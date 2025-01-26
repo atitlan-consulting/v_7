@@ -1,0 +1,355 @@
+        /* Import Fonts */
+        @font-face {
+            font-family: 'Raleway';
+            src: url('../static/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Plantin';
+            src: url('../static/fonts/PlantinMTProLight.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Segoe UI';
+            src: url('../static/fonts/SegoeUI-VF.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Refined Color Scheme */
+        :root {
+            --primary-color: #00bfffff;
+            --primary-color-light: #b3e6ffff;
+            --primary-color-dark: #007acc;
+
+            --secondary-color: #ff8c00ff;
+            --secondary-color-light: #f39c12;
+            --secondary-color-dark: #d35400;
+
+            --neutral-light: #ecf0f1;
+            --neutral: #bdc3c7;
+            --neutral-dark: #7f8c8d;
+
+            --background-color: #000000;
+            --background-color-light: #34495e;
+            --text-primary: #f4f4f4;
+            --text-secondary: #bdc3c7;
+        }
+
+        /* General Reset */
+        body {
+            font-family: 'Raleway', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-secondary);
+            /*background-image: radial-gradient(circle at center, var(--primary-color-light) 0%, var(--primary-color-dark) 100%);*/
+            overflow: visible;
+            background-color: var(--background-color);
+        }
+
+        html, body {
+            overflow: visible;
+            height: 100%;
+        }
+        
+
+        /* Headings Styling */
+        h1 {
+            font-family: 'Raleway', Arial, sans-serif;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-family: 'Raleway', Arial, sans-serif;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        h3, h4, h5, h6 {
+            font-family: 'Raleway', Arial, sans-serif;
+            color: var(--text-secondary);
+        }
+
+        .drop-cap {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .drop-cap::first-letter {
+            font-size: 3em;
+            font-weight: bold;
+            float: left;
+            margin-right: 0.1em;
+            line-height: 1;
+            color: var(--secondary-color) !important;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: var(--background-color, #333) !important;
+            color: #ffffff !important;
+            font-family: 'Raleway', sans-serif;
+            z-index: 1030;
+            position: sticky;
+            top: 0;
+            transition: transform 0.3s ease-in-out;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar .nav-link {
+            color: #ffffff !important;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .navbar .nav-link:hover {
+            color: var(--secondary-color, #f39c12) !important;
+            text-decoration: none;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff8c00 !important;
+        }
+
+        .navbar-brand:hover {
+            color: #f39c12 !important;
+        }
+
+        .sticky-top {
+            position: sticky !important;
+    
+        }
+        
+        .container {
+            padding: 0 15px;
+            max-width: 1140px;
+            margin: auto;
+            background-color: var(--background-color);
+        }
+
+        /* Button Styles */
+        .btn {
+            background-color: var(--primary-color) !important;
+            border-color: var(--primary-color-dark) !important;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color-dark);
+            border-radius: 5px;
+        }
+
+        /* Text Colors */
+        .text-primary {
+            color: var(--primary-color-light) !important;
+        }
+
+        .text-secondary {
+            color: var(--secondary-color-light) !important;
+        }
+
+        .text-success {
+            color: var(--neutral-light) !important;
+        }
+
+        /* Body Padding for Sticky Header */
+        body {
+            padding-top: 0px;
+        }
+
+        /* Hero Section Styles */
+        #hero {
+            background-color: var(--background-color) !important;
+            text-align: center;
+            padding: 100px 15px;
+        }
+
+        #hero img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        #hero .btn {
+            background-color: var(--primary-color) !important;
+            color: #fff;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        #hero .btn:hover {
+            background-color: var(--secondary-color-dark) !important;
+            color: #f4f4f4;
+        }
+
+        /* Focus Styles */
+        .btn:focus, .nav-link:focus {
+            outline: 3px dashed var(--primary-color-light);
+            outline-offset: 2px;
+        }
+
+        #about {
+            /*background-color: var(--background-color-light);*/
+            background: linear-gradient(to bottom, #000000, #2d3436); /* Black to dark gray */
+            border-radius: 0px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 3rem 0; /* Add some inner padding */
+            margin: 2rem auto; /* Add spacing between sections */
+            max-width: 800px; /* Keep it centered and not too wide */
+            text-align: center;
+            color: var(--text-secondary); /* Light gray text */
+        }
+        
+
+        #about h2, h3 {
+            font-size: 2rem; /* Make the heading more prominent */
+            color: var(--primary-color); /* Align color with overall theme */
+            margin-bottom: 1rem;
+        }
+        
+        #about p {
+            font-size: 1.1rem; /* Slightly larger font for readability */
+            line-height: 1.8; /* Increase line spacing */
+            color: var(--text-secondary); /* Use secondary text color */
+            margin-bottom: 1rem;
+        }
+        
+        #about ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        #about ul li {
+            margin-bottom: 0.5rem;
+            color: var(--neutral-light); /* Slightly lighter text for list items */
+        }
+        
+        #about img {
+            max-width: 100%;    
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+        }
+        
+        hr.my-5 {
+            border: none;
+            border-top: 2px solid var(--neutral-dark);
+            margin: 3rem 0;
+        }
+        
+ /* =====================
+   Team Section Styles
+===================== */
+
+#team {
+    background-color: var(--background-color); /* Dark background */
+    color: var(--text-primary); /* Light text */
+    padding: 60px 20px; /* Add spacing around the section */
+}
+
+#team h2 {
+    color: var(--primary-color); /* Highlighted heading */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    flex-shrink: 0; /* Ensure images stay consistent */
+}
+
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.profile-img img:hover {
+    transform: scale(1.1); /* Subtle zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+
+/* Profile Text Styling */
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.profile-text {
+    font-size: 1rem;
+    color: var(--text-secondary); /* Consistent secondary text color */
+    margin: 0;
+    line-height: 1.6; /* Improve readability */
+    text-align: center; /* Center-align on smaller screens */
+}
+
+.profile-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: var(--text-secondary);
+}
+
+.profile-text ul li {
+    margin-bottom: 5px;
+}
+
+/* Button Styling */
+#team .btn {
+    background-color: var(--primary-color); /* Button matches the theme */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#team .btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05); /* Subtle button hover effect */
+}
+
+/* RICS Icon Styling */
+#team .row img {
+    filter: brightness(1.2); /* Make the RICS logo slightly brighter */
+    transition: filter 0.3s ease;
+}
+
+#team .row img:hover {
+    filter: brightness(1.5); /* Brighter on hover */
+}
+
+/* =====================
+   Responsive Layout Tweaks
+===================== */
+@media (min-width: 768px) {
+    .profile-img {
+        margin-right: 20px;
+    }
+
+    .profile-text {
+        text-align: left; /* Align text left on larger screens */
+    }
+
+    .profile-img.order-md-2 {
+        margin-left: 20px; /* Add space for reverse order on larger screens */
+        margin-right: 0; /* Reset right margin */
+    }
+}

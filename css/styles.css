@@ -1,0 +1,705 @@
+/* Import Fonts */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../static/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plantin';
+    src: url('../static/fonts/PlantinMTProLight.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../static/fonts/SegoeUI-VF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =====================
+   Global Styles
+===================== */
+:root {
+    --primary-color: #00bfff; /* Bright blue */
+    --primary-color-light: #b3e6ff;
+    --primary-color-dark: #007acc;
+
+    --secondary-color: #696969; /* Dark gray */
+    --secondary-color-light: #ffdbb3;
+    --secondary-color-dark: #ff4500;
+
+    --neutral-light: #ecf0f1;
+    --neutral: #bdc3c7;
+    --neutral-dark: #7f8c8d;
+
+    --background-color: #2e2e2e; /* #2e2e2e  #1B263B f9f9f9 #d6d6d6*/
+    --background-color-light: #2d3436; /* Dark gray */
+    --text-primary: #f4f4f4; /* White text */
+    --text-secondary: #c0c0c0ff; /* Light gray for supporting text */
+}
+
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: var(--text-primary);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    position: absolute; /* Remove it from the normal document flow */
+    left: -9999px; /* Push it off-screen */
+    top: 0;
+    width: 1px; /* Shrink its width */
+    height: 1px; /* Shrink its height */
+    overflow: hidden; /* Ensure no visible overflow */
+    clip: rect(0, 0, 0, 0); /* Clip it */
+    white-space: nowrap; /* Prevent wrapping */
+    border: 0; /* Remove any borders */
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: var(--text-primary);
+}
+
+/* =====================
+   General List Styling
+===================== */
+ul.custom-list {
+    list-style-type: disc; /* Use disc bullets */
+    margin: 0; /* Remove default margin */
+    padding-left: 1.5em; /* Adjust indent for a clean look */
+    color: var(--neutral-light); /* Set bullet color */
+}
+
+/* List Items */
+ul.custom-list li {
+    font-size: 1rem; /* Keep font size consistent with body text */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 10px; /* Add subtle spacing between items */
+    color: var(--text-primary); /* Match the text color with the site theme */
+}
+
+/* Nested Lists */
+ul.custom-list ul {
+    list-style-type: circle; /* Use circle bullets for nested lists */
+    padding-left: 1.5em; /* Indent nested lists slightly more */
+    margin-top: 10px; /* Add space between parent and nested lists */
+}
+
+ul.custom-list ul li {
+    font-size: 0.95rem; /* Slightly smaller font for nested items */
+    color: var(--text-secondary); /* Use a lighter text color for nested items */
+}
+
+/* =====================
+   Ordered List Styling
+===================== */
+ol.custom-list {
+    list-style-type: decimal; /* Use numbers for ordered lists */
+    margin: 0;
+    padding-left: 1.5em;
+    color: var(--neutral-light);
+}
+
+ol.custom-list li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+/* =====================
+   Hover Effects (Optional)
+===================== */
+ul.custom-list li:hover,
+ol.custom-list li:hover {
+    color: var(--primary-color); /* Highlight on hover */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =====================
+   Components
+===================== */
+.btn {
+    background-color: var(--primary-color);
+    border: none;/*1px solid var(--primary-color-dark);*/
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+    color:  var(--text-secondary);
+}
+
+.img-rounded {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* =====================
+   Section Styles
+===================== */
+
+/* Ensure sticky-top works */
+.sticky-top {
+    z-index: 1020; /* Ensures it stays above other elements */
+    background-color: var(--background-color); /* Dark background for the navbar */
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+/* Logo Styles */
+.logo-icon {
+    max-height: 40px; /* Adjust the logo size */
+    margin-right: 10px; /* Add space between logo and text */
+}
+
+@media (max-width: 768px) {
+    .logo-icon {
+        max-height: 30px; /* Smaller logo for mobile */
+    }
+}
+
+/* Navbar Links */
+.navbar .nav-link {
+    color: #ffffff !important; /* Link color */
+    font-size: 1rem; /* Adjust font size */
+    text-transform: uppercase; /* Optional: Transform to uppercase */
+    padding: 0.5rem 1rem; /* Adds better spacing */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color, #f39c12) !important; /* Hover color */
+    text-decoration: none; /* No underline */
+}
+
+/* Active Link Styling */
+.navbar .nav-link.active {
+    color: #f39c12 !important; /* Active link color */
+    font-weight: bold; /* Highlight active link */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.5rem; /* Adjust brand font size */
+    font-weight: bold; /* Make it bold */
+    color: #ff8c00 !important; /* Custom brand color */
+    display: flex;
+    align-items: center; /* Aligns logo and text vertically */
+    gap: 10px; /* Adds spacing between logo and text */
+}
+
+.navbar-brand:hover {
+    color: #f39c12 !important; /* Hover effect for brand */
+}
+
+/* Navbar Toggler Icon */
+.navbar-toggler {
+    border: none; /* Removes the default border */
+    outline: none; /* Removes focus outline */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28155,155,155,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; /* Customizes icon color */
+}
+
+/* Collapsible Content */
+.navbar-collapse {
+    justify-content: flex-end; /* Aligns nav items to the right */
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        justify-content: center; /* Centers links in mobile view */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center-align links in mobile */
+    }
+}
+
+/* Adjust spacing and alignment for navbar items */
+.navbar-nav .nav-item {
+    margin: 0 5px; /* Add spacing between nav items */
+}
+
+/* Active and hover states for buttons */
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f39c12 !important; /* Highlight active/hover state */
+}
+
+
+
+
+/* Hero Section */
+#hero {
+    background: var(--background-color) !important; /*linear-gradient(to bottom, #000000, #2d3436);*/
+    color: var(--text-primary);
+    text-align: center;
+    padding: 100px 15px;
+}
+
+#hero h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    line-height: 1.8; /* Improve readability */
+    color: var(--text-secondary); /* Use lighter text */
+    margin-bottom: 1rem; /* Add spacing */
+}
+
+#hero .btn {
+    padding: 12px 30px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#hero .img {
+    margin-top: 20px;
+    height: 60px;
+}
+/* =====================
+   About Section
+===================== */
+#about {
+    background-color: var(--background-light); /* Match site's background */
+    color: var(--text-primary) !important; /* Primary text color */
+    padding: 60px 20px; /* Consistent vertical spacing */
+}
+
+/* About Section Paragraphs */
+#about .about-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary) !important; /* Use secondary text color for supporting text */
+    margin-bottom: 20px;
+}
+
+/* Service Descriptions */
+#about .services-description p {
+    font-size: 1.1rem; /* Slightly larger font size */
+    line-height: 1.8;
+    color: var(--text-primary) !important; /* Primary text color */
+}
+
+#about .custom-list {
+    list-style-type: disc; /* Disc bullets for lists */
+    padding-left: 1.5em; /* Indent for a clean look */
+    margin: 0;
+    color: var(--primary-color) !important; /* Match the text color with the site theme */
+}
+
+#about .custom-list li {
+    font-size: 1rem; /* Match paragraph text size */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 10px; /* Space between items */
+
+}
+
+#about .about-image img {
+    max-width: 100%;
+    height: auto; /* Ensure responsive scaling */
+    border-radius: 8px; /* Add consistent rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+
+/* Team Section */
+#team {
+    background-color: var(--background-color);
+    color: var(--text-primary) !important;
+    padding: 60px 20px;
+    
+}
+
+#team h1, h2, h3 {
+    color: var(--primary-color) !important;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--background-color-light) !important;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 150px;
+    height: 150px;
+
+}
+
+.profile-img {
+    flex-shrink: 0; /* Ensure images stay the same size */
+}
+
+.profile-text {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-primary);
+
+}
+
+.profile-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.profile-text ul li {
+    color: var(--text-primary);
+}
+
+/* =====================
+   Team Section
+===================== */
+#team {
+    background-color: var(--background-color); /* Matches site background */
+    color: #c0c0c0ff; /* Set global text color */
+    padding: 60px 20px; /* Add vertical spacing */
+}
+
+.team-title {
+    color: var(--primary-color); /* Brighten the title */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.team-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #c0c0c0ff; /* Consistent lighter text */
+    margin-bottom: 30px;
+}
+
+.divider {
+    border-top: 1px solid #6c757d; /* Subtle divider */
+    margin: 40px 0;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add depth to profile images */
+    width: 120px;
+    height: 120px;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    color: var(--primary-color); /* Brighten names */
+    margin-bottom: 5px;
+}
+
+.profile-role {
+    font-size: 1rem;
+    color: #c0c0c0ff; /* Match overall text color */
+    margin-bottom: 10px;
+}
+
+.profile-bio {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #c0c0c0ff; /* Set lighter text color */
+    margin-bottom: 15px;
+}
+
+.profile-list {
+    list-style-type: disc; /* Disc bullets for lists */
+    padding-left: 20px; /* Add spacing for bullets */
+    color: #c0c0c0ff; /* Match text color */
+    margin-bottom: 20px;
+}
+
+.profile-list li {
+    margin-bottom: 10px;
+}
+
+.profile-qualifications {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #c0c0c0ff;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-text {
+        text-align: center; /* Center-align text for smaller screens */
+    }
+}
+
+
+/* =====================
+   Contact Section Refinements
+===================== */
+#contact {
+    background-color: var(--background-color); /* Match the site's theme */
+    color: var(--text-primary);
+    padding: 40px 20px; /* Slightly reduce vertical padding */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 15px; /* Reduce spacing under heading */
+}
+
+#contact p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Form Styling */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px; /* Increase form padding for balance */
+    border: 1px solid var(--neutral-light); /* Softer border */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background-color: var(--background-light); /* Match site’s contrast */
+}
+
+/* Form Labels */
+#contact .form-label {
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Form Inputs */
+#contact .form-control {
+    border: 1px solid var(--neutral-light);
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: var(--background-light);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Textarea */
+#contact textarea.form-control {
+    resize: none; /* Disable resizing */
+}
+
+/* Checkbox */
+#contact .form-check-input {
+    margin-right: 10px;
+    accent-color: var(--primary-color);
+}
+
+#contact .form-check-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    vertical-align: middle; /* Center text with the checkbox */
+}
+
+/* Submit Button */
+#contact .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact .btn-primary:hover {
+    background-color: var(--primary-color-dark);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add depth on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #contact {
+        padding: 30px 15px;
+    }
+
+    #contact h2 {
+        font-size: 1.8rem;
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+}
+
+/* =====================
+   Resources Section
+===================== */
+.resources-section {
+    background-color: var(--background-color); /* Match site theme */
+    color: #c0c0c0ff; /* Lighter text for readability */
+    padding: 60px 20px; /* Add vertical spacing */
+}
+
+.resources-section h2 {
+    color: var(--primary-color); /* Highlighted section title */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.resources-section .intro {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.resources-section h3 {
+    color: var(--primary-color); /* Highlight categories */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.resources-section p {
+    color: #c0c0c0ff; /* Consistent lighter text */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.divider {
+    border-top: 1px solid var(--neutral-light); /* Subtle divider */
+    margin: 20px auto;
+    max-width: 100px;
+}
+
+
+/* =====================
+   Footer Section
+===================== */
+#footer {
+    background: var(--background-color); /* Match the site's background */
+    color: var(--text-secondary); /* Secondary color for the text */
+    padding: 20px 0; /* Consistent vertical padding */
+    text-align: center;
+    font-size: 0.9rem; /* Slightly smaller font size for footer text */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Footer Links */
+#footer a {
+    color: var(--primary-color); /* Match the site's primary color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+#footer a:hover {
+    color: var(--primary-color-dark); /* Slightly darker on hover */
+}
+
+/* Footer Modal Styling */
+.modal-content {
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background: var(--background-light); /* Light background for contrast */
+    color: var(--text-primary); /* Primary text color */
+    padding: 20px; /* Inner padding for the modal */
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--neutral-light); /* Subtle divider */
+    padding-bottom: 10px;
+}
+
+.modal-title {
+    font-size: 1.25rem; /* Highlighted title size */
+    color: var(--primary-color); /* Use primary color for titles */
+}
+
+.modal-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary); /* Secondary color for body text */
+}
+
+.modal-footer {
+    border-top: 1px solid var(--neutral-light); /* Divider for footer */
+    padding-top: 10px;
+}
+
+.btn-close {
+    color: var(--neutral-dark); /* Neutral color for the close button */
+}
+
+.btn-close:hover {
+    color: var(--primary-color-dark); /* Match site's hover color */
+}
+
+
+/* =====================
+   Responsive Styles
+===================== */
+@media (min-width: 768px) {
+    #about, #services, #team {
+        padding: 80px 40px;
+    }
+
+    .profile-img {
+        margin-right: 20px;
+    }
+
+    .profile-text {
+        text-align: left;
+    }
+}
