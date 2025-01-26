@@ -1,21 +1,21 @@
 /* Import Fonts */
 @font-face {
     font-family: 'Raleway';
-    src: url('../static/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    src: url('fonts/Raleway-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Plantin';
-    src: url('../static/fonts/PlantinMTProLight.TTF') format('truetype');
+    src: url('fonts/PlantinMTProLight.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Segoe UI';
-    src: url('../static/fonts/SegoeUI-VF.ttf') format('truetype');
+    src: url('fonts/SegoeUI-VF.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

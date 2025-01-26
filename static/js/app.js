@@ -25,11 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Load all sections
-    loadPartial('../project/partials/about.html', 'about');
-    loadPartial('../project/partials/case-studies.html', 'case-studies', initializeCaseStudies); // Initialize map & carousel here
-    loadPartial('../project/partials/team.html', 'team');
-    loadPartial('../project/partials/resources.html', 'resources');
-    loadPartial('../project/partials/contact.html', 'contact');
+    loadPartial('partials/about.html', 'about');
+    loadPartial('partials/case-studies.html', 'case-studies', initializeCaseStudies); // Initialize map & carousel here
+    loadPartial('partials/team.html', 'team');
+    loadPartial('partials/contact.html', 'contact');
 
     // Load the header and footer
     loadPartial('partials/header.html', 'header');
