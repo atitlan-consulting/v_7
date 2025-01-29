@@ -69,10 +69,28 @@
     <!-- Case Studies Section -->
     <section id="case-studies" class="py-5">
         <div class="container">
-            <h2>Case Studies</h2>
-            <!-- Case studies content (map and carousel) will be dynamically loaded here -->
+            <h2 class="text-center mb-4">Case Studies</h2>
+            <hr class="my-5">
+
+            <!-- Filter Buttons -->
+            <div class="d-flex justify-content-center gap-2">
+                <button class="btn btn-primary filter-btn" data-category="minor">Minor</button>
+                <button class="btn btn-secondary filter-btn" data-category="major">Major</button>
+                <button class="btn btn-secondary filter-btn" data-category="strategic">Strategic</button>
+            </div>
+
+            <!-- Case Study Cards (Dynamic Content Here) -->
+            <div class="row mt-4">
+                <div id="case-study-container" class="d-flex flex-nowrap overflow-auto">
+                    <!-- JavaScript will inject cards here -->
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div id="map" class="mt-4"></div>
         </div>
     </section>
+
 
     <!-- Team Section -->
     <section id="team" class="py-5">
@@ -92,7 +110,6 @@
     </section>
 
     <!-- Footer -->
-
     <section id="footer" class="py-5">
     </section>
 

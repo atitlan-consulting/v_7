@@ -13,20 +13,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (target) {
                     target.innerHTML = data;
 
-                    // Run callback after content loads
+                    console.log(`✅ ${targetId} loaded successfully.`);
+
+                    // Run callback AFTER content loads
                     if (callback) callback();
                 } else {
-                    console.error(`Target container #${targetId} not found.`);
+                    console.error(`❌ Target container #${targetId} not found.`);
                 }
             })
             .catch((error) => {
-                console.error(`Error loading partial: ${error}`);
+                console.error(`❌ Error loading partial: ${error}`);
             });
     };
 
     // Load all sections
     loadPartial('templates/partials/about.html', 'about');
-    loadPartial('templates/partials/case-studies.html', 'case-studies', initializeCaseStudies); // Initialize map & carousel here
+    loadPartial('templates/partials/case-studies.html', 'case-studies', () => {
+        console.log("✅ Case Studies section is now loaded. Initializing case studies...");
+        initializeCaseStudies(); // Run only after partial loads
+    });
     loadPartial('templates/partials/team.html', 'team');
     loadPartial('templates/partials/resources.html', 'resources');
     loadPartial('templates/partials/contact.html', 'contact');
