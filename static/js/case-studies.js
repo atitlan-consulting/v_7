@@ -21,7 +21,7 @@ function initializeCaseStudies() {
 
     // Fetch GeoJSON and initialize the single carousel
     const polygons = [];
-    fetch('geojson/merged_case_studies.geojson')
+    fetch('static/geojson/merged_case_studies.geojson')
         .then(response => response.json())
         .then(data => {
             if (!data || !data.features || !data.features.length) {

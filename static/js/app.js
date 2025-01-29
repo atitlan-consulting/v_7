@@ -25,12 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Load all sections
-    loadPartial('partials/about.html', 'about');
-    loadPartial('partials/case-studies.html', 'case-studies', initializeCaseStudies); // Initialize map & carousel here
-    loadPartial('partials/team.html', 'team');
-    loadPartial('partials/contact.html', 'contact');
+    loadPartial('templates/partials/about.html', 'about');
+    loadPartial('templates/partials/case-studies.html', 'case-studies', initializeCaseStudies); // Initialize map & carousel here
+    loadPartial('templates/partials/team.html', 'team');
+    loadPartial('templates/partials/resources.html', 'resources');
+    loadPartial('templates/partials/contact.html', 'contact');
 
     // Load the header and footer
-    loadPartial('partials/header.html', 'header');
-    loadPartial('partials/footer.html', 'footer');
+    loadPartial('templates/partials/header.html', 'header');
+    loadPartial('templates/partials/footer.html', 'footer');
 });
