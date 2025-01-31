@@ -36,9 +36,9 @@
     --neutral: #bdc3c7;
     --neutral-dark: #7f8c8d;
 
-    --background-color: #f3f1ef; /* #2e2e2e  #1B263B f9f9f9 #d6d6d6 #1B263B  #1B263B*/
+    --background-color: #c; /* #2e2e2e  #1B263B f9f9f9 #d6d6d6 #1B263B  #1B263B*/
     --background-color-light: #f3f1efff; /* Cream background */
-    --text-primary: #1e1c1c; /* White text */
+    --text-primary: #696969; /* White text */
     --text-secondary: #c0c0c0ff; /* Light gray for supporting text */
 }
 
