@@ -75,7 +75,7 @@ ul.custom-list {
     list-style-type: disc; /* Use disc bullets */
     margin: 0; /* Remove default margin */
     padding-left: 1.5em; /* Adjust indent for a clean look */
-    color: var(--neutral-light); /* Set bullet color */
+    color: var(--neutral-dark); /* Set bullet color */
 }
 
 /* List Items */
@@ -105,7 +105,7 @@ ol.custom-list {
     list-style-type: decimal; /* Use numbers for ordered lists */
     margin: 0;
     padding-left: 1.5em;
-    color: var(--neutral-light);
+    color: var(--neutral-dark);
 }
 
 ol.custom-list li {
@@ -115,14 +115,7 @@ ol.custom-list li {
     color: var(--text-primary);
 }
 
-/* =====================
-   Hover Effects (Optional)
-===================== */
-ul.custom-list li:hover,
-ol.custom-list li:hover {
-    color: var(--primary-color); /* Highlight on hover */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
+
 
 
 
@@ -255,10 +248,13 @@ img {
 
 /* Hero Section */
 #hero {
-    background: var(--background-color) !important; /*linear-gradient(to bottom, #000000, #2d3436);*/
+    background: url('../images/hero-light.svg') no-repeat center center;
+    background-size: cover; /* Contain prevents cropping */
+    background-color: var(--background-color) !important; /* Match site's background */
     color: var(--text-primary);
     text-align: center;
     padding: 100px 15px;
+    position: relative;
 }
 
 #hero h1 {
@@ -273,7 +269,7 @@ img {
     font-size: 1.2rem;
     line-height: 1.8; /* Improve readability */
     color: var(--text-secondary); /* Use lighter text */
-    margin-bottom: 1rem; /* Add spacing */
+    margin-bottom: 15rem; /* Add spacing */
 }
 
 #hero .btn {
@@ -282,17 +278,15 @@ img {
     margin-top: 1rem;
 }
 
-#hero image {
-    max-width: 100%;
-    height: auto;
-}
+
+
 
 /* =====================
    About Section
 ===================== */
 #about {
     background-color: var(--background-light); /* Match site's background */
-    color: var(--text-primary) !important; /* Primary text color */
+    color: var(--text-secondary) !important; /* Primary text color */
     padding: 60px 20px; /* Consistent vertical spacing */
 }
 
@@ -308,21 +302,21 @@ img {
 #about .services-description p {
     font-size: 1.1rem; /* Slightly larger font size */
     line-height: 1.8;
-    color: var(--text-primary) !important; /* Primary text color */
+    color: var(--text-secondary) !important; /* Primary text color */
 }
 
 #about .custom-list {
     list-style-type: disc; /* Disc bullets for lists */
     padding-left: 1.5em; /* Indent for a clean look */
     margin: 0;
-    color: var(--primary-color) !important; /* Match the text color with the site theme */
+    color: var(---text-secondary) !important; /* Match the text color with the site theme */
 }
 
 #about .custom-list li {
     font-size: 1rem; /* Match paragraph text size */
     line-height: 1.5; /* Improve readability */
     margin-bottom: 10px; /* Space between items */
-
+    color: var(--text-secondary) !important;
 }
 
 #about .about-image img {
@@ -336,7 +330,7 @@ img {
 /* Team Section */
 #team {
     background-color: var(--background-color);
-    color: var(--text-primary) !important;
+    color: var(--text-secondary) !important;
     padding: 60px 20px;
     
 }
@@ -405,7 +399,12 @@ img {
 }
 
 .divider {
-    border-top: 1px solid #6c757d; /* Subtle divider */
+    border-top: 5px solid #6c757d; /* Subtle divider */
+    margin: 40px 0;
+}
+
+#team hr {
+    border-top: 2px solid #6c757d;  /* Adjust color for better contrast */
     margin: 40px 0;
 }
 
