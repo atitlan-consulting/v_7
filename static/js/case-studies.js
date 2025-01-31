@@ -182,18 +182,38 @@ function generateSectorIcons(sectors) {
     ).join('');
 }
 
-// 📌 Initialize Leaflet Map
+// 📌 Initialize Leaflet Map with multiple basemaps
 function initializeMap() {
-    console.log("🗺️ Initializing map...");
+    console.log("🗺️ Initializing map with basemaps...");
 
+    // Define basemap layers
+    const basemaps = {
+        "Light": L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.carto.com">CARTO</a>'
+        }),
+        "Dark": L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.carto.com">CARTO</a>'
+        }),
+        "Satellite": L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            maxZoom: 20,
+            attribution: '&copy; <a href="https://www.esri.com">ESRI</a>'
+        }),
+    };
+
+    // Initialize the map with the default layer (Light theme)
     if (!map) {
-        map = L.map('map', { zoomControl: true }).setView([51.505, -0.09], 10);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map);
+        map = L.map('map', { zoomControl: true, layers: [basemaps.Light] }).setView([51.505, -0.09], 10);
+
+        // Add layer control for switching basemaps
+        L.control.layers(basemaps).addTo(map);
     } else {
         console.log("🔄 Map already exists. Refreshing...");
         setTimeout(() => map.invalidateSize(), 500); // Fix blank map issue
     }
 }
+
 
 // 📌 Render all polygons on the map
 function renderAllCaseStudiesOnMap() {
