@@ -23,7 +23,7 @@
 /* =====================
    Global Styles
 ===================== */
-:root {
+:root { 
     --primary-color: #00bfff; /* Bright blue */
     --primary-color-light: #b3e6ff;
     --primary-color-dark: #007acc;
@@ -38,7 +38,7 @@
 
     --background-color: #f3f1ef; /* #2e2e2e  #1B263B f9f9f9 #d6d6d6 #1B263B  #1B263B*/
     --background-color-light: #f3f1efff; /* Cream background */
-    --text-primary: #f4f4f4; /* White text */
+    --text-primary: #1e1c1c; /* White text */
     --text-secondary: #c0c0c0ff; /* Light gray for supporting text */
 }
 
@@ -75,7 +75,7 @@ ul.custom-list {
     list-style-type: disc; /* Use disc bullets */
     margin: 0; /* Remove default margin */
     padding-left: 1.5em; /* Adjust indent for a clean look */
-    color: var(--neutral-dark); /* Set bullet color */
+    color: var(--text-primary); /* Set bullet color */
 }
 
 /* List Items */
@@ -174,7 +174,7 @@ img {
 
 /* Navbar Links */
 .navbar .nav-link {
-    color: #ffffff !important; /* Link color */
+    color: var(---text-secondary) !important; /* Link color */
     font-weight: lighter;
     font-size: 1rem; /* Adjust font size */
     text-transform: uppercase; /* Optional: Transform to uppercase */
@@ -249,7 +249,7 @@ img {
 /* Hero Section */
 #hero {
     background: url('../images/hero-light.svg') no-repeat center center;
-    background-size: cover; /* Contain prevents cropping */
+    background-size: auto;
     background-color: var(--background-color) !important; /* Match site's background */
     color: var(--text-primary);
     text-align: center;
@@ -275,7 +275,7 @@ img {
 #hero .btn {
     padding: 12px 30px;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 20rem;
 }
 
 
@@ -286,7 +286,7 @@ img {
 ===================== */
 #about {
     background-color: var(--background-light); /* Match site's background */
-    color: var(--text-secondary) !important; /* Primary text color */
+    color: var(--text-primary) !important; /* Primary text color */
     padding: 60px 20px; /* Consistent vertical spacing */
 }
 
@@ -294,7 +294,7 @@ img {
 #about .about-intro p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: var(--text-secondary) !important; /* Use secondary text color for supporting text */
+    color: var(--text-primary) !important; /* Use secondary text color for supporting text */
     margin-bottom: 20px;
 }
 
