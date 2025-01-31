@@ -129,7 +129,7 @@ img {
 ===================== */
 .btn {
     background-color: var(--primary-color);
-    border: none;/*1px solid var(--primary-color-dark);*/
+    border: 1px solid var(--primary-color-dark);
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
