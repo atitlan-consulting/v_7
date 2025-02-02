@@ -248,7 +248,7 @@ img {
 
 /* Hero Section */
 #hero {
-    background: url('../images/hero-light.svg') no-repeat center center;
+    background: url('../images/hero-light-map.svg') no-repeat center center;
     background-size: auto;
     background-color: var(--background-color) !important; /* Match site's background */
     color: var(--text-primary);
