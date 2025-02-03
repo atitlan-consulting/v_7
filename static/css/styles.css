@@ -116,9 +116,6 @@ ol.custom-list li {
 }
 
 
-
-
-
 img {
     max-width: 100%;
     height: auto;
@@ -174,7 +171,7 @@ img {
 
 /* Navbar Links */
 .navbar .nav-link {
-    color: var(---text-secondary) !important; /* Link color */
+    color: var(---text-primary) !important; /* Link color */
     font-weight: lighter;
     font-size: 1rem; /* Adjust font size */
     text-transform: uppercase; /* Optional: Transform to uppercase */
@@ -262,6 +259,12 @@ img {
     margin-bottom: 1rem;
 }
 
+#her h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
 #hero p {
     font-size: 1.2rem;
     font-weight: lighter;
@@ -272,7 +275,7 @@ img {
 }
 
 #hero .btn {
-    padding: 12px 100px;
+    padding: 12px 80px;
     margin-bottom: 1rem;
     margin-top: 25rem;
 }
