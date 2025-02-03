@@ -248,6 +248,7 @@ img {
     background: url('../images/hero-dark 2.svg') no-repeat center center; /*no-repeat center center;*/
     background-size: cover; /* OPTS: cover, auto, */
     background-color: var(--background-color) !important; /* Match site's background */
+    background-repeat: round;
     color: var(--text-primary);
     text-align: center;
     padding: 100px 15px;
@@ -262,7 +263,7 @@ img {
 #hero h2 {
     color: var(--primary-color);
     font-size: 2.5rem;
-    margin-top: 25rem;
+    margin-top: 1rem;
 }
 
 #hero p {
@@ -271,13 +272,13 @@ img {
     font-size: 1.1rem;
     line-height: 1.8; /* Improve readability */
     color: var(--text-secondary); /* Use lighter text */
-    margin-bottom: 15rem; /* Add spacing */
+    margin-bottom: 1rem; /* Add spacing */
 }
 
 #hero .btn {
     padding: 12px 80px;
     margin-bottom: 1rem;
-    margin-top: 10rem;
+    margin-top: 1rem;
 }
 
 
