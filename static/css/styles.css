@@ -36,7 +36,7 @@
     --neutral: #bdc3c7;
     --neutral-dark: #7f8c8d;
 
-    --background-color: #c; /* #2e2e2e  #1B263B f9f9f9 #d6d6d6 #1B263B  #1B263B*/
+    --background-color: #f3f1efff; /* #2e2e2e  #1B263B f9f9f9 #d6d6d6 #1B263B  #1B263B*/
     --background-color-light: #f3f1efff; /* Cream background */
     --text-primary: #696969; /* White text */
     --text-secondary: #c0c0c0ff; /* Light gray for supporting text */
@@ -248,8 +248,8 @@ img {
 
 /* Hero Section */
 #hero {
-    background: url('../images/hero-light 3.svg') no-repeat center center;
-    background-size: auto; /* height*/
+    background: url('../images/hero-light.svg'); /*no-repeat center center;*/
+    background-size: cover; /* OPTS: cover, auto, */
     background-color: var(--background-color) !important; /* Match site's background */
     color: var(--text-primary);
     text-align: center;
@@ -273,9 +273,9 @@ img {
 }
 
 #hero .btn {
-    padding: 12px 30px;
+    padding: 12px 100px;
     margin-bottom: 1rem;
-    margin-top: 23rem;
+    margin-top: 25rem;
 }
 
 
