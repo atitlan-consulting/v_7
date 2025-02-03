@@ -26,13 +26,13 @@
      inkscape:pageopacity="1"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.63283959"
-     inkscape:cx="410.84661"
-     inkscape:cy="386.35383"
+     inkscape:zoom="1.4278644"
+     inkscape:cx="409.00242"
+     inkscape:cy="524.20943"
      inkscape:window-width="1712"
      inkscape:window-height="832"
-     inkscape:window-x="3292"
-     inkscape:window-y="110"
+     inkscape:window-x="3249"
+     inkscape:window-y="93"
      inkscape:window-maximized="0"
      inkscape:current-layer="g63" />
   <defs
@@ -45,11 +45,11 @@
          id="stop69" />
       <stop
          style="stop-color:#b3e6ff;stop-opacity:1;"
-         offset="0.11873245"
+         offset="0.05990892"
          id="stop72" />
       <stop
          style="stop-color:#00bfff;stop-opacity:1;"
-         offset="0.43023497"
+         offset="0.27023497"
          id="stop68" />
       <stop
          style="stop-color:#0099ff;stop-opacity:1;"
@@ -72,7 +72,7 @@
          id="stop2" />
       <stop
          style="stop-color:#007acc;stop-opacity:1;"
-         offset="0.30265281"
+         offset="0.13559398"
          id="stop14" />
       <stop
          style="stop-color:#b3e6ff;stop-opacity:1;"
@@ -80,10 +80,10 @@
          id="stop16" />
       <stop
          style="stop-color:#2e2e2e;stop-opacity:1;"
-         offset="0.86726075"
+         offset="0.89079016"
          id="stop15" />
       <stop
-         style="stop-color:#2e2e2e;stop-opacity:1;"
+         style="stop-color:#2e2e2e;stop-opacity:0;"
          offset="0.94069076"
          id="stop3" />
     </linearGradient>
@@ -110,17 +110,17 @@
     <linearGradient
        xlink:href="#linearGradient14"
        id="linearGradient15"
-       x1="34.29784"
-       y1="42.035854"
-       x2="146.15454"
-       y2="132.35173"
+       x1="39.872551"
+       y1="39.230156"
+       x2="93.381401"
+       y2="155.02069"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.86668488,-0.45636846,0.45636763,0.8666835,173.56856,-26.780396)" />
     <linearGradient
        xlink:href="#linearGradient67"
        id="linearGradient69"
-       x1="34.29784"
-       y1="42.035854"
+       x1="39.872551"
+       y1="39.230156"
        x2="73.883537"
        y2="159.81885"
        gradientUnits="userSpaceOnUse"
@@ -151,7 +151,7 @@
            style="fill:url(#linearGradient1);stroke:#ffffff;stroke-width:0.0352778" />
         <g
            id="g4"
-           transform="matrix(1.7989561,0,0,1.7989561,-253.11204,-44.564517)"
+           transform="matrix(1.7989561,0,0,1.7989561,-253.11203,-44.564517)"
            style="stroke-width:0.555878">
           <g
              id="g5"
