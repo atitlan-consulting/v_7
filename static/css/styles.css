@@ -248,8 +248,8 @@ img {
 
 /* Hero Section */
 #hero {
-    background: url('../images/hero-dark\ 2.svg') no-repeat center; /*no-repeat center center;*/
-    background-size: cover; /* OPTS: cover, auto, */
+    background: url('../images/hero-dark 2.svg') no-repeat center center; /*no-repeat center center;*/
+    background-size: auto; /* OPTS: cover, auto, */
     background-color: var(--background-color) !important; /* Match site's background */
     color: var(--text-primary);
     text-align: center;
