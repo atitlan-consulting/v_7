@@ -248,7 +248,7 @@ img {
 
 /* Hero Section */
 #hero {
-    background: url('../images/hero-light.svg') no-repeat center center;
+    background: url('../images/hero-light 3.svg') no-repeat center center;
     background-size: auto; /* height*/
     background-color: var(--background-color) !important; /* Match site's background */
     color: var(--text-primary);
@@ -266,7 +266,7 @@ img {
 #hero p {
     font-size: 1.2rem;
     font-weight: lighter;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.8; /* Improve readability */
     color: var(--text-secondary); /* Use lighter text */
     margin-bottom: 15rem; /* Add spacing */
@@ -275,7 +275,7 @@ img {
 #hero .btn {
     padding: 12px 30px;
     margin-bottom: 1rem;
-    margin-top: 20rem;
+    margin-top: 23rem;
 }
 
 
