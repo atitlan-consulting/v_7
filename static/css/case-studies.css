@@ -2,7 +2,7 @@
    Case Studies Section
 ===================== */
 #case-studies {
-    background: var(--background-color);
+    background: var(--background-color-light);
     color: var(--text-secondary);
     padding: 60px 20px;
     text-align: center;

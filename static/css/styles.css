@@ -37,7 +37,7 @@
     --neutral-dark: #7f8c8d;
 
     --background-color: #2e2e2e; /* #2e2e2e  #1B263B f9f9f9 #d6d6d6 #1B263B  #1B263B*/
-    --background-color-light: #f3f1efff; /* Cream background */
+    --background-color-light: #f3f1efff; /* Cream background  #f3f1ef00*/ 
     --text-primary: #696969; /* White text */
     --text-secondary: #c0c0c0ff; /* Light gray for supporting text */
 }
@@ -45,7 +45,7 @@
 body {
     font-family: 'Raleway', Arial, sans-serif;
     color: var(--text-primary);
-    background-color: var(--background-color);
+    background-color: var(--background-color-light);
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -187,7 +187,7 @@ img {
 /* Active Link Styling */
 .navbar .nav-link.active {
     color: #f39c12 !important; /* Active link color */
-    font-weight: lighter; /* Highlight active link */
+    font-weight: lighter; /* Highlight active link */   
 }
 
 /* Navbar Brand */
@@ -245,10 +245,11 @@ img {
 
 /* Hero Section */
 #hero {
-    background: url('../images/hero-dark 2.svg') no-repeat center center; /*no-repeat center center;*/
-    background-size: cover; /* OPTS: cover, auto, */
-    background-color: var(--background-color) !important; /* Match site's background */
-    background-repeat: round;
+    background-image: url('../images/hero-light-cityscape.svg'); /*no-repeat center center;*/
+    background-repeat: no-repeat;
+    background-size: contain; /* OPTS: cover, auto, */
+    background-position: center center;
+    background-color: var(--background-color-light) !important; /* Match site's background */
     color: var(--text-primary);
     text-align: center;
     padding: 100px 15px;
@@ -263,7 +264,7 @@ img {
 #hero h2 {
     color: var(--primary-color);
     font-size: 2.5rem;
-    margin-top: 1rem;
+    margin-top: 20rem;
 }
 
 #hero p {
@@ -271,12 +272,12 @@ img {
     font-weight: lighter;
     font-size: 1.1rem;
     line-height: 1.8; /* Improve readability */
-    color: var(--text-secondary); /* Use lighter text */
+    color: var(--text-primary); /* Use lighter text */
     margin-bottom: 1rem; /* Add spacing */
 }
 
 #hero .btn {
-    padding: 12px 80px;
+    padding: 12px 20px;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
@@ -286,7 +287,7 @@ img {
    About Section
 ===================== */
 #about {
-    background-color: var(--background-light); /* Match site's background */
+    background-color: var(--background-color-light); /* Match site's background */
     color: var(--text-primary) !important; /* Primary text color */
     padding: 60px 20px; /* Consistent vertical spacing */
 }
@@ -321,7 +322,7 @@ img {
 }
 
 #about .about-image img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto; /* Ensure responsive scaling */
     border-radius: 8px; /* Add consistent rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
@@ -330,7 +331,7 @@ img {
 
 /* Team Section */
 #team {
-    background-color: var(--background-color);
+    background-color: var(--background-color-light);
     color: var(--text-secondary) !important;
     padding: 60px 20px;
     
@@ -381,7 +382,7 @@ img {
    Team Section
 ===================== */
 #team {
-    background-color: var(--background-color); /* Matches site background */
+    background-color: var(--background-color-light); /* Matches site background */
     color: #c0c0c0ff; /* Set global text color */
     padding: 60px 20px; /* Add vertical spacing */
 }
@@ -484,7 +485,7 @@ img {
    Contact Section Refinements
 ===================== */
 #contact {
-    background-color: var(--background-color); /* Match the site's theme */
+    background-color: var(--background-color-light); /* Match the site's theme */
     color: var(--text-primary);
     padding: 40px 20px; /* Slightly reduce vertical padding */
     text-align: center;
@@ -512,7 +513,7 @@ img {
     border: 1px solid var(--neutral-light); /* Softer border */
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    background-color: var(--background-light); /* Match site’s contrast */
+    background-color: var(--background-color-light); /* Match site’s contrast */
 }
 
 /* Form Labels */
@@ -591,7 +592,7 @@ img {
    Resources Section
 ===================== */
 .resources-section {
-    background-color: var(--background-color); /* Match site theme */
+    background-color: var(--background-color-light); /* Match site theme */
     color: #c0c0c0ff; /* Lighter text for readability */
     padding: 60px 20px; /* Add vertical spacing */
 }
@@ -631,7 +632,7 @@ img {
    Footer Section
 ===================== */
 #footer {
-    background: var(--background-color); /* Match the site's background */
+    background: var(--background-color-light); /* Match the site's background */
     color: var(--text-secondary); /* Secondary color for the text */
     padding: 20px 0; /* Consistent vertical padding */
     text-align: center;
@@ -654,7 +655,7 @@ img {
 .modal-content {
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    background: var(--background-light); /* Light background for contrast */
+    background: var(--background-color-light); /* Light background for contrast */
     color: var(--text-primary); /* Primary text color */
     padding: 20px; /* Inner padding for the modal */
 }
