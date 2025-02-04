@@ -3,7 +3,7 @@
 ===================== */
 #case-studies {
     background: var(--background-color-light);
-    color: var(--text-secondary);
+    color: var(--text-primary);
     padding: 60px 20px;
     text-align: center;
 }
@@ -102,7 +102,7 @@
 /* Back Side */
 .flip-card-back {
     background-color: var(--primary-color-dark);
-    color: var(--text-primary);
+    color: var(--text-secondary);
     transform: rotateY(180deg);
 }
 

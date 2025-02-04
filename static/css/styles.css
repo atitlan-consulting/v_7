@@ -95,7 +95,7 @@ ul.custom-list ul {
 
 ul.custom-list ul li {
     font-size: 0.95rem; /* Slightly smaller font for nested items */
-    color: var(--text-secondary); /* Use a lighter text color for nested items */
+    color: var(--text-primary); /* Use a lighter text color for nested items */
 }
 
 /* =====================
@@ -105,7 +105,7 @@ ol.custom-list {
     list-style-type: decimal; /* Use numbers for ordered lists */
     margin: 0;
     padding-left: 1.5em;
-    color: var(--neutral-dark);
+    color: var(--text-primary);
 }
 
 ol.custom-list li {
@@ -159,7 +159,7 @@ img {
 
 /* Logo Styles */
 .logo-icon {
-    max-height: 60px; /* Adjust the logo size */
+    max-height: 70px; /* Adjust the logo size */
 
 }
 
@@ -245,65 +245,82 @@ img {
 
 /* Hero Section */
 #hero {
-    background-image: url('../images/hero-light-cityscape.svg'); /*no-repeat center center;*/
+    background-image: url('../images/hero-light-cityscape.svg');
     background-repeat: no-repeat;
-    /*background-size: contain; /* OPTS: cover, auto, contain  */
-    background-position: 50% 10%;
-    background-color: var(--background-color-light) !important; /* Match site's background */
+    background-position: center center; /* Default for mobile */
+    background-size: contain;           /* Default for mobile */
+    background-color: var(--background-color-light) !important;
     color: var(--text-primary);
     text-align: center;
-    padding: 0px 0px;
+    padding: 2rem 1rem; /* Add padding for spacing */
 }
 
-#hero h1 {
+/* Hero Text Elements */
+#hero h1, #hero h2 {
     color: var(--primary-color);
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 #hero h2 {
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    margin-top: 20rem;
+    margin-top: 4rem; /* Adjust for better spacing */
 }
 
 #hero p {
-    font-size: 1.2rem;
-    font-weight: lighter;
     font-size: 1.1rem;
-    line-height: 1.8; /* Improve readability */
-    color: var(--text-primary); /* Use lighter text */
-    margin-bottom: 1rem; /* Add spacing */
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
 }
 
 #hero .btn {
     padding: 12px 20px;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin: 1rem auto; /* Center button and manage spacing */
 }
 
+/* Responsive Design */
 
 /* Mobile First */
-.hero {
-    background-size: contain; /* Or cover, based on your design */
+#hero {
+    background-size: contain;
     background-position: center;
+    padding: 2rem 1rem;
 }
-  
-  /* Tablet */
-  @media (min-width: 768px) {
-    .hero {
-      background-size: cover;
-      background-position: top center;
+
+/* Tablet */
+@media (min-width: 768px) {
+    #hero {
+        background-size: cover;
+        background-position: top center;
+        padding: 3rem 2rem;
+    }
+
+    #hero h1, #hero h2 {
+        font-size: 3rem; /* Slightly larger headings on tablet */
+    }
+
+    #hero p {
+        font-size: 1.2rem;
     }
 }
-  
-  /* Desktop */
-  @media (min-width: 1024px) {
-    .hero {
-      background-size: cover;
-      background-position: center center;
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #hero {
+        background-size: auto 80vh;
+        background-position: center;
+        padding: 4rem 2.5rem;
+    }
+
+    #hero h1 {
+        font-size: 3.5rem; /* Larger, bolder heading for desktop */
+    }
+
+    #hero h2 {
+        margin-top: 5rem; /* Improved spacing for large screens */
     }
 }
+
   
 
 /* =====================
@@ -327,21 +344,21 @@ img {
 #about .services-description p {
     font-size: 1.1rem; /* Slightly larger font size */
     line-height: 1.8;
-    color: var(--text-secondary) !important; /* Primary text color */
+    color: var(--text-primary) !important; /* Primary text color */
 }
 
 #about .custom-list {
     list-style-type: disc; /* Disc bullets for lists */
     padding-left: 1.5em; /* Indent for a clean look */
     margin: 0;
-    color: var(---text-secondary) !important; /* Match the text color with the site theme */
+    color: var(--text-primary) !important; /* Match the text color with the site theme */
 }
 
 #about .custom-list li {
     font-size: 1rem; /* Match paragraph text size */
     line-height: 1.5; /* Improve readability */
     margin-bottom: 10px; /* Space between items */
-    color: var(--text-secondary) !important;
+    color: var(--text-primary) !important;
 }
 
 #about .about-image img {
@@ -355,7 +372,7 @@ img {
 /* Team Section */
 #team {
     background-color: var(--background-color-light);
-    color: var(--text-secondary) !important;
+    color: var(--text-primary) !important;
     padding: 60px 20px;
     
 }
@@ -448,21 +465,21 @@ img {
 
 .profile-role {
     font-size: 1rem;
-    color: #c0c0c0ff; /* Match overall text color */
+    color: var(--text-primary); /* Match overall text color */
     margin-bottom: 10px;
 }
 
 .profile-bio {
     font-size: 1rem;
     line-height: 1.8;
-    color: #c0c0c0ff; /* Set lighter text color */
+    color: var(--text-primary); /* Set lighter text color */
     margin-bottom: 15px;
 }
 
 .profile-list {
     list-style-type: disc; /* Disc bullets for lists */
     padding-left: 20px; /* Add spacing for bullets */
-    color: #c0c0c0ff; /* Match text color */
+    color: var(--text-primary); /* Match text color */
     margin-bottom: 20px;
 }
 
@@ -473,7 +490,7 @@ img {
 .profile-qualifications {
     font-size: 1rem;
     line-height: 1.6;
-    color: #c0c0c0ff;
+    color: var(--text-primary);
     margin-bottom: 15px;
 }
 
@@ -523,7 +540,7 @@ img {
 
 #contact p {
     font-size: 1rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -616,7 +633,7 @@ img {
 ===================== */
 .resources-section {
     background-color: var(--background-color-light); /* Match site theme */
-    color: #c0c0c0ff; /* Lighter text for readability */
+    color: var(---text-primary); /* Lighter text for readability */
     padding: 60px 20px; /* Add vertical spacing */
 }
 
@@ -628,7 +645,7 @@ img {
 
 .resources-section .intro {
     font-size: 1.1rem;
-    color: var(--text-secondary);
+    color: var(---text-primary);
     margin-bottom: 40px;
 }
 
@@ -639,7 +656,7 @@ img {
 }
 
 .resources-section p {
-    color: #c0c0c0ff; /* Consistent lighter text */
+    color: var(---text-primary) /* Consistent lighter text */
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -656,7 +673,7 @@ img {
 ===================== */
 #footer {
     background: var(--background-color-light); /* Match the site's background */
-    color: var(--text-secondary); /* Secondary color for the text */
+    color: var(---text-primary); /* Secondary color for the text */
     padding: 20px 0; /* Consistent vertical padding */
     text-align: center;
     font-size: 0.9rem; /* Slightly smaller font size for footer text */
@@ -696,7 +713,7 @@ img {
 .modal-body {
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--text-secondary); /* Secondary color for body text */
+    color: var(var(---text-primary)y); /* Secondary color for body text */
 }
 
 .modal-footer {
