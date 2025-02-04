@@ -256,7 +256,7 @@ img {
 #hero {
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     background-color: var(--background-color-light) !important;
     color: var(--text-primary);
     text-align: center;
@@ -268,6 +268,22 @@ img {
 #hero.hero-image-mobile {
     background-image: url('../images/hero-light.svg');
 }
+
+/* Wordstamp is shown only on mobile by default */
+.hero-wordstamp {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Hide the wordstamp on tablet and desktop screens */
+@media (min-width: 768px) {
+    .hero-wordstamp {
+        display: none;
+    }
+}
+
 
 /* Tablet/Desktop: No Wordstamp Image */
 @media (min-width: 768px) {
