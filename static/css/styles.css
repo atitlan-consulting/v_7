@@ -157,15 +157,24 @@ img {
     /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
 /*}
 
-/* Logo Styles */
-.logo-icon {
-    max-height: 70px; /* Adjust the logo size */
-
+/* Base styles */
+.logo-small, .logo-large {
+    display: none; /* Hide both by default */
 }
 
-@media (max-width: 768px) {
-    .logo-icon {
-        max-height: 30px; /* Smaller logo for mobile */
+/* Mobile-first: Show small logo */
+.logo-small {
+    display: inline-block;
+}
+
+/* Show large logo on larger screens */
+@media (min-width: 768px) {
+    .logo-small {
+        display: none;
+    }
+
+    .logo-large {
+        display: inline-block;
     }
 }
 
@@ -303,12 +312,13 @@ img {
     #hero p {
         font-size: 1.2rem;
     }
+
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
     #hero {
-        background-size: auto 80vh;
+        background-size: auto;
         background-position: center;
         padding: 4rem 2.5rem;
     }
@@ -319,6 +329,14 @@ img {
 
     #hero h2 {
         margin-top: 5rem; /* Improved spacing for large screens */
+    }
+
+    #hero p {
+        font-size: 1.3rem; /* Larger text for better readability */
+    }
+
+    #hero .hero-wordstamp {
+        display: none; /* Hide the wordstamp on large screens */
     }
 }
 
