@@ -28,9 +28,9 @@
     --primary-color-light: #b3e6ff;
     --primary-color-dark: #007acc;
 
-    --secondary-color: #696969; /* Dark gray */
+    --secondary-color: #ff8c00; /* Bright orange */
     --secondary-color-light: #ffdbb3;
-    --secondary-color-dark: #ff4500;
+    --secondary-color-dark: #cc7000; 
 
     --neutral-light: #ecf0f1;
     --neutral: #bdc3c7;
@@ -262,6 +262,8 @@ img {
     text-align: center;
     padding: 2rem 1rem;
     height: 100vh;
+    width: 100%;
+    
 }
 
 #hero.p {
@@ -271,9 +273,14 @@ img {
     margin-bottom: 20px;
 }
 
+#hero h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color-dark) !important;
+    margin-bottom: 20px;
+}
 /* Mobile: Wordstamp Image */
 #hero.hero-image-mobile {
-    background-image: url('../images/hero-light.svg');
+    background-image: url('../images/hero-light-test.svg'); /* hero-light.svg */
 }
 
 /* Wordstamp is shown only on mobile by default */
@@ -295,7 +302,7 @@ img {
 /* Tablet/Desktop: No Wordstamp Image */
 @media (min-width: 768px) {
     #hero {
-        background-image: url('../images/hero-light-stamp.svg'); /* Image without word stamp */
+        background-image: url('../images/hero-light-test.svg'); /* hero-light-stamp.svg */
         background-size: cover;
         background-position: top center;
         padding: 3rem 2rem;
@@ -313,7 +320,7 @@ img {
 /* Desktop-specific styling */
 @media (min-width: 1024px) {
     #hero {
-        background-image: url('../images/hero-light-stamp.svg');
+        background-image: url('../images/hero-light-test.svg'); /* hero-light-stamp.svg */
         background-size: cover;
         background-position: top center;
         padding: 4rem 2.5rem;
