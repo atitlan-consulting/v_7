@@ -253,6 +253,7 @@ img {
     color: var(--text-primary);
     text-align: center;
     padding: 2rem 1rem; /* Add padding for spacing */
+    height: 100vh; /* Adjust height for better visibility */
 }
 
 /* Hero Text Elements */
