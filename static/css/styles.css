@@ -266,13 +266,13 @@ img {
 
 /* Mobile: Wordstamp Image */
 #hero.hero-image-mobile {
-    background-image: url('../images/hero-light-stamp.svg');
+    background-image: url('../images/hero-light.svg');
 }
 
 /* Tablet/Desktop: No Wordstamp Image */
 @media (min-width: 768px) {
     #hero {
-        background-image: url('../images/hero-light.svg'); /* Image without word stamp */
+        background-image: url('../images/hero-light-stamp.svg'); /* Image without word stamp */
         background-size: cover;
         background-position: top center;
         padding: 3rem 2rem;
@@ -290,6 +290,7 @@ img {
 /* Desktop-specific styling */
 @media (min-width: 1024px) {
     #hero {
+        background-image: url('../images/hero-light-stamp.svg');
         background-size: contain;
         background-position: center;
         padding: 4rem 2.5rem;
