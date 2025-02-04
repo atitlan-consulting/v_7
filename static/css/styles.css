@@ -247,12 +247,12 @@ img {
 #hero {
     background-image: url('../images/hero-light-cityscape.svg'); /*no-repeat center center;*/
     background-repeat: no-repeat;
-    background-size: contain; /* OPTS: cover, auto, */
-    background-position: center center;
+    /*background-size: contain; /* OPTS: cover, auto, contain  */
+    background-position: 50% 10%;
     background-color: var(--background-color-light) !important; /* Match site's background */
     color: var(--text-primary);
     text-align: center;
-    padding: 100px 15px;
+    padding: 0px 0px;
 }
 
 #hero h1 {
@@ -282,6 +282,29 @@ img {
     margin-top: 1rem;
 }
 
+
+/* Mobile First */
+.hero {
+    background-size: contain; /* Or cover, based on your design */
+    background-position: center;
+}
+  
+  /* Tablet */
+  @media (min-width: 768px) {
+    .hero {
+      background-size: cover;
+      background-position: top center;
+    }
+}
+  
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .hero {
+      background-size: cover;
+      background-position: center center;
+    }
+}
+  
 
 /* =====================
    About Section
