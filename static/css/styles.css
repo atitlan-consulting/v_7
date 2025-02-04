@@ -262,7 +262,7 @@ img {
     text-align: center;
     padding: 2rem 1rem;
     height: 100vh;
-    width: 100%;
+    width: flex;
     
 }
 
@@ -276,6 +276,12 @@ img {
 #hero h3 {
     font-size: 1.5rem;
     color: var(--secondary-color-dark) !important;
+    margin-bottom: 20px;
+}
+
+#hero h4 {
+    font-size: 1.5rem;
+    color: var(--primary-color-dark) !important;
     margin-bottom: 20px;
 }
 /* Mobile: Wordstamp Image */
@@ -348,7 +354,7 @@ img {
 #about {
     background-color: var(--background-color-light); /* Match site's background */
     color: var(--text-primary) !important; /* Primary text color */
-    padding: 60px 20px; /* Consistent vertical spacing */
+    padding: 0px 0px; /* Consistent vertical spacing */
 }
 
 /* About Section Paragraphs */
@@ -356,7 +362,7 @@ img {
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text-primary) !important; /* Use secondary text color for supporting text */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Service Descriptions */
