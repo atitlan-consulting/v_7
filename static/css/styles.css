@@ -267,7 +267,7 @@ img {
 }
 
 #hero.p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     color: var(--text-primary);
     margin-bottom: 20px;
@@ -319,7 +319,7 @@ img {
     }
 
     #hero p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -352,9 +352,11 @@ img {
    About Section
 ===================== */
 #about {
-    background-color: var(--background-color-light); /* Match site's background */
+    background: inherit;
+    #background-color: var(--background-color-light); /* Match site's background */
     color: var(--text-primary) !important; /* Primary text color */
     padding: 0px 0px; /* Consistent vertical spacing */
+    margin-top: 0px;
 }
 
 /* About Section Paragraphs */
@@ -375,12 +377,12 @@ img {
 #about .custom-list {
     list-style-type: disc; /* Disc bullets for lists */
     padding-left: 1.5em; /* Indent for a clean look */
-    margin: 0;
+    margin-left: 5px; /* Add space to the left */
     color: var(--text-primary) !important; /* Match the text color with the site theme */
 }
 
 #about .custom-list li {
-    font-size: 1rem; /* Match paragraph text size */
+    font-size: 1.1rem; /* Match paragraph text size */
     line-height: 1.5; /* Improve readability */
     margin-bottom: 10px; /* Space between items */
     color: var(--text-primary) !important;
