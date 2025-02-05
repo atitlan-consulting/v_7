@@ -396,117 +396,52 @@ img {
 }
 
 
-/* Team Section */
+/* =====================
+   Team Section Styles
+===================== */
 #team {
     background-color: var(--background-color-light);
-    color: var(--text-primary) !important;
+    color: var(--text-primary);
     padding: 60px 20px;
-    
 }
 
-#team h1, h2, h3 {
-    color: var(--primary-color) !important;
+/* Profile Container */
+.profile-container {
+    padding: 20px;
+    background-color: var(--background-color-light);
+    border-radius: 8px;
 }
 
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: var(--background-color-light) !important;
-}
-
+/* Profile Image */
 .profile-img img {
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 150px;
     height: 150px;
-
-}
-
-.profile-img {
-    flex-shrink: 0; /* Ensure images stay the same size */
-}
-
-.profile-text {
-    text-align: center;
-    padding: 20px;
-    color: var(--text-primary);
-
+    transition: transform 0.3s ease;
 }
 
 .profile-img img:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-.profile-text ul li {
-    color: var(--text-primary);
-}
-
-/* =====================
-   Team Section
-===================== */
-#team {
-    background-color: var(--background-color-light); /* Matches site background */
-    color: #c0c0c0ff; /* Set global text color */
-    padding: 60px 20px; /* Add vertical spacing */
-}
-
-.team-title {
-    color: var(--primary-color); /* Brighten the title */
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.team-intro {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #c0c0c0ff; /* Consistent lighter text */
-    margin-bottom: 30px;
-}
-
-.divider {
-    border-top: 5px solid #6c757d; /* Subtle divider */
-    margin: 40px 0;
-}
-
-#team hr {
-    border-top: 2px solid #6c757d;  /* Adjust color for better contrast */
-    margin: 40px 0;
-}
-
-.profile-img img {
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add depth to profile images */
-    width: 120px;
-    height: 120px;
-}
-
+/* Profile Text */
 .profile-name {
     font-size: 1.5rem;
-    color: var(--primary-color); /* Brighten names */
-    margin-bottom: 5px;
-}
-
-.profile-role {
-    font-size: 1rem;
-    color: var(--text-primary); /* Match overall text color */
-    margin-bottom: 10px;
+    color: var(--primary-color);
+    margin-top: 1rem;
 }
 
 .profile-bio {
     font-size: 1rem;
     line-height: 1.8;
-    color: var(--text-primary); /* Set lighter text color */
+    color: var(--text-primary);
     margin-bottom: 15px;
 }
 
 .profile-list {
-    list-style-type: disc; /* Disc bullets for lists */
-    padding-left: 20px; /* Add spacing for bullets */
-    color: var(--text-primary); /* Match text color */
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--text-primary);
     margin-bottom: 20px;
 }
 
@@ -521,48 +456,48 @@ img {
     margin-bottom: 15px;
 }
 
-.btn-primary {
-    background-color: var(--primary-color);
-    color: #fff;
-    font-size: 0.9rem;
-    border-radius: 5px;
-    padding: 8px 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+/* =====================
+   Link and Icon Styles
+===================== */
+.linkedin-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
 }
 
-.btn-primary:hover {
-    background-color: var(--primary-color-dark);
-    transform: scale(1.05);
+.linkedin-icon {
+    width: 32px;
+    height: auto;
+    fill: #0077b5;
 }
 
-/* Responsive Adjustments */
+/* RICS Logo */
+.rics-logo {
+    margin-top: 1rem;
+    max-width: 100px;
+    height: auto;
+}
+
+/* =====================
+   Responsive Styles
+===================== */
 @media (max-width: 768px) {
+    .profile-container {
+        margin-bottom: 2rem;
+    }
+
     .profile-img img {
         width: 100px;
         height: 100px;
     }
 
-    .profile-text {
-        text-align: center; /* Center-align text for smaller screens */
-    }
-}
-
-/* Profile images: responsive and centered */
-.profile-img img {
-    max-width: 150px;
-    width: 100%;
-    height: auto;
-}
-
-/* Adjust spacing for mobile */
-@media (max-width: 768px) {
     .profile-name {
-        font-size: 1.5rem;
-        margin-top: 1rem;
+        font-size: 1.4rem;
     }
 
     .profile-bio {
-        margin-top: 1rem;
         font-size: 1rem;
     }
 
@@ -575,10 +510,11 @@ img {
         margin-bottom: 0.5rem;
     }
 
-    .profile-text {
-        margin-top: 1rem;
+    .rics-logo {
+        max-width: 80px;
     }
 }
+
 
 
 
