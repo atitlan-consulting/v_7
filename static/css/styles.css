@@ -547,6 +547,29 @@ img {
     }
 }
 
+/* Adjust image sizes for mobile */
+.profile-img img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+/* Stack elements on mobile and provide padding */
+@media (max-width: 768px) {
+    .profile-text {
+        margin-top: 1rem;
+    }
+
+    .profile-list {
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .profile-list li {
+        margin-bottom: 0.5rem;
+    }
+}
+
 
 /* =====================
    Contact Section Refinements
