@@ -67,6 +67,7 @@ h1 {
 h2, h3, h4, h5, h6 {
     font-family: 'Raleway', Arial, sans-serif;
     color: var(--text-primary);
+    font-weight: thin;
 }
 
 /* =====================
@@ -200,19 +201,7 @@ img {
     font-weight: lighter; /* Highlight active link */   
 }
 
-/* Navbar Brand */
-.navbar-brand {
-    font-size: 1.5rem; /* Adjust brand font size */
-    font-weight: lighter;
-    color: #ff8c00 !important; /* Custom brand color */
-    display: flex;
-    align-items: center; /* Aligns logo and text vertically */
-    gap: 10px; /* Adds spacing between logo and text */
-}
 
-.navbar-brand:hover {
-    color: #f39c12 !important; /* Hover effect for brand */
-}
 
 /* Navbar Toggler Icon */
 .navbar-toggler {
@@ -255,18 +244,44 @@ img {
 
 /* Hero Section */
 #hero {
+    position: relative;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: auto; /* contain / cover */
-    background-color: var(--background-color-light) !important;
+    background-size: cover;
+    background-color: #f3f1ef !important; /* Background color */
     color: var(--text-primary);
     text-align: center;
     padding: 2rem 1rem;
     width: flex;
-    
 }
 
-#hero.p {
+/* Gradient Overlay for Fade Effect */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(243, 241, 239, 1) 0%,
+        rgba(243, 241, 239, 0) 20%,
+        rgba(243, 241, 239, 0) 80%,
+        rgba(243, 241, 239, 1) 100%
+    );
+    pointer-events: none; /* Allow clicks to pass through the overlay */
+    z-index: 1;
+}
+
+/* Adjust content within the hero section */
+#hero > * {
+    position: relative;
+    z-index: 2; /* Ensure content appears above the gradient */
+}
+
+/* Hero Text Elements */
+#hero p {
     font-size: 1.0rem;
     line-height: 1.6;
     color: var(--text-primary);
@@ -277,18 +292,21 @@ img {
     font-size: 1.5rem;
     color: var(--primary-color) !important;
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 #hero h3 {
     font-size: 1.5rem;
     color: var(--secondary-color) !important;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 
 #hero h4 {
     font-size: 1.5rem;
     color: var(--primary-color-dark) !important;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 #hero .rics-logo {
@@ -297,10 +315,9 @@ img {
     margin-top: 1rem;
 }
 
-
 /* Mobile: Wordstamp Image */
 #hero.hero-image-mobile {
-    background-image: url('../images/hero-cranes.jpg'); /* hero-light.svg HERO-LIGHT-TEST.SVG */
+    background-image: url('../images/hero-cranes.jpg');
     background-size: cover;
 }
 
@@ -319,12 +336,11 @@ img {
     }
 }
 
-
-/* Tablet/Desktop: No Wordstamp Image */
+/* Tablet/Desktop */
 @media (min-width: 768px) {
     #hero {
-        background-image: url('../images/hero-cranes-stamp.jpg'); /* hero-light-stamp.svg hero-light-test.svg*/
-        background-size: cover; /* cover */
+        background-image: url('../images/hero-cranes-stamp.jpg');
+        background-size: cover;
         background-position: center center;
         padding: 3rem 2rem;
     }
@@ -338,11 +354,11 @@ img {
     }
 }
 
-/* Desktop-specific styling */
+/* Desktop */
 @media (min-width: 1024px) {
     #hero {
-        background-image: url('../images/hero-cranes-stamp.jpg'); /* hero-light-stamp.svg */
-        background-size: cover; /* cover */
+        background-image: url('../images/hero-cranes-stamp.jpg');
+        background-size: cover;
         background-position: center center;
         padding: 4rem 2.5rem;
     }
