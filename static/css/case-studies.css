@@ -19,7 +19,7 @@
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 10px;
-    color: var(--primary-color-light);
+    color: var(--primary-color);
 }
 
 #case-studies p {
@@ -103,7 +103,7 @@
 
 /* Front Side */
 .flip-card-front {
-    background-color: var(--background-color-light);
+    background-color: #fafaf8; /* var(--neutral-cream); */
     color: var(--text-primary);
 }
 
@@ -140,8 +140,8 @@
 }
 
 .sector-icons img {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     margin: 0 6px;
 }
 

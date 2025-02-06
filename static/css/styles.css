@@ -35,6 +35,7 @@
     --neutral-light: #ecf0f1;
     --neutral: #bdc3c7;
     --neutral-dark: #7f8c8d;
+    --neutral-cream: #fffaf0;
 
     --background-color: #2e2e2e; /* #2e2e2e  #1B263B f9f9f9 #d6d6d6 #1B263B  #1B263B*/
     --background-color-light: #f3f1efff; /* Cream background  #f3f1ef00*/ 
@@ -267,7 +268,7 @@ img {
 }
 
 #hero.p {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     line-height: 1.6;
     color: var(--text-primary);
     margin-bottom: 20px;
@@ -281,7 +282,7 @@ img {
 
 #hero h3 {
     font-size: 1.5rem;
-    color: var(--secondary-color-dark) !important;
+    color: var(--secondary-color) !important;
     margin-bottom: 20px;
 }
 
