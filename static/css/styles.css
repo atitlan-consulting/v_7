@@ -158,7 +158,7 @@ img {
     /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
 /*}
 
-/* Base styles */
+/* Base styles to swith logo display in header and hero sections*/ 
 .logo-small, .logo-large {
     display: none; /* Hide both by default */
 }
@@ -291,6 +291,14 @@ img {
     color: var(--primary-color-dark) !important;
     margin-bottom: 20px;
 }
+
+#hero .rics-logo {
+    max-width: 20rem;
+    height: 6rem;
+    margin-top: 1rem;
+}
+
+
 /* Mobile: Wordstamp Image */
 #hero.hero-image-mobile {
     background-image: url('../images/hero-light-test.svg'); /* hero-light.svg */
@@ -495,8 +503,8 @@ img {
 /* RICS Logo */
 .rics-logo {
     margin-top: 1rem;
-    max-width: 100px;
-    height: auto;
+    max-width: 20rem;
+    height: 5rem;
 }
 
 /* =====================
