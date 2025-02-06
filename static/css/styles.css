@@ -273,9 +273,9 @@ img {
     margin-bottom: 20px;
 }
 
-#hero h3 {
+#hero h2 {
     font-size: 1.5rem;
-    color: var(--text-secondary) !important;
+    color: var(--primary-color) !important;
     margin-bottom: 20px;
 }
 
