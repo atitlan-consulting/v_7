@@ -136,7 +136,7 @@ function updateCaseStudies(category) {
         card.innerHTML = `
             <div class="flip-card-inner">
                 <!-- Front Side -->
-                <div class="flip-card-front" style="background-color: ${study.primary_color || '#fff'};">
+                <div class="flip-card-front" style="background-color: '#f5f5dc'};">
                     <div class="card-content p-3">
                         <!-- Project Name at the Top -->
                         <h5 class="text-center card-title mb-3">${study.name}</h5>

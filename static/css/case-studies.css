@@ -97,23 +97,23 @@
     align-items: center;
     text-align: center;
     border-radius: 8px;
-    padding: 20px;
+    padding: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Front Side */
 .flip-card-front {
-    background-color: var(--secondary-color);
+    background-color: var(--background-color-light);
     color: var(--text-primary);
 }
 
 .flip-card-front:hover {
-    background-color: var(--secondary-color-dark);
+    background-color: var(--background-color-light);
 }
 
 /* Back Side */
 .flip-card-back {
-    background-color: var(--primary-color-dark);
+    background-color: var(--neutral);
     color: var(--text-secondary);
     transform: rotateY(180deg);
 }
@@ -121,7 +121,7 @@
 /* Flip card improvements */
 .flip-card {
     flex: 0 0 300px;  
-    height: 400px;
+    height: 200px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
