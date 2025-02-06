@@ -128,7 +128,7 @@ img {
 .btn {
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color-dark);
-    color: #fff;
+    color: var(--neutral-cream);
     padding: 10px 20px;
     border-radius: 5px;
     text-transform: uppercase;
@@ -137,9 +137,9 @@ img {
 }
 
 .btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color-dark);
     transform: scale(1.05);
-    color:  var(--text-secondary);
+    color:  var(--neutral-cream);
 }
 
 .img-rounded {
@@ -262,7 +262,6 @@ img {
     color: var(--text-primary);
     text-align: center;
     padding: 2rem 1rem;
-    height: 100vh;
     width: flex;
     
 }
@@ -330,11 +329,11 @@ img {
     }
 
     #hero h1, #hero h2 {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     #hero p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
@@ -348,15 +347,15 @@ img {
     }
 
     #hero h1 {
-        font-size: 3.5rem;
+        font-size: 1.5rem;
     }
 
     #hero h2 {
-        margin-top: 5rem;
+        margin-top: 1.5rem;
     }
 
     #hero p {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 
