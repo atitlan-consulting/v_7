@@ -301,7 +301,7 @@ img {
 /* Mobile: Wordstamp Image */
 #hero.hero-image-mobile {
     background-image: url('../images/hero-cranes.jpg'); /* hero-light.svg HERO-LIGHT-TEST.SVG */
-    background-size: cover
+    background-size: cover;
 }
 
 /* Wordstamp is shown only on mobile by default */
