@@ -300,7 +300,7 @@ img {
 
 /* Mobile: Wordstamp Image */
 #hero.hero-image-mobile {
-    background-image: url('../images/hero-light-test.svg'); /* hero-light.svg */
+    background-image: url('../images/hero-cranes.jpg'); /* hero-light.svg HERO-LIGHT-TEST.SVG */
 }
 
 /* Wordstamp is shown only on mobile by default */
@@ -322,7 +322,7 @@ img {
 /* Tablet/Desktop: No Wordstamp Image */
 @media (min-width: 768px) {
     #hero {
-        background-image: url('../images/hero-light-test.svg'); /* hero-light-stamp.svg */
+        background-image: url('../images/hero-cranes-stamp.jpg'); /* hero-light-stamp.svg hero-light-test.svg*/
         background-size: cover;
         background-position: top center;
         padding: 3rem 2rem;
@@ -340,8 +340,8 @@ img {
 /* Desktop-specific styling */
 @media (min-width: 1024px) {
     #hero {
-        background-image: url('../images/hero-light-test.svg'); /* hero-light-stamp.svg */
-        background-size: cover;
+        background-image: url('../images/hero-cranes-stamp.jpg'); /* hero-light-stamp.svg */
+        background-size: auto; /* cover */
         background-position: top center;
         padding: 4rem 2.5rem;
     }
