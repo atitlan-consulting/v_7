@@ -317,7 +317,7 @@ img {
 
 /* Mobile: Wordstamp Image */
 #hero.hero-image-mobile {
-    background-image: url('../images/hero-cranes-mobile.jpg');
+    background-image: url('../images/hero-cranes-mobile.svg');
     background-size: cover;
 }
 
@@ -340,7 +340,7 @@ img {
 /* Tablet/Desktop */
 @media (min-width: 768px) {
     #hero {
-        background-image: url('../images/hero-cranes-stamp.jpg');
+        background-image: url('../images/hero-cranes-mobile.svg');
         background-size: cover;
         background-position: center center;
         padding: 3rem 2rem;
@@ -358,7 +358,7 @@ img {
 /* Desktop */
 @media (min-width: 1024px) {
     #hero {
-        background-image: url('../images/hero-cranes-stamp.jpg');
+        background-image: url('../images/hero-cranes-mobile.svg');
         background-size: cover;
         background-position: center center;
         padding: 4rem 2.5rem;
@@ -583,30 +583,30 @@ img {
 }
 
 
-.row {
-    flex-wrap: wrap;
-}
-
-@media (max-width: 768px) {
     .row {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 20px;
-        scroll-snap-type: x mandatory;
-        scroll-padding: 10px;
-        -webkit-overflow-scrolling: touch;
+        flex-wrap: wrap;
     }
 
-    .col-md-6.col-lg-4 {
-        min-width: 300px;
-        flex: 0 0 auto;
-        scroll-snap-align: start;
-    }
+    @media (max-width: 768px) {
+        .row {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 20px;
+            scroll-snap-type: x mandatory;
+            scroll-padding: 10px;
+            -webkit-overflow-scrolling: touch;
+        }
 
-    .profile-container {
-        margin: auto;
+        .col-md-6.col-lg-4 {
+            min-width: 300px;
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+        }
+
+        .profile-container {
+            margin: auto;
+        }
     }
-}
 
 
 
