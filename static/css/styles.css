@@ -309,6 +309,11 @@ img {
     font-weight: 10;
 }
 
+#hero h1, h2, h3 {
+    display: inline-block;
+    margin: 0 10px;
+}
+
 #hero .rics-logo {
     max-width: 20rem;
     height: 6rem;
