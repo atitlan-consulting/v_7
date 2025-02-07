@@ -266,8 +266,8 @@ img {
     background: linear-gradient(
         to bottom,
         rgba(243, 241, 239, 1) 0%,
-        rgba(243, 241, 239, 0) 20%,
-        rgba(243, 241, 239, 0) 80%,
+        rgba(243, 241, 239, 0) 30%,
+        rgba(243, 241, 239, 0) 70%,
         rgba(243, 241, 239, 1) 100%
     );
     pointer-events: none; /* Allow clicks to pass through the overlay */
@@ -292,27 +292,27 @@ img {
     font-size: 1.5rem;
     color: var(--primary-color) !important;
     margin-bottom: 20px;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 #hero h3 {
     font-size: 1.5rem;
     color: var(--secondary-color) !important;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 #hero h4 {
     font-size: 1.5rem;
-    color: var(--primary-color-dark) !important;
+    color: var(--secondary-color-dark) !important;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 10;
 }
 
 #hero .rics-logo {
     max-width: 20rem;
     height: 6rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 /* Mobile: Wordstamp Image */
@@ -327,6 +327,7 @@ img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+
 }
 
 /* Hide the wordstamp on tablet and desktop screens */
