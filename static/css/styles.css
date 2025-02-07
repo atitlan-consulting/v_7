@@ -435,6 +435,7 @@ img {
     background-color: var(--background-color-light);
     color: var(--text-primary);
     padding: 60px 20px;
+    text-align: center;
 }
 
 #team h2 {
@@ -443,66 +444,74 @@ img {
     margin-bottom: 20px;
 }
 
-#team h3 {
-    color: var(--text-secondary);
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-/* Profile Container */
+/* =====================
+   Profile Container Styles
+===================== */
 .profile-container {
     padding: 20px;
     background-color: var(--background-color-light);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Profile Image */
+.profile-img {
+    margin-bottom: 1.5rem;
+}
+
 .profile-img img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img img:hover {
     transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Profile Text */
 .profile-name {
     font-size: 1.5rem;
     color: var(--primary-color);
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 .profile-bio {
     font-size: 1rem;
     line-height: 1.8;
     color: var(--text-primary);
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
+/* Profile Details List */
 .profile-list {
     list-style-type: disc;
-    padding-left: 20px;
-    color: var(--text-primary);
-    margin-bottom: 20px;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .profile-list li {
-    margin-bottom: 10px;
+    margin-bottom: 0.75rem;
 }
 
 .profile-qualifications {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-primary);
-    margin-bottom: 15px;
 }
 
 /* =====================
    Link and Icon Styles
 ===================== */
+.profile-header a {
+    text-decoration: none;
+}
+
 .linkedin-icon-link {
     display: inline-flex;
     align-items: center;
@@ -528,10 +537,22 @@ img {
    Responsive Styles
 ===================== */
 @media (max-width: 768px) {
-    .profile-container {
-        margin-bottom: 2rem;
+    /* Horizontal scrolling for profiles */
+    .row.d-flex {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 20px;
+        scroll-snap-type: x mandatory;
+        padding: 0 10px;
     }
 
+    .col-md-6.col-lg-4 {
+        min-width: 300px;
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+    }
+
+    /* Smaller image and spacing on mobile */
     .profile-img img {
         width: 100px;
         height: 100px;
@@ -541,8 +562,9 @@ img {
         font-size: 1.4rem;
     }
 
-    .profile-bio {
-        font-size: 1rem;
+    .profile-bio,
+    .profile-qualifications {
+        font-size: 0.9rem;
     }
 
     .profile-list {
@@ -556,8 +578,10 @@ img {
 
     .rics-logo {
         max-width: 80px;
+        height: auto;
     }
 }
+
 
 
 
