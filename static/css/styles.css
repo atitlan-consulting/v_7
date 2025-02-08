@@ -323,7 +323,7 @@ img {
 /* Mobile: Wordstamp Image */
 #hero.hero-image-mobile {
     background-image: url('../images/hero-sketch-mobile.svg');
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
 }
 
@@ -347,9 +347,9 @@ img {
 @media (min-width: 768px) {
     #hero {
         background-image: url('../images/hero-sketch-mobile.svg');
-        background-size: contain;
+        background-size: cover;
         background-position: center center;
-        padding: 3rem 2rem;
+        padding: 0rem 0rem;
     }
 
     #hero h1, #hero h2 {
@@ -366,8 +366,8 @@ img {
     #hero {
         background-image: url('../images/hero-sketch-mobile.svg');
         background-size: contain;
-        background-position: center center;
-        padding: 4rem 2.5rem;
+        background-position: cover center;
+        padding: 0rem 0%;
     }
 
     #hero h1 {
