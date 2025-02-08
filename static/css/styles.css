@@ -322,7 +322,7 @@ img {
 
 /* Mobile: Wordstamp Image */
 #hero.hero-image-mobile {
-    background-image: url('../images/hero-cranes-mobile.svg');
+    background-image: url('../images/hero-sketch.svg');
     background-size: cover;
 }
 
