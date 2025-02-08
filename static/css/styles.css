@@ -316,14 +316,13 @@ img {
 }
 
 #hero .rics-logo {
-    max-width: 3rem;
-    height: 2rem;
+    max-width: 5rem;
+    height: 3rem;
     margin-top: 10rem;
 }
 
-#hero .button {
-    margin-top: 20px;
-    margin-top: 10rem;
+#hero .btn {
+    margin-top: 10rem !important;
 }
 
 #hero.hero-image-mobile {
