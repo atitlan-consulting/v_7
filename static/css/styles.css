@@ -322,13 +322,13 @@ img {
 }
 
 #hero .btn {
-    margin-top: 10rem !important;
+    margin-top: 0rem !important;
 }
 
 #hero.hero-image-mobile {
     background-image: url('../images/hero-sketch-mobile.svg');
     background-size: cover; /* Or cover, depending on your goal */
-    background-position: center center;
+    background-position: center center !important;
     width: 100%;
     height: 100vh; /* Or a different height depending on your design */
     max-width: 100%;
@@ -340,8 +340,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 4 rem;
-
+    margin-bottom: 4rem;
 }
 
 /* Hide the wordstamp on tablet and desktop screens */
