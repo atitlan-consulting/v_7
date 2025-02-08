@@ -324,6 +324,7 @@ img {
 #hero.hero-image-mobile {
     background-image: url('../images/hero-sketch-mobile.svg');
     background-size: cover;
+    background-position: center top;
 }
 
 /* Wordstamp is shown only on mobile by default */
