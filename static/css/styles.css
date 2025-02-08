@@ -323,8 +323,8 @@ img {
 /* Mobile: Wordstamp Image */
 #hero.hero-image-mobile {
     background-image: url('../images/hero-sketch-mobile.svg');
-    background-size: cover;
-    background-position: center top;
+    background-size: contain;
+    background-position: center center;
 }
 
 /* Wordstamp is shown only on mobile by default */
@@ -347,7 +347,7 @@ img {
 @media (min-width: 768px) {
     #hero {
         background-image: url('../images/hero-sketch-mobile.svg');
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
         padding: 3rem 2rem;
     }
@@ -365,7 +365,7 @@ img {
 @media (min-width: 1024px) {
     #hero {
         background-image: url('../images/hero-sketch-mobile.svg');
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
         padding: 4rem 2.5rem;
     }
