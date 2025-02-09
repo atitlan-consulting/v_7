@@ -98,7 +98,7 @@ ul.custom-list li {
 /* Nested Lists */
 ul.custom-list ul {
     list-style-type: circle; /* Use circle bullets for nested lists */
-    padding-left: 1.5em; /* Indent nested lists slightly more */
+    padding-left: 1.5rem; /* Indent nested lists slightly more */
     margin-top: 10px; /* Add space between parent and nested lists */
 }
 
