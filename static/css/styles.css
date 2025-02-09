@@ -72,9 +72,9 @@ h2, h3, h4, h5, h6 {
 
 /* Container */
 
-.container {
+/*.container {
     padding: 0 15px;
-}
+}*/
 
 
 /* =====================
@@ -257,122 +257,85 @@ img {
 /* Hero Section */
 #hero {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    background-color: var(--background-color-light)!important; /* Background color */
+    background-color: var(--background-color-light) !important;
     color: var(--text-primary);
     text-align: center;
-    padding: 0px 20px;
     width: 100%;
     height: 100vh;
+    padding: 0;
 }
 
-/* Gradient Overlay for Fade Effect */
-/*#hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Wordstamp Container */
+.hero-wordstamp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to bottom,
-        rgba(243, 241, 239, 1) 0%,
-        rgba(243, 241, 239, 0) 30%,
-        rgba(243, 241, 239, 0) 70%,
-        rgba(243, 241, 239, 1) 100%
-    );
-    pointer-events: none; /* Allow clicks to pass through the overlay */
-    /*z-index: 1;
-}*/
+    margin-top: 20px;
+}
 
-/* Adjust content within the hero section */
-/*#hero > * {
-    position: relative;
-    z-index: 2; /* Ensure content appears above the gradient
-} */
+.hero-wordstamp {
+    max-width: 90%;
+    height: auto;
+}
+
+/* General Container Fix */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
 
 /* Hero Text Elements */
 #hero p {
-    font-size: 1.0rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: var(--text-primary);
     margin-bottom: 20px;
 }
 
-#hero h2 {
+#hero h2, #hero h3, #hero h4 {
     font-size: 1.5rem;
-    color: var(--primary-color) !important;
     margin-bottom: 20px;
     font-weight: 100;
 }
 
-#hero h3 {
-    font-size: 1.5rem;
-    color: var(--secondary-color) !important;
-    margin-bottom: 20px;
-    font-weight: 100;
-}
+/* Adjustments for Responsive Layouts */
 
-#hero h4 {
-    font-size: 1.5rem;
-    color: var(--secondary-color-dark) !important;
-    margin-bottom: 20px;
-    font-weight: 10;
-}
-
-#hero h1, h2, h3 {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-#hero .rics-logo {
-    max-width: 5rem;
-    height: 3rem;
-    margin-top: 1rem;
-}
-
-#hero .btn {
-    margin-top: 8rem !important;
-}
-
-#hero.hero-image-mobile {
-    background-image: url('../images/hero-sketch-mobile.svg');
-    background-size: cover; /* Or cover, depending on your goal */
-    background-position: center center !important;
-    width: 100%;
-    height: 100vh; /* Or a different height depending on your design */
-    max-width: 100%;
-    padding: 0;
-}
-
-/* Wordstamp is shown only on mobile by default */
-.hero-wordstamp {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 4rem;
-}
-
-/* Hide the wordstamp on tablet and desktop screens */
+/* Hide wordstamp on larger screens */
 @media (min-width: 768px) {
     .hero-wordstamp {
         display: none;
     }
 }
 
-/* Tablet/Desktop */
+/* Mobile Layout Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #hero {
+        height: auto; /* Allow hero height to adjust on mobile */
+    }
+}
+
+/* Tablet */
 @media (min-width: 768px) {
     #hero {
-        background-image: url('../images/hero-sketch-mobile.svg');
+        background-image: url('../images/hero-sketch-tablet.svg');
         background-size: cover;
         background-position: center center;
-        padding: 0rem 0rem;
-        max-width: 100%;
         height: 100vh;
-        width: 100%;
-
     }
 
     #hero h1, #hero h2 {
@@ -387,15 +350,13 @@ img {
 /* Desktop */
 @media (min-width: 1024px) {
     #hero {
-        background-image: url('../images/hero-sketch-mobile.svg');
+        background-image: url('../images/hero-sketch-desktop.svg');
         background-size: cover;
-        background-position: center center;
-        padding: 0rem 0%;
-        max-width: 100%;
+        height: 100vh;
     }
 
     #hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     #hero h2 {
@@ -406,6 +367,7 @@ img {
         font-size: 1rem;
     }
 }
+
 
 
   
