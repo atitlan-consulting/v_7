@@ -121,12 +121,6 @@ ol.custom-list li {
     color: var(--text-primary);
 }
 
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 /* =====================
    Components
 ===================== */
