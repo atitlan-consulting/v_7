@@ -70,6 +70,13 @@ h2, h3, h4, h5, h6 {
     font-weight: thin;
 }
 
+/* Container */
+
+.container {
+    padding: 0 15px;
+}
+
+
 /* =====================
    General List Styling
 ===================== */
@@ -545,8 +552,9 @@ img {
     .row.no-stack, .row.d-flex {
         display: flex;
         flex-wrap: wrap;  /* Allow wrapping */
-        gap: 20px;        /* Space between columns */
-        padding: 0 10px;
+        justify-content: space-between; /* Space between columns */
+        gap: 1px;        /* Space between columns */
+        padding: 0 11px;
     }
 
     .col-md-6, .col-lg-4 {
