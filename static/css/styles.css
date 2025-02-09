@@ -386,7 +386,7 @@ img {
 ===================== */
 #about {
     #background-color: var(--background-color-light); /* Match site's background */
-    color: var(--text-primary) !important; /* Primary text color */
+    color: var(--text-primary); /* Primary text color */
     padding: 0px 0px; /* Consistent vertical spacing */
     margin-top: 0px;
 }
@@ -403,7 +403,7 @@ img {
 #about .services-description p {
     font-size: 1.1rem; /* Slightly larger font size */
     line-height: 1.8;
-    color: var(--text-primary) !important; /* Primary text color */
+    color: var(--text-primary); /* Primary text color */
 }
 
 
