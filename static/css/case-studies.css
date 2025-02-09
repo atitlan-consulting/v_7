@@ -4,22 +4,22 @@
 #case-studies {
     background: var(--background-color-light);
     color: var(--text-primary);
-    padding: 0em 0em;
+    padding: 0rem 0rem;
 }
 
 #case-studies h2 {
     color: var(--primary-color);
-    font-size: 1em;
+    font-size: 1rem;
     font-family: 'Raleway', sans-serif;
 }
 
 #case-studies h5 {
-    font-size: 1em;
+    font-size: 1rem;
     color: var(--text-secondary);
 }
 
 #case-studies p {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /* Filter Buttons */
@@ -27,7 +27,7 @@
     background-color: var(--primary-color);
     color: var(--background-color-light);
     /*transition: background-color 0.3s ease;*/ /* Removed transition effect */
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .filter-btn:hover {
@@ -37,7 +37,7 @@
 /* Case Study Container - Scrollable Cards */
 #case-study-container {
     display: flex;
-    gap: 1em;
+    gap: 1rem;
     overflow-x: auto;
 
     white-space: nowrap;
@@ -46,21 +46,21 @@
 }
 
 #case-study-container::-webkit-scrollbar {
-    height: 1em;
+    height: 1rem;
 }
 
 #case-study-container::-webkit-scrollbar-thumb {
     background: var(--primary-color);
-    border-radius: 1em;
+    border-radius: 1rem;
 }
 
 /* Flip Cards */
 .flip-card {
     flex: 0 0 auto;
-    width: 1em;
+    width: 2%;
     min-height: 2em;
     border-radius: 0.5em;
-    perspective: 1000px;
+    perspective: fit-content;
     scroll-snap-align: center;
 }
 

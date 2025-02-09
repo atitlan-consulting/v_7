@@ -40,6 +40,7 @@ body {
     font-family: 'Raleway', Arial, sans-serif;
     color: var(--text-primary);
     background-color: var(--background-color-light);
+    margin: 0;
 }
 
 /*a {
@@ -271,7 +272,7 @@ ol.custom-list li {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--background-color-light) !important;
+    /*background-color: var(--background-color-light) !important;*/
     color: var(--text-primary);
 }
 
@@ -317,11 +318,11 @@ ol.custom-list li {
     font-size: 1em;
 }
 
-/* Responsive Layouts */
+/* Responsive Layouts - Mobile */
 @media (max-width: 768px) {
     .container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     #hero {
