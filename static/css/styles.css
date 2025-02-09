@@ -6,8 +6,6 @@
     font-style: normal;
 }
 
-      
-
 @font-face {
     font-family: 'Segoe UI';
     src: url('../fonts/SegoeUI-VF.ttf') format('truetype');
@@ -85,6 +83,7 @@ ul.custom-list {
     margin: 0; /* Remove default margin */
     padding-left: 0rem; /* Adjust indent for a clean look */
     color: var(--text-primary); /* Set bullet color */
+    position: relative; /* Ensure nested lists are positioned correctly */
 }
 
 /* List Items */
