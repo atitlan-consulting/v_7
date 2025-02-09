@@ -280,6 +280,10 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: var(--background-color-light) !important;
+    color: var(--text-primary);
+    flex-direction: column;
+    justify-content: center;
 }
 
 #hero .container {

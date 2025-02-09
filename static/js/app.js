@@ -1,42 +1,42 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Utility function to load partials into a section
-    const loadPartial = (url, targetId, callback) => {
-        fetch(url)
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`Failed to load ${url}: ${response.statusText}`);
-                }
-                return response.text();
-            })
-            .then((data) => {
-                const target = document.getElementById(targetId);
-                if (target) {
-                    target.innerHTML = data;
+    const loadPartial = async (url, targetId, callback) => {
+        try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error(`Failed to load ${url}: ${response.statusText}`);
 
-                    console.log(`✅ ${targetId} loaded successfully.`);
+            // Sanitize response text
+            const rawHtml = await response.text();
+            const sanitizedHtml = sanitizeHTML(rawHtml);
 
-                    // Run callback AFTER content loads
-                    if (callback) callback();
-                } else {
-                    console.error(`❌ Target container #${targetId} not found.`);
-                }
-            })
-            .catch((error) => {
-                console.error(`❌ Error loading partial: ${error}`);
-            });
+            const target = document.getElementById(targetId);
+            if (target) {
+                target.innerHTML = sanitizedHtml;
+
+                console.log(`✅ ${targetId} loaded successfully.`);
+                if (callback) callback();
+            } else {
+                console.error(`❌ Target container #${targetId} not found.`);
+            }
+        } catch (error) {
+            console.error(`❌ Error loading partial: ${error}`);
+        }
     };
 
-    // Load all sections
+    // Example CSP-compatible sanitizer
+    function sanitizeHTML(html) {
+        const template = document.createElement('template');
+        template.innerHTML = html;
+        template.content.querySelectorAll('script, iframe, object').forEach(el => el.remove());
+        return template.innerHTML;
+    }
+
+    // Load partials securely
     loadPartial('templates/partials/about.html', 'about');
-    loadPartial('templates/partials/case-studies.html', 'case-studies', () => {
-        console.log("✅ Case Studies section is now loaded. Initializing case studies...");
-        initializeCaseStudies(); // Run only after partial loads
-    });
+    loadPartial('templates/partials/case-studies.html', 'case-studies');
     loadPartial('templates/partials/team.html', 'team');
     loadPartial('templates/partials/resources.html', 'resources');
     loadPartial('templates/partials/contact.html', 'contact');
-
-    // Load the header and footer
     loadPartial('templates/partials/header.html', 'header');
     loadPartial('templates/partials/footer.html', 'footer');
 });
+
