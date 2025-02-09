@@ -256,6 +256,7 @@ img {
 
 /* Hero Section */
 #hero {
+    background-image: url('../images/hero-sketch-mobile.svg');
     position: relative;
     display: flex;
     flex-direction: column;
