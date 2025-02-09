@@ -299,7 +299,7 @@ ol.custom-list li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 1rem;
 }
 
 .hero-wordstamp {
@@ -326,7 +326,7 @@ ol.custom-list li {
 
     #hero {
         height: auto; /* Allow hero height to adjust on mobile */
-        background: 
+        background: -webkit-image-set(url(../images/hero-sketch-mobile.svg) 1x, url(../images/hero-sketch-desktop.svg) 2x);
     }
 
     .hero-background-img {
