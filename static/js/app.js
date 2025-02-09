@@ -31,12 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Load partials securely
-    loadPartial('templates/partials/about.html', 'about');
     loadPartial('templates/partials/case-studies.html', 'case-studies');
-    loadPartial('templates/partials/team.html', 'team');
-    loadPartial('templates/partials/resources.html', 'resources');
     loadPartial('templates/partials/contact.html', 'contact');
-    loadPartial('templates/partials/header.html', 'header');
-    loadPartial('templates/partials/footer.html', 'footer');
 });
 

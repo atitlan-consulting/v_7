@@ -43,13 +43,53 @@
 
 <body>
 
+<!-- Header -->
+
+<header class="sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#hero" aria-label="Go to Hero Section">
+            <!-- Small logo (for mobile screens) -->
+            <img src="static/images/logo.svg" alt="Atitlan Consulting Logo" class="logo-small" style="height: 60px; margin-left: 10px;">
+
+            <!-- Large logo with wordmark (for larger screens) -->
+            <img src="static/images/logo-wordstamp.svg" alt="Atitlan Consulting Logo with Wordmark" class="logo-large" style="height: 60px; margin-left: 10px;">
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" aria-label="Go to About Section">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#case-studies" aria-label="Go to Case Studies Section">Case Studies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team" aria-label="Go to Team Section">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resources" aria-label="Go to Resources Section">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" aria-label="Go to Contact Section">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
 <!-- Hero Section -->
 <section id="hero" class="hero-image-mobile bg-primary text-center pt-5">
 
     <!-- Hero Background Image -->
     <img src="static/images/hero-sketch-mobile.svg" alt="Mobile Background" class="hero-background-img">
-
+    
     <div class="container">
         <!-- Hero Heading -->
         <h1>Atitlan Consulting</h1>
@@ -74,62 +114,155 @@
                 <img src="static/images/rics_black.svg" alt="RICS Logo" class="rics-logo">
             </a>
         </div>
-
-
-
     </div>
 </section>
 
 
     <!-- About Section -->
-    <section id="about" class="py-0">
-        <!-- About content will be dynamically loaded here -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-md-6">
+                    <p class="text-secondary">
+                        General Practice Chartered Surveyors and Development Consultants, with backgrounds spanning asset management, fund management, and valuation.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="custom-list">
+                        <li>Feasibility studies and financial viability assessments</li>
+                        <li>Opportunity Analysis</li>
+                        <li>Concept Design and Financial Analysis</li>
+                        <li>Site Search and Land Assembly</li>
+                        <li>Joint Venture facilitation and Development Agreements</li>
+                        <li>Due Diligence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Case Studies Section -->
-    <section id="case-studies" class="py-3">
-        <div class="container">
+<!-- Case Studies Section -->
+<section id="case-studies" class="py-3">
+    <div class="container">
 
-            <!-- Filter Buttons -->
-            <div class="d-flex justify-content-center gap-2">
-                <button class="btn btn-primary filter-btn" data-category="minor">Minor</button>
-                <button class="btn btn-secondary filter-btn" data-category="major">Major</button>
-                <button class="btn btn-secondary filter-btn" data-category="strategic">Strategic</button>
+        <!-- Filter Buttons -->
+        <div class="d-flex justify-content-center gap-2">
+            <button class="btn btn-primary filter-btn" data-category="minor">Minor</button>
+            <button class="btn btn-secondary filter-btn" data-category="major">Major</button>
+            <button class="btn btn-secondary filter-btn" data-category="strategic">Strategic</button>
+        </div>
+
+        <!-- Case Study Cards (Dynamic Content Here) -->
+        <div class="row mt-4">
+            <div id="case-study-container" class="d-flex flex-nowrap overflow-auto">
+                <!-- JavaScript will inject cards here -->
             </div>
+        </div>
 
-            <!-- Case Study Cards (Dynamic Content Here) -->
-            <div class="row mt-4">
-                <div id="case-study-container" class="d-flex flex-nowrap overflow-auto">
-                    <!-- JavaScript will inject cards here -->
+        <!-- Map Section -->
+        <div id="map" class="mt-4"></div>
+    </div>
+</section>
+
+
+<section id="team" class="team-section py-1">
+    <div class="container">
+        <div class="row no-stack justify-content-center">
+            <!-- Team Member 1 -->
+            <div class="col-md-6 col-lg-4 mb-4 d-flex">
+                <div class="profile-container w-100">
+                    <div class="profile-header d-flex flex-column align-items-center">
+                        <div class="profile-img mb-3">
+                            <a href="#">
+                                <img src="static/images/am_headshot.png" alt="Andrew Murphy" class="rounded-circle img-fluid">
+                            </a>
+                        </div>
+                        <h3 class="profile-name">Andrew Murphy</h3>
+                        <p class="profile-qualifications">
+                            BSc. (Hons.) MRICS
+                        </p>
+                    </div>
+                    <div class="profile-details mt-3">
+                        <p class="profile-bio">Andrew's profile bio...</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Map Section -->
-            <div id="map" class="mt-4"></div>
+            <!-- Team Member 2 -->
+            <div class="col-md-6 col-lg-4 mb-4 d-flex">
+                <div class="profile-container w-100">
+                    <div class="profile-header d-flex flex-column align-items-center">
+                        <div class="profile-img mb-3">
+                            <a href="#">
+                                <img src="static/images/od_headshot_bw.png" alt="Oliver Dawson" class="rounded-circle img-fluid">
+                            </a>
+                        </div>
+                        <h3 class="profile-name">Oliver Dawson</h3>
+                        <p class="profile-qualifications">
+                            BA (Hons), MSc, MRICS,RICS Registered Valuer
+                        </p>
+                    </div>
+                    <div class="profile-details mt-3">
+                        <p class="profile-bio">Oliver's profile bio...</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <!-- Contact content will be dynamically loaded here -->
+    </div>
+</section>
 
-    <!-- Team Section -->
-    <section id="team" class="py-5">
-        <!-- Team content will be dynamically loaded here -->
-    </section>
-
-    <!-- Resources Section -->
-    <section id="resources" class="py-5">
-        <!-- Resources content will be dynamically loaded here -->
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <!-- Contact content will be dynamically loaded here -->
+<!-- Footer -->
+<section id="footer" class="bg-dark text-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2025 Atitlan Consulting. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Notice</a> |
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms & Conditions</a>
+                </p>
+            </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <section id="footer" class="py-5">
-    </section>
+    <!-- Privacy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">Privacy Notice</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Your privacy is important to us. This Privacy Notice explains how we handle your data.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Terms & Conditions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>By using our website, you agree to the following terms and conditions...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
