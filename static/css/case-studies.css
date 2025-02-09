@@ -1,203 +1,179 @@
 /* =====================
+/* ============================
    Case Studies Section
-===================== */
+============================ */
 #case-studies {
     background: var(--background-color-light);
     color: var(--text-primary);
-    padding: 0rem 0rem;
+    padding: 2em 1em;
+    text-align: center;
 }
 
 #case-studies h2 {
     color: var(--primary-color);
-    font-size: 1rem;
-    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
 }
 
-#case-studies h5 {
-    font-size: 1rem;
-    color: var(--text-secondary);
+/* ============================
+   Filter Buttons
+============================ */
+.filter-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
 }
 
-#case-studies p {
-    font-size: 1rem;
-}
-
-/* Filter Buttons */
 .filter-btn {
     background-color: var(--primary-color);
     color: var(--background-color-light);
-    /*transition: background-color 0.3s ease;*/ /* Removed transition effect */
     font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .filter-btn:hover {
     background-color: var(--primary-color-dark);
 }
 
-/* Case Study Container - Scrollable Cards */
+.filter-btn.active {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* ============================
+   Scrollable Case Study Cards
+============================ */
 #case-study-container {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     overflow-x: auto;
-
-    white-space: nowrap;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    padding: 1rem 0;
 }
 
 #case-study-container::-webkit-scrollbar {
-    height: 1rem;
+    height: 0.5em;
 }
 
 #case-study-container::-webkit-scrollbar-thumb {
     background: var(--primary-color);
-    border-radius: 1rem;
+    border-radius: 0.25em;
 }
 
-/* Flip Cards */
-.flip-card {
-    flex: 0 0 auto;
-    width: 2%;
-    min-height: 2em;
-    border-radius: 0.5em;
-    perspective: fit-content;
+/* ============================
+   Card Design
+============================ */
+.case-study-card {
+    flex: 0 0 20rem;
+    min-height: 12rem;
+    background-color: #fafaf8; /* Replace with var(--neutral-cream) if defined */
+    color: var(--text-primary);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
     scroll-snap-align: center;
 }
 
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s ease-in-out;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-/* Flip Card Front & Back */
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 1rem;
-    padding: 1rem;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
-}
-
-/* Front Side */
-.flip-card-front {
-    background-color: #fafaf8; /* var(--neutral-cream); */
-    color: var(--text-primary);
-}
-
-
-/* Back Side */
-.flip-card-back {
-    background-color: var(--neutral);
-    color: var(--text-secondary);
-    transform: rotateY(180deg);
-}
-
-/* Flip card improvements */
-.flip-card {
-    flex: 0 0 300px;  
-    height: 200px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.flip-card:hover {
-    transform: translateY(-5px);  /* Subtle hover effect */
-}
-
-/* Card content layout improvements */
-.card-title {
-    font-size: 1.em;
+.case-study-card .card-header {
+    font-size: 1.25rem;
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
-.sector-icons img {
-    width: 3em;
-    height: 3em;
-    margin: 0 3em;
+.case-study-card .card-description {
+    font-size: 1rem;
+    margin: 1rem 0;
 }
 
-/* Sector Icons */
-.sector-icons {
+.case-study-card .sector-icons {
     display: flex;
     justify-content: center;
-    gap: 3em;
-    margin-bottom: 3em;
+    gap: 1rem;
+    margin: 1rem 0;
 }
 
-.sector-icon {
-    width: 30px;
-    height: 30px;
+.case-study-card .sector-icon {
+    width: 3rem;
+    height: 3rem;
     transition: transform 0.2s ease-in-out;
 }
 
-.sector-icon:hover {
+.case-study-card .sector-icon:hover {
     transform: scale(1.1);
 }
 
-/* View on Map Button */
-.view-on-map {
-    width: 100%;
+/* ============================
+   View on Map Button
+============================ */
+.case-study-card .view-on-map {
     background-color: var(--primary-color);
     color: #fff;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 1rem;
+    padding: 0.8rem;
     font-size: 1rem;
-    text-transform: uppercase;
     font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
 }
 
-.view-on-map:hover {
+.case-study-card .view-on-map:hover {
     background-color: var(--primary-color-dark);
 }
 
-/* Map Section */
+/* ============================
+   Map Section (Separate if needed)
+============================ */
 #map {
-    height: 500px;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    height: 10rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile Responsiveness */
+/* ============================
+   Mobile Responsiveness
+============================ */
 @media (max-width: 768px) {
     #case-study-container {
+        gap: 1rem;
         overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
     }
 
-    .flip-card {
-        width: 250px;
+    .case-study-card {
+        flex: 0 0 16rem;
+        padding: 1rem;
     }
 
     .sector-icon {
-        width: 25px;
-        height: 25px;
+        width: 2rem;
+        height: 2rem;
     }
 
     .view-on-map {
         font-size: 0.9rem;
-        padding: 8px;
+        padding: 0.6rem;
     }
 
     #map {
-        height: 300px;
+        height: 8rem;
+    }
+
+    .filter-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
     }
 }
