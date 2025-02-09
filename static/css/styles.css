@@ -40,9 +40,6 @@ body {
     font-family: 'Raleway', Arial, sans-serif;
     color: var(--text-primary);
     background-color: var(--background-color-light);
-    margin: 0;
-    padding: 0;
-    line-height: 1rem;
 }
 
 /*a {
@@ -86,21 +83,20 @@ ul.custom-list {
 
 /* List Items */
 ul.custom-list li {
-    font-size: 1rem; /* Keep font size consistent with body text */
-    line-height: 1.5; /* Improve readability */
-    margin-bottom: 10px; /* Add subtle spacing between items */
+    font-size: 0.5em; /* Keep font size consistent with body text */
+    line-height: 0,5em; /* Improve readability */
+    margin-bottom: 0.5em; /* Add subtle spacing between items */
     color: var(--text-primary); /* Match the text color with the site theme */
 }
 
 /* Nested Lists */
 ul.custom-list ul {
     list-style-type: circle; /* Use circle bullets for nested lists */
-    padding-left: 0rem; /* Indent nested lists slightly more */
-    margin-top: 10px; /* Add space between parent and nested lists */
+    padding-left: 0em; /* Indent nested lists slightly more */
+    margin-top: 1px; /* Add space between parent and nested lists */
 }
 
 ul.custom-list ul li {
-    font-size: 0.95rem; /* Slightly smaller font for nested items */
     color: var(--text-primary); /* Use a lighter text color for nested items */
 }
 
@@ -110,14 +106,14 @@ ul.custom-list ul li {
 ol.custom-list {
     list-style-type: decimal; /* Use numbers for ordered lists */
     margin: 0;
-    padding-left: 0rem;
+    padding-left: 0em;
     color: var(--text-primary);
 }
 
 ol.custom-list li {
     font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 1px;
+    line-height: 0em;
+    margin-bottom: 0em;
     color: var(--text-primary);
 }
 
@@ -128,8 +124,8 @@ ol.custom-list li {
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color-dark);
     color: var(--neutral-cream);
-    padding: 10px 20px;
-    border-radius: 5px;
+    /*padding: 10px 20px;
+    border-radius: 5px;*/
     text-transform: uppercase;
     font-size: 1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
