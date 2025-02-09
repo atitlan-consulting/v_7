@@ -544,27 +544,31 @@ img {
    Responsive Styles (Mobile)
 ===================== */
 @media (max-width: 768px) {
-    .row.d-flex {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 20px;
+    /* Horizontal scrolling row for profiles */
+    .row.no-stack, .row.d-flex {
+        display: flex;
+        flex-wrap: nowrap;      /* Prevent columns from stacking */
+        overflow-x: auto;       /* Enable horizontal scrolling */
+        gap: 20px;              /* Space between items */
         scroll-snap-type: x mandatory;
+        scroll-padding: 10px;
         padding: 0 10px;
         -webkit-overflow-scrolling: touch;
     }
 
-    .col-md-6.col-lg-4 {
+    .col-md-6, .col-lg-4 {
         min-width: 300px;
-        flex: 0 0 auto;
+        flex: 0 0 auto;         /* Prevent auto-stacking */
         scroll-snap-align: center;
     }
 
-    /* Profile Image and Text Adjustments */
+    /* Profile Image Adjustments */
     .profile-img img {
         width: 100px;
         height: 100px;
     }
 
+    /* Text Adjustments */
     .profile-name {
         font-size: 1.4rem;
     }
@@ -574,7 +578,7 @@ img {
         font-size: 0.9rem;
     }
 
-    /* Remove list styles on smaller screens */
+    /* Remove list styles for smaller screens */
     .profile-list {
         padding-left: 0;
         list-style: none;
@@ -589,16 +593,8 @@ img {
         max-width: 80px;
         height: auto;
     }
-
-    /* Additional row adjustments */
-    .row {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 20px;
-        scroll-snap-type: x mandatory;
-        scroll-padding: 10px;
-    }
 }
+
 
 
 
