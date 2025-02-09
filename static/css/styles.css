@@ -38,7 +38,7 @@
     --neutral-cream: #fffaf0;
 
     --background-color: #2e2e2e; /* #2e2e2e  #1B263B f9f9f9 #d6d6d6 #1B263B  #1B263B*/
-    --background-color-light: #f5f5dc; /* Cream background #f3f1efff #f3f1ef00  */ 
+    --background-color-light: #fff9f2; /* Cream background #f3f1efff #f3f1ef00  */ 
     --text-primary: #696969; /* White text */
     --text-secondary: #c0c0c0ff; /* Light gray for supporting text */
 }
@@ -187,6 +187,10 @@ img {
     }
 }
 
+.header {
+    background-color: #ffffff;
+}
+
 /* Navbar Links */
 .navbar .nav-link {
     color: var(---text-primary) !important; /* Link color */
@@ -195,6 +199,7 @@ img {
     text-transform: uppercase; /* Optional: Transform to uppercase */
     padding: 0.5rem 1rem; /* Adds better spacing */
     transition: color 0.3s ease; /* Smooth hover effect */
+
 }
 
 .navbar .nav-link:hover {
@@ -264,7 +269,7 @@ img {
 }
 
 /* Gradient Overlay for Fade Effect */
-#hero::before {
+/*#hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -279,14 +284,14 @@ img {
         rgba(243, 241, 239, 1) 100%
     );
     pointer-events: none; /* Allow clicks to pass through the overlay */
-    z-index: 1;
-}
+    /*z-index: 1;
+}*/
 
 /* Adjust content within the hero section */
-#hero > * {
+/*#hero > * {
     position: relative;
-    z-index: 2; /* Ensure content appears above the gradient */
-}
+    z-index: 2; /* Ensure content appears above the gradient
+} */
 
 /* Hero Text Elements */
 #hero p {
