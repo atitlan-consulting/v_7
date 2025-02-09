@@ -38,7 +38,7 @@
     --neutral-cream: #fffaf0;
 
     --background-color: #2e2e2e; /* #2e2e2e  #1B263B f9f9f9 #d6d6d6 #1B263B  #1B263B*/
-    --background-color-light: #f3f1efff; /* Cream background  #f3f1ef00*/ 
+    --background-color-light: #f5f5dc; /* Cream background #f3f1efff #f3f1ef00  */ 
     --text-primary: #696969; /* White text */
     --text-secondary: #c0c0c0ff; /* Light gray for supporting text */
 }
@@ -255,7 +255,7 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    background-color: #f3f1ef !important; /* Background color */
+    background-color: var(--background-color-light)!important; /* Background color */
     color: var(--text-primary);
     text-align: center;
     padding: 0px 20px;
