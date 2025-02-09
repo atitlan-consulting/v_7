@@ -167,7 +167,7 @@ ol.custom-list li {
     }
 
     .logo-large {
-        display: inline-block;
+        display: flex;
     }
 }
 
@@ -349,7 +349,7 @@ ol.custom-list li {
     }
 
     #hero {
-        background-image: url('static/images/hero-sketch-desktop.svg');
+        background-image: url(/static/images/hero-sketch-desktop.svg);
         background-size: cover;
         background-position: center;
     }
@@ -369,8 +369,6 @@ ol.custom-list li {
 #about {
     #background-color: var(--background-color-light); /* Match site's background */
     color: var(--text-primary); /* Primary text color */
-    padding: 0px 0px; /* Consistent vertical spacing */
-    margin-top: 0px;
 }
 
 /* About Section Paragraphs */
@@ -395,14 +393,14 @@ ol.custom-list li {
 #team {
     background-color: var(--background-color-light);
     color: var(--text-primary);
-    padding: 60px 20px;
+   /*padding: 60px 20px;*/
     text-align: center;
 }
 
 #team h2 {
     color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 1em;
 }
 
 /* =====================
@@ -419,14 +417,14 @@ ol.custom-list li {
 
 /* Profile Image */
 .profile-img {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.2em;
 }
 
 .profile-img img {
-    width: 150px;
-    height: 150px;
+    /*width: 150px;
+    height: 150px;*/
     border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -647,45 +645,6 @@ ol.custom-list li {
     #contact form {
         padding: 20px;
     }
-}
-
-/* =====================
-   Resources Section
-===================== */
-.resources-section {
-    background-color: var(--background-color-light); /* Match site theme */
-    color: var(---text-primary); /* Lighter text for readability */
-    padding: 60px 20px; /* Add vertical spacing */
-}
-
-.resources-section h2 {
-    color: var(--primary-color); /* Highlighted section title */
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.resources-section .intro {
-    font-size: 1.1rem;
-    color: var(---text-primary);
-    margin-bottom: 40px;
-}
-
-.resources-section h3 {
-    color: var(--primary-color); /* Highlight categories */
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.resources-section p {
-    color: var(---text-primary) /* Consistent lighter text */
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.divider {
-    border-top: 1px solid var(--neutral-light); /* Subtle divider */
-    margin: 20px auto;
-    max-width: 100px;
 }
 
 

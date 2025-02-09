@@ -128,17 +128,17 @@
 }
 
 .sector-icons img {
-    width: 40px;
-    height: 40px;
-    margin: 0 6px;
+    width: 3em;
+    height: 3em;
+    margin: 0 3em;
 }
 
 /* Sector Icons */
 .sector-icons {
     display: flex;
     justify-content: center;
-    gap: 8px;
-    margin-bottom: 10px;
+    gap: 3em;
+    margin-bottom: 3em;
 }
 
 .sector-icon {
