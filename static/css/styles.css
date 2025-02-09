@@ -105,15 +105,12 @@ ul.custom-list ul li {
 ===================== */
 ol.custom-list {
     list-style-type: decimal; /* Use numbers for ordered lists */
-    margin: 0;
-    padding-left: 0em;
     color: var(--text-primary);
 }
 
 ol.custom-list li {
     font-size: 1rem;
-    line-height: 0em;
-    margin-bottom: 0em;
+    line-height: 1rem;
     color: var(--text-primary);
 }
 
@@ -282,7 +279,7 @@ ol.custom-list li {
     position: relative;
     z-index: 2;
     max-width: 100%; /* Override Bootstrap's max-width */
-    padding: 0 15px;
+    padding: 0 0px;
     box-sizing: border-box;
 }
 
@@ -304,22 +301,20 @@ ol.custom-list li {
 }
 
 .hero-wordstamp {
-    max-width: 90%;
+    max-width: 20%;
     height: auto;
 }
 
 /* Typography */
 #hero p {
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.6;
     color: var(--text-primary);
     margin-bottom: 20px;
 }
 
 #hero h2, #hero h3, #hero h4 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    font-weight: 100;
+    font-size: 1em;
 }
 
 /* Responsive Layouts */
@@ -380,16 +375,15 @@ ol.custom-list li {
 
 /* About Section Paragraphs */
 #about .about-intro p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-primary) !important; /* Use secondary text color for supporting text */
-    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1em;
+    color: var(--text-primary); /* Use secondary text color for supporting text */
 }
 
 /* Service Descriptions */
 #about .services-description p {
-    font-size: 1.1rem; /* Slightly larger font size */
-    line-height: 1.8;
+    font-size: 1em; /* Slightly larger font size */
+    line-height: 1em;
     color: var(--text-primary); /* Primary text color */
 }
 
