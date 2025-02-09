@@ -32,6 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load partials securely
     loadPartial('templates/partials/case-studies.html', 'case-studies');
-    loadPartial('templates/partials/contact.html', 'contact');
+    // loadPartial('templates/partials/contact.html', 'contact');
 });
 

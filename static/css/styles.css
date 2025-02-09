@@ -118,14 +118,14 @@ ul.custom-list ul li {
 ol.custom-list {
     list-style-type: decimal; /* Use numbers for ordered lists */
     margin: 0;
-    padding-left: 1.5em;
+    padding-left: 0rem;
     color: var(--text-primary);
 }
 
 ol.custom-list li {
     font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     color: var(--text-primary);
 }
 
