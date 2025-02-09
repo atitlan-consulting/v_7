@@ -440,7 +440,6 @@ img {
 }
 
 
-
 /* =====================
    Team Section Styles
 ===================== */
@@ -458,15 +457,15 @@ img {
 }
 
 /* =====================
-   Profile Container Styles
+   Profile Card Styles
 ===================== */
 .profile-container {
-    padding: 20px;
-    background-color: var(--background-color-light);
-    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    background-color: var(--background-color-light);
+    border-radius: 8px;
 }
 
 /* Profile Image */
@@ -475,11 +474,11 @@ img {
 }
 
 .profile-img img {
-    border-radius: 50%;
     width: 150px;
     height: 150px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-img img:hover {
@@ -494,7 +493,8 @@ img {
     margin: 1rem 0;
 }
 
-.profile-bio {
+.profile-bio,
+.profile-qualifications {
     font-size: 1rem;
     line-height: 1.8;
     color: var(--text-primary);
@@ -510,12 +510,6 @@ img {
 
 .profile-list li {
     margin-bottom: 0.75rem;
-}
-
-.profile-qualifications {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--text-primary);
 }
 
 /* =====================
@@ -547,16 +541,16 @@ img {
 }
 
 /* =====================
-   Responsive Styles
+   Responsive Styles (Mobile)
 ===================== */
 @media (max-width: 768px) {
-    /* Horizontal scrolling for profiles */
     .row.d-flex {
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 20px;
         scroll-snap-type: x mandatory;
         padding: 0 10px;
+        -webkit-overflow-scrolling: touch;
     }
 
     .col-md-6.col-lg-4 {
@@ -565,7 +559,7 @@ img {
         scroll-snap-align: center;
     }
 
-    /* Smaller image and spacing on mobile */
+    /* Profile Image and Text Adjustments */
     .profile-img img {
         width: 100px;
         height: 100px;
@@ -580,6 +574,7 @@ img {
         font-size: 0.9rem;
     }
 
+    /* Remove list styles on smaller screens */
     .profile-list {
         padding-left: 0;
         list-style: none;
@@ -589,37 +584,21 @@ img {
         margin-bottom: 0.5rem;
     }
 
+    /* Adjust RICS logo size */
     .rics-logo {
         max-width: 80px;
         height: auto;
     }
-}
 
-
+    /* Additional row adjustments */
     .row {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 20px;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 10px;
     }
-
-    @media (max-width: 768px) {
-        .row {
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            gap: 20px;
-            scroll-snap-type: x mandatory;
-            scroll-padding: 10px;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .col-md-6.col-lg-4 {
-            min-width: 300px;
-            flex: 0 0 auto;
-            scroll-snap-align: start;
-        }
-
-        /*.profile-container {
-            margin: auto;
-        }*/
-    }
+}
 
 
 
