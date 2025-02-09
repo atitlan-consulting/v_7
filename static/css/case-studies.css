@@ -4,37 +4,30 @@
 #case-studies {
     background: var(--background-color-light);
     color: var(--text-primary);
-    padding: 1px 1px;
+    padding: 0em 0em;
 }
 
 #case-studies h2 {
     color: var(--primary-color);
-    margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 1em;
     font-family: 'Raleway', sans-serif;
 }
 
 #case-studies h5 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: var(--primary-color);
+    font-size: 1em;
+    color: var(--text-secondary);
 }
 
 #case-studies p {
-    font-size: 1rem;
-    margin-top: 10px;
+    font-size: 1em;
 }
 
 /* Filter Buttons */
 .filter-btn {
     background-color: var(--primary-color);
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    margin: 5px;
+    color: var(--background-color-light);
+    /*transition: background-color 0.3s ease;*/ /* Removed transition effect */
+    font-size: 1em;
 }
 
 .filter-btn:hover {
@@ -44,29 +37,29 @@
 /* Case Study Container - Scrollable Cards */
 #case-study-container {
     display: flex;
-    gap: 15px;
+    gap: 1em;
     overflow-x: auto;
-    padding: 10px;
+
     white-space: nowrap;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 }
 
 #case-study-container::-webkit-scrollbar {
-    height: 5px;
+    height: 1em;
 }
 
 #case-study-container::-webkit-scrollbar-thumb {
     background: var(--primary-color);
-    border-radius: 5px;
+    border-radius: 1em;
 }
 
 /* Flip Cards */
 .flip-card {
     flex: 0 0 auto;
-    width: 280px;
-    min-height: 220px;
-    border-radius: 10px;
+    width: 1em;
+    min-height: 2em;
+    border-radius: 0.5em;
     perspective: 1000px;
     scroll-snap-align: center;
 }
@@ -91,13 +84,13 @@
     height: 100%;
     backface-visibility: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 8px;
-    padding: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 /* Front Side */
@@ -106,9 +99,6 @@
     color: var(--text-primary);
 }
 
-.flip-card-front:hover {
-    background-color: var(--background-color-light);
-}
 
 /* Back Side */
 .flip-card-back {
@@ -133,9 +123,8 @@
 
 /* Card content layout improvements */
 .card-title {
-    font-size: 1.1rem;
+    font-size: 1.em;
     font-weight: bold;
-    margin-bottom: 12px;
 }
 
 .sector-icons img {
@@ -143,21 +132,6 @@
     height: 40px;
     margin: 0 6px;
 }
-
-.card-description {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-}
-
-.flip-card-back {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 
 /* Sector Icons */
 .sector-icons {
