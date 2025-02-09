@@ -463,7 +463,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0 15px;
     background-color: var(--background-color-light);
     border-radius: 8px;
 }
