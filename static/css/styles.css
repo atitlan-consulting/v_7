@@ -43,17 +43,17 @@ body {
     margin: 0 0;
 }
 
-/*a {
+a {
     color: var(--primary-color);
     text-decoration: none;
-}*/
+}
 
 h1 {
     position: absolute; /* Remove it from the normal document flow - for SEO optimisation*/
     left: -9999px; /* Push it off-screen */
     top: 0;
-    width: 1px; /* Shrink its width */
-    height: 1px; /* Shrink its height */
+    width: 0; /* Shrink its width */
+    height: 0; /* Shrink its height */
     overflow: hidden; /* Ensure no visible overflow */
     clip: rect(0, 0, 0, 0); /* Clip it */
     white-space: nowrap; /* Prevent wrapping */
@@ -69,7 +69,7 @@ h2, h3, h4, h5, h6 {
 /* Container */
 
 .container {
-    padding: 1rem;
+    padding: 0 0rem;
 }
 
 
@@ -84,17 +84,17 @@ ul.custom-list {
 
 /* List Items */
 ul.custom-list li {
-    font-size: 0.5em; /* Keep font size consistent with body text */
-    line-height: 0,5em; /* Improve readability */
-    margin-bottom: 0.5em; /* Add subtle spacing between items */
+    font-size: 0.5rem; /* Keep font size consistent with body text */
+    line-height: 0,5rem; /* Improve readability */
+    margin-bottom: 0.5rem; /* Add subtle spacing between items */
     color: var(--text-primary); /* Match the text color with the site theme */
 }
 
 /* Nested Lists */
 ul.custom-list ul {
     list-style-type: circle; /* Use circle bullets for nested lists */
-    padding-left: 0em; /* Indent nested lists slightly more */
-    margin-top: 1px; /* Add space between parent and nested lists */
+    padding-left: 0.5rem; /* Indent nested lists slightly more */
+    margin-top: 0rem; /* Add space between parent and nested lists */
 }
 
 ul.custom-list ul li {
@@ -120,12 +120,12 @@ ol.custom-list li {
 ===================== */
 .btn {
     background-color: var(--primary-color);
-    border: 1px solid var(--primary-color-dark);
+    /*border: 1px solid var(--primary-color-dark);*/
     color: var(--neutral-cream);
     /*padding: 10px 20px;
     border-radius: 5px;*/
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -177,8 +177,8 @@ ol.custom-list li {
 .navbar {
     background-color:var(--background-color); /* Match the site's background */
     color: var(--text-primary); /* Primary text color */
-    padding: 10px 20px; /* Add vertical padding */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 0 0; /* Add vertical padding */
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Navbar Links */
