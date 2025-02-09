@@ -540,37 +540,29 @@ img {
     height: 5rem;
 }
 
-/* =====================
-   Responsive Styles (Mobile)
-===================== */
+/* Responsive styles for mobile */
 @media (max-width: 768px) {
-    /* Horizontal scrolling row for profiles */
     .row.no-stack, .row.d-flex {
         display: flex;
-        flex-wrap: nowrap;      /* Prevent columns from stacking */
-        overflow-x: auto;       /* Enable horizontal scrolling */
-        gap: 20px;              /* Space between items */
-        scroll-snap-type: x mandatory;
-        scroll-padding: 10px;
+        flex-wrap: wrap;  /* Allow wrapping */
+        gap: 20px;        /* Space between columns */
         padding: 0 10px;
-        -webkit-overflow-scrolling: touch;
     }
 
     .col-md-6, .col-lg-4 {
-        min-width: 300px;
-        flex: 0 0 auto;         /* Prevent auto-stacking */
-        scroll-snap-align: center;
+        flex: 1 1 48%;          /* Take up nearly half the screen width */
+        max-width: 48%;         /* Prevent overflow */
+        box-sizing: border-box; /* Include padding and borders in width */
     }
 
-    /* Profile Image Adjustments */
+    /* Adjustments for text and images */
     .profile-img img {
-        width: 100px;
-        height: 100px;
+        width: 80px;            /* Smaller profile images */
+        height: 80px;
     }
 
-    /* Text Adjustments */
     .profile-name {
-        font-size: 1.4rem;
+        font-size: 1.2rem;      /* Adjust text sizes to fit better */
     }
 
     .profile-bio,
@@ -578,7 +570,7 @@ img {
         font-size: 0.9rem;
     }
 
-    /* Remove list styles for smaller screens */
+    /* Remove list styles */
     .profile-list {
         padding-left: 0;
         list-style: none;
@@ -588,12 +580,13 @@ img {
         margin-bottom: 0.5rem;
     }
 
-    /* Adjust RICS logo size */
+    /* Adjust RICS logo */
     .rics-logo {
-        max-width: 80px;
+        max-width: 60px;
         height: auto;
     }
 }
+
 
 
 
