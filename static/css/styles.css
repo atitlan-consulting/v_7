@@ -88,7 +88,7 @@ h2, h3, h4, h5, h6 {
 ul.custom-list {
     list-style-type: disc; /* Use disc bullets */
     margin: 0; /* Remove default margin */
-    padding-left: 1.5rem; /* Adjust indent for a clean look */
+    padding-left: 0rem; /* Adjust indent for a clean look */
     color: var(--text-primary); /* Set bullet color */
 }
 
@@ -103,7 +103,7 @@ ul.custom-list li {
 /* Nested Lists */
 ul.custom-list ul {
     list-style-type: circle; /* Use circle bullets for nested lists */
-    padding-left: 1.5rem; /* Indent nested lists slightly more */
+    padding-left: 0rem; /* Indent nested lists slightly more */
     margin-top: 10px; /* Add space between parent and nested lists */
 }
 
