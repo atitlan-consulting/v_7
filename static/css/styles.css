@@ -554,7 +554,7 @@ img {
         flex-wrap: wrap;  /* Allow wrapping */
         justify-content: space-between; /* Space between columns */
         gap: 1px;        /* Space between columns */
-        padding: 0 11px;
+        padding: 0 1px;
     }
 
     .col-md-6, .col-lg-4 {
