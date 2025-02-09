@@ -372,7 +372,7 @@ img {
     }
 
     #hero {
-        background-image: url('../images/hero-sketch-desktop.svg');
+        background-image: url('static/images/hero-sketch-desktop.svg');
         background-size: cover;
         background-position: center;
     }
@@ -390,7 +390,6 @@ img {
    About Section
 ===================== */
 #about {
-    background: inherit;
     #background-color: var(--background-color-light); /* Match site's background */
     color: var(--text-primary) !important; /* Primary text color */
     padding: 0px 0px; /* Consistent vertical spacing */
