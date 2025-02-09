@@ -346,42 +346,26 @@ img {
     }
 }
 
-/* Tablet */
-@media (min-width: 768px) {
+/* Mobile: Use HTML image */
+@media (max-width: 768px) {
     #hero {
-        background-image: url('../images/hero-sketch-tablet.svg');
-        background-size: cover;
-        background-position: center center;
-        height: 100vh;
+        background: none;
     }
 
-    #hero h1, #hero h2 {
-        font-size: 1.5rem;
-    }
-
-    #hero p {
-        font-size: 1rem;
+    .hero-background-img {
+        display: block;
     }
 }
 
-/* Desktop */
-@media (min-width: 1024px) {
+/* Tablet and desktop: Use CSS background */
+@media (min-width: 769px) {
+    .hero-background-img {
+        display: none;
+    }
+
     #hero {
         background-image: url('../images/hero-sketch-desktop.svg');
         background-size: cover;
-        height: 100vh;
-    }
-
-    #hero h1 {
-        font-size: 1.75rem;
-    }
-
-    #hero h2 {
-        margin-top: 1.5rem;
-    }
-
-    #hero p {
-        font-size: 1rem;
     }
 }
 
