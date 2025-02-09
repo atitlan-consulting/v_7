@@ -264,7 +264,7 @@ img {
     align-items: center;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     background-color: var(--background-color-light) !important;
     color: var(--text-primary);
     text-align: center;
