@@ -430,14 +430,14 @@ ol.custom-list li {
 
 .profile-img img:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);*/
 }
 
 /* Profile Text */
 .profile-name {
-    font-size: 1.5rem;
+    font-size: 1em;
     color: var(--primary-color);
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 .profile-bio,
@@ -459,26 +459,7 @@ ol.custom-list li {
     margin-bottom: 0.75rem;
 }
 
-/* =====================
-   Link and Icon Styles
-===================== */
-.profile-header a {
-    text-decoration: none;
-}
 
-.linkedin-icon-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-}
-
-.linkedin-icon {
-    width: 32px;
-    height: auto;
-    fill: #0077b5;
-}
 
 /* RICS Logo */
 .rics-logo {
