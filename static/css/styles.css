@@ -52,6 +52,11 @@ body {
     line-height: 1.6;
 }
 
+/*a {
+    color: var(--primary-color);
+    text-decoration: none;
+}*/
+
 h1 {
     position: absolute; /* Remove it from the normal document flow - for SEO optimisation*/
     left: -9999px; /* Push it off-screen */
@@ -83,7 +88,7 @@ h2, h3, h4, h5, h6 {
 ul.custom-list {
     list-style-type: disc; /* Use disc bullets */
     margin: 0; /* Remove default margin */
-    padding-left: 1.5em; /* Adjust indent for a clean look */
+    padding-left: 1.5rem; /* Adjust indent for a clean look */
     color: var(--text-primary); /* Set bullet color */
 }
 
