@@ -440,9 +440,9 @@ img {
 }
 
 #about .custom-list li {
-    font-size: 1.1rem; /* Match paragraph text size */
+    font-size: 1.em; /* Match paragraph text size */
     line-height: 1.5; /* Improve readability */
-    margin-bottom: 10px; /* Space between items */
+    margin-bottom: 1px; /* Space between items */
     color: var(--text-primary) !important;
 }
 
