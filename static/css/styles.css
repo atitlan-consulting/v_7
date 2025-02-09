@@ -4,7 +4,9 @@
     src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}      
+}
+
+      
 
 @font-face {
     font-family: 'Segoe UI';
@@ -404,19 +406,6 @@ img {
     color: var(--text-primary) !important; /* Primary text color */
 }
 
-#about .custom-list {
-    list-style-type: disc; /* Disc bullets for lists */
-    padding-left: 1.5em; /* Indent for a clean look */
-    margin-left: 5px; /* Add space to the left */
-    color: var(--text-primary) !important; /* Match the text color with the site theme */
-}
-
-#about .custom-list li {
-    font-size: 1.em; /* Match paragraph text size */
-    line-height: 1.5; /* Improve readability */
-    margin-bottom: 1px; /* Space between items */
-    color: var(--text-primary) !important;
-}
 
 
 /* =====================
