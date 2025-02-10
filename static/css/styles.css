@@ -21,12 +21,12 @@
     --primary-color-dark: #007acc;
 
     --secondary-color: #ff8c00;
-    --neutral-light: #ecf0f1;
+    --neutral-light: #fff9f2;
     --neutral-dark: #7f8c8d;
     --neutral-cream: #fffaf0;
 
     --background-color: #2e2e2e;
-    --background-color-light: #fff9f2;
+    --background-color-light: #fffaf0; /* fff9f2;*/
     --text-primary: #696969;
     --text-secondary: #c0c0c0ff;
 }
@@ -45,7 +45,7 @@ a {
 }
 
 a:hover {
-    color: var(--primary-color-dark);
+    color: var(--primary-color);
 }
 
 /* =====================
@@ -53,13 +53,13 @@ a:hover {
 ===================== */
 .sticky-top {
     z-index: 1020;
-    background-color: var(--background-color);
+    background-color: var(--neutral-light) !important; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
     padding: 10px 20px;
-    background-color: var(--background-color);
+    background-color: var(--neutral-light);
     color: var(--text-primary);
     display: flex;
     justify-content: space-between;
@@ -83,6 +83,43 @@ a:hover {
 .navbar .nav-link.active {
     color: var(--secondary-color) !important;
 }
+
+/* Hide both logos by default */
+.logo-small,
+.logo-large {
+    display: none;
+}
+
+/* Mobile-first: Show the small logo */
+.logo-small {
+    display: inline-block;
+}
+
+/* Tablet and Desktop: Switch to large logo */
+@media (min-width: 768px) {
+    .logo-small {
+        display: none;
+    }
+
+    .logo-large {
+        display: inline-block;
+    }
+}
+
+/* Navbar Logo Alignment */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add spacing between logos and text */
+    height: 60px;
+}
+
+.logo-small,
+.logo-large {
+    height: 40px; /* Ensure consistent logo height */
+    object-fit: contain; /* Prevent stretching */
+}
+
 
 /* =====================
    Hero Section
@@ -232,7 +269,7 @@ a:hover {
 ===================== */
 #footer {
     padding: 20px 0;
-    background-color: var(--background-color-light);
+    background-color: var(--background-color-light) !important;
     text-align: center;
     font-size: 0.9rem;
 }
