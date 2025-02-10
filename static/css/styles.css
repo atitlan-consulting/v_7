@@ -274,6 +274,7 @@ ol.custom-list li {
     text-align: center;
     background-color: var(--background-color-light) !important; 
     color: var(--text-primary);
+    overflow: hidden;
 }
 
 #hero .container {
@@ -299,11 +300,16 @@ ol.custom-list li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
+    width: auto; /* Remove static width */
+    margin-top: 2rem; /* Add space between the hero image and text */
+    z-index: 1; /* Ensure it appears above the hero background */
 }
 
 .hero-wordstamp {
-    max-width: 2rem;
+    max-width: 150px; /* Adjust as needed */
+    width: 80%; /* Responsive scaling */
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio */
 }
 
 /* Typography */
@@ -320,8 +326,8 @@ ol.custom-list li {
 /* Responsive Layouts - Mobile */
 @media (max-width: 768px) {
     .container {
-        padding-left: 0em;
-        padding-right: 0em;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 
     #hero {
@@ -333,6 +339,13 @@ ol.custom-list li {
 
     .hero-wordstamp-container {
         display: flex;
+        justify-content: center;
+
+    }
+
+    .hero-wordstamp {
+        max-width: 80px;
+        width: 100%;
     }
 
     .hero-background-img {
@@ -347,9 +360,6 @@ ol.custom-list li {
         font-size: 0.9rem;
     }
 
-    .hero-wordstamp-container {
-        display: flex;
-    }
 }
 
 /* Tablet and Desktop */
