@@ -40,7 +40,6 @@ body {
     font-family: 'Raleway', Arial, sans-serif;
     color: var(--text-primary);
     background-color: var(--background-color-light);
-    margin: 0 0;
 }
 
 a {
@@ -69,7 +68,7 @@ h2, h3, h4, h5, h6 {
 /* Container */
 
 .container {
-    padding: 0 0rem;
+    padding: 1rem 1rem;
 }
 
 
@@ -85,7 +84,7 @@ ul.custom-list {
 /* List Items */
 ul.custom-list li {
     font-size: 0.5rem; /* Keep font size consistent with body text */
-    line-height: 0,5rem; /* Improve readability */
+    line-height: 0.5rem; /* Improve readability */
     margin-bottom: 0.5rem; /* Add subtle spacing between items */
     color: var(--text-primary); /* Match the text color with the site theme */
 }
@@ -125,7 +124,7 @@ ol.custom-list li {
     /*padding: 10px 20px;
     border-radius: 5px;*/
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.5rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -266,14 +265,14 @@ ol.custom-list li {
 #hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center no-repeat;
+    justify-content: center; /*no repeat*/
     align-items: center;
     text-align: center;
-    background-color: var(--background-color-light) !important; /*!important;*/
-    background-image: url(../images/hero-sketch-mobile.svg);
+    background-color: var(--background-color-light); 
     color: var(--text-primary);
 }
 
@@ -281,40 +280,41 @@ ol.custom-list li {
     position: relative;
     z-index: 0;
     max-width: 100%; /* Override Bootstrap's max-width */
-    /*padding: 1rem 1rem;*/
+    padding: 1rem 1rem;
     box-sizing: border-box;
 }
 
 .hero-background-img {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 0;
+    z-index: -1; /* Ensure it stays behind the content */
 }
 
 .hero-wordstamp-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1rem;
+    width: 3rem;
 }
 
 .hero-wordstamp {
-    max-width: 1remm;
+    max-width: 2rem;
 }
 
 /* Typography */
 #hero p {
-    font-size: 1em;
-    line-height: 1em;
+    font-size: 1rem;
+    line-height: 1rem;
     color: var(--text-primary);
 }
 
 #hero h2, #hero h3, #hero h4 {
-    font-size: 1em;
+    font-size: 1.8rem;
 }
 
 /* Responsive Layouts - Mobile */
@@ -326,7 +326,13 @@ ol.custom-list li {
 
     #hero {
         height: auto; /* Allow hero height to adjust on mobile */
-        background: -webkit-image-set(url(../images/hero-sketch-mobile.svg) 1x, url(../images/hero-sketch-desktop.svg) 2x);
+        background-image: url(../images/hero-sketch-mobile.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-wordstamp-container {
+        display: flex;
     }
 
     .hero-background-img {
