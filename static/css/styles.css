@@ -280,8 +280,8 @@ ol.custom-list li {
 #hero .container {
     position: relative;
     z-index: 2;
-    /*max-width: 100%; /* Override Bootstrap's max-width */
-    /*padding: 0 0px;*/
+    max-width: 100%; /* Override Bootstrap's max-width */
+    padding: 1rem 1rem;
     box-sizing: border-box;
 }
 
@@ -299,11 +299,11 @@ ol.custom-list li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1rem;
+    width: 1em;
 }
 
 .hero-wordstamp {
-    max-width: 4em;
+    max-width: 1remm;
 }
 
 /* Typography */
