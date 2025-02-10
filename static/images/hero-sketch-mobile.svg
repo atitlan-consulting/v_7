@@ -28,14 +28,14 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.37057403"
-     inkscape:cx="156.51394"
-     inkscape:cy="492.4792"
+     inkscape:cx="420.96852"
+     inkscape:cy="508.67029"
      inkscape:window-width="1280"
      inkscape:window-height="772"
      inkscape:window-x="0"
      inkscape:window-y="1108"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer5"
      showguides="true" />
   <defs
      id="defs1">
@@ -181,29 +181,54 @@
          id="tspan4"
          x="104.43663"
          y="178.34781" /></text>
+    <g
+       id="text21"
+       style="font-size:32px;line-height:1;font-family:'Raleway Dots';-inkscape-font-specification:'Raleway Dots';text-align:center;letter-spacing:2.04px;word-spacing:0px;text-anchor:middle;fill:none;stroke:#007acc;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:bevel;paint-order:stroke markers fill"
+       aria-label="IDENTIFY . PLAN . DELIVER">
+      <path
+         style="font-size:28px;font-family:Raleway;-inkscape-font-specification:Raleway;fill:#00bfff;stroke:#00bfff"
+         d="m 50.824737,356.28787 v -19.88 h 1.96 v 19.88 z m 8.983977,0 v -19.88 h 6.748 q 3.164,0 5.264,1.344 2.128,1.316 3.192,3.584 1.064,2.24 1.064,4.984 0,3.024 -1.176,5.264 -1.148,2.24 -3.304,3.472 -2.128,1.232 -5.04,1.232 z m 14.308,-9.968 q 0,-2.38 -0.896,-4.228 -0.868,-1.848 -2.548,-2.884 -1.68,-1.064 -4.116,-1.064 h -4.788 v 16.408 h 4.788 q 2.464,0 4.144,-1.092 1.68,-1.092 2.548,-2.94 0.868,-1.876 0.868,-4.2 z m 21.108005,8.232 v 1.736 h -13.356 v -19.88 h 13.104 v 1.736 h -11.144 v 7.168 h 9.716 v 1.652 h -9.716 v 7.588 z m 7.695981,-14.532 v 16.268 h -1.96 v -19.88 h 1.624 l 13.048,16.576 v -16.548 h 1.96 v 19.852 h -1.82 z m 35.80798,-1.876 h -7.084 v 18.144 h -1.96 v -18.144 h -7.084 v -1.736 h 16.128 z m 5.00801,18.144 v -19.88 h 1.96 v 19.88 z m 8.98398,0 v -19.88 h 13.048 v 1.736 h -11.088 v 7.308 h 9.352 v 1.624 h -9.352 v 9.212 z m 18.64402,-19.88 6.496,10.696 6.552,-10.696 h 2.128 l -7.7,12.488 v 7.392 h -1.96 v -7.448 l -7.672,-12.432 z"
+         id="path34" />
+      <path
+         style="font-size:28px;font-family:Raleway;-inkscape-font-specification:Raleway;fill:#00bfff"
+         d="m 200.0287,356.28787 v -2.744 h 1.652 v 2.744 z"
+         id="path35" />
+      <path
+         style="font-size:28px;font-family:Raleway;-inkscape-font-specification:Raleway;fill:#007acc;stroke:none"
+         d="m 217.21265,356.28787 v -19.88 h 8.232 q 1.288,0 2.352,0.532 1.092,0.532 1.876,1.456 0.784,0.896 1.232,2.016 0.448,1.092 0.448,2.24 0,1.624 -0.728,3.08 -0.7,1.428 -1.988,2.324 -1.288,0.896 -3.024,0.896 h -6.44 v 7.336 z m 1.96,-9.072 h 6.356 q 1.176,0 2.044,-0.644 0.868,-0.644 1.344,-1.68 0.476,-1.036 0.476,-2.24 0,-1.232 -0.56,-2.268 -0.56,-1.036 -1.484,-1.624 -0.896,-0.616 -1.988,-0.616 h -6.188 z m 17.49599,9.072 v -19.88 h 1.96 v 18.144 h 11.48 v 1.736 z m 24.52401,-19.88 h 1.652 l 8.26,19.88 h -2.072 l -2.576,-6.216 h -8.932 l -2.548,6.216 h -2.1 z m 4.816,12.124 -4.004,-9.828 -4.06,9.828 z m 11.95202,-8.512 v 16.268 h -1.96 v -19.88 h 1.624 l 13.048,16.576 v -16.548 h 1.96 v 19.852 h -1.82 z"
+         id="path36" />
+      <path
+         style="font-size:28px;font-family:Raleway;-inkscape-font-specification:Raleway;fill:#00bfff"
+         d="m 308.16464,356.28787 v -2.744 h 1.652 v 2.744 z"
+         id="path37" />
+      <path
+         style="font-size:28px;font-family:Raleway;-inkscape-font-specification:Raleway;fill:#ff8c00;stroke:#ff8c00"
+         d="m 325.34857,356.28787 v -19.88 h 6.748 q 3.164,0 5.264,1.344 2.128,1.316 3.192,3.584 1.064,2.24 1.064,4.984 0,3.024 -1.176,5.264 -1.148,2.24 -3.304,3.472 -2.128,1.232 -5.04,1.232 z m 14.308,-9.968 q 0,-2.38 -0.896,-4.228 -0.868,-1.848 -2.548,-2.884 -1.68,-1.064 -4.116,-1.064 h -4.788 v 16.408 h 4.788 q 2.464,0 4.144,-1.092 1.68,-1.092 2.548,-2.94 0.868,-1.876 0.868,-4.2 z m 21.108,8.232 v 1.736 h -13.356 v -19.88 h 13.104 v 1.736 h -11.144 v 7.168 h 9.716 v 1.652 h -9.716 v 7.588 z m 5.73598,1.736 v -19.88 h 1.96 v 18.144 h 11.48 v 1.736 z m 18.36401,0 v -19.88 h 1.96 v 19.88 z m 8.89998,-19.88 7.112,17.444 7.084,-17.444 h 2.044 l -8.232,19.88 h -1.792 l -8.26,-19.88 z m 34.49203,18.144 v 1.736 h -13.356 v -19.88 h 13.104 v 1.736 h -11.144 v 7.168 h 9.716 v 1.652 h -9.716 v 7.588 z m 5.73598,1.736 v -19.88 h 8.4 q 1.288,0 2.352,0.532 1.064,0.532 1.848,1.456 0.812,0.896 1.232,2.016 0.448,1.092 0.448,2.24 0,1.428 -0.56,2.688 -0.532,1.26 -1.54,2.128 -0.98,0.868 -2.324,1.148 l 4.872,7.672 h -2.212 l -4.676,-7.336 h -5.88 v 7.336 z m 1.96,-9.072 h 6.496 q 1.176,0 2.044,-0.644 0.868,-0.644 1.344,-1.68 0.476,-1.064 0.476,-2.24 0,-1.204 -0.56,-2.212 -0.532,-1.036 -1.456,-1.652 -0.896,-0.644 -2.016,-0.644 h -6.328 z"
+         id="path38" />
+    </g>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:1;font-family:'Raleway Dots';-inkscape-font-specification:'Raleway Dots';text-align:center;text-decoration-color:#000000;letter-spacing:2.04px;word-spacing:0px;text-anchor:middle;fill:none;fill-opacity:1;stroke:#007acc;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
-       x="249.05864"
-       y="356.28787"
-       id="text21"><tspan
+       x="-335.10611"
+       y="273.66541"
+       id="text34"><tspan
          sodipodi:role="line"
-         id="tspan21"
-         x="250.07864"
-         y="356.28787"
+         id="tspan34"
+         x="-334.08612"
+         y="273.66541"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:Raleway;-inkscape-font-specification:Raleway;letter-spacing:2.04px;fill:#007acc;fill-opacity:1;stroke:#007acc;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"><tspan
            style="font-size:28px;letter-spacing:2.04px;fill:#00bfff;fill-opacity:1;stroke:#00bfff;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
-           id="tspan16">IDENTIFY</tspan><tspan
+           id="tspan28">IDENTIFY</tspan><tspan
            style="font-size:28px;letter-spacing:2.04px;fill:#00bfff;fill-opacity:1"
-           id="tspan17"> .</tspan><tspan
+           id="tspan29"> .</tspan><tspan
            style="font-size:28px"
-           id="tspan26"> </tspan><tspan
+           id="tspan30"> </tspan><tspan
            style="font-size:28px;letter-spacing:2.04px;stroke:none;stroke-width:0.3;stroke-dasharray:none"
-           id="tspan18">PLAN</tspan><tspan
+           id="tspan31">PLAN</tspan><tspan
            style="font-size:28px;letter-spacing:2.04px;fill:#00bfff;fill-opacity:1"
-           id="tspan19"> .</tspan><tspan
+           id="tspan32"> .</tspan><tspan
            style="font-size:28px;letter-spacing:2.04px;fill:#ff8c00;fill-opacity:1;stroke:#ff8c00;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
-           id="tspan20"> DELIVER</tspan></tspan></text>
+           id="tspan33"> DELIVER</tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
