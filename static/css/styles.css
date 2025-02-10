@@ -170,7 +170,7 @@ a:hover {
 }
 
 .hero-visually-hidden {
-    position: absolute;
+    position: relative;
     clip: rect(0px, 0px, 0px, 0px);
     padding: 0;
     border: 0;
