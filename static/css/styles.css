@@ -1,4 +1,6 @@
-/* Import Fonts */
+/* =====================
+   Global Styles & Fonts
+===================== */
 @font-face {
     font-family: 'Raleway';
     src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
@@ -13,646 +15,211 @@
     font-style: normal;
 }
 
-/* =====================
-   Global Styles
-===================== */
-:root { 
-    --primary-color: #00bfff; /* Bright blue */
+:root {
+    --primary-color: #00bfff;
     --primary-color-light: #b3e6ff;
     --primary-color-dark: #007acc;
 
-    --secondary-color: #ff8c00; /* Bright orange */
-    --secondary-color-light: #ffdbb3;
-    --secondary-color-dark: #cc7000; 
-
+    --secondary-color: #ff8c00;
     --neutral-light: #ecf0f1;
-    --neutral: #bdc3c7;
     --neutral-dark: #7f8c8d;
     --neutral-cream: #fffaf0;
 
-    --background-color: #2e2e2e; /* #2e2e2e  #1B263B f9f9f9 #d6d6d6 #1B263B  #1B263B*/
-    --background-color-light: #fff9f2; /* Cream background #f3f1efff #f3f1ef00  */ 
-    --text-primary: #696969; /* White text */
-    --text-secondary: #c0c0c0ff; /* Light gray for supporting text */
+    --background-color: #2e2e2e;
+    --background-color-light: #fff9f2;
+    --text-primary: #696969;
+    --text-secondary: #c0c0c0ff;
 }
 
 body {
     font-family: 'Raleway', Arial, sans-serif;
     color: var(--text-primary);
     background-color: var(--background-color-light);
+    line-height: 1.6;
 }
 
 a {
     color: var(--primary-color);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-h1 {
-    position: absolute; /* Remove it from the normal document flow - for SEO optimisation*/
-    left: -9999px; /* Push it off-screen */
-    top: 0;
-    width: 0; /* Shrink its width */
-    height: 0; /* Shrink its height */
-    overflow: hidden; /* Ensure no visible overflow */
-    clip: rect(0, 0, 0, 0); /* Clip it */
-    white-space: nowrap; /* Prevent wrapping */
-    border: 0; /* Remove any borders */
-}
-
-h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', Arial, sans-serif;
-    color: var(--text-primary);
-    font-weight: thin;
-}
-
-/* Container */
-
-.container {
-    padding: 1rem 1rem;
-}
-
-
-/* =====================
-   General List Styling
-===================== */
-ul.custom-list {
-    list-style-type: disc; /* Use disc bullets */
-    color: var(--text-primary); /* Set bullet color */
-    position: relative; /* Ensure nested lists are positioned correctly */
-}
-
-/* List Items */
-ul.custom-list li {
-    font-size: 0.5rem; /* Keep font size consistent with body text */
-    line-height: 0.5rem; /* Improve readability */
-    margin-bottom: 0.5rem; /* Add subtle spacing between items */
-    color: var(--text-primary); /* Match the text color with the site theme */
-}
-
-/* Nested Lists */
-ul.custom-list ul {
-    list-style-type: circle; /* Use circle bullets for nested lists */
-    padding-left: 0.5rem; /* Indent nested lists slightly more */
-    margin-top: 0rem; /* Add space between parent and nested lists */
-}
-
-ul.custom-list ul li {
-    color: var(--text-primary); /* Use a lighter text color for nested items */
+a:hover {
+    color: var(--primary-color-dark);
 }
 
 /* =====================
-   Ordered List Styling
+   Header & Navbar
 ===================== */
-ol.custom-list {
-    list-style-type: decimal; /* Use numbers for ordered lists */
-    color: var(--text-primary);
-}
-
-ol.custom-list li {
-    font-size: 1rem;
-    line-height: 1rem;
-    color: var(--text-primary);
-}
-
-/* =====================
-   Components
-===================== */
-.btn {
-    background-color: var(--primary-color);
-    /*border: 1px solid var(--primary-color-dark);*/
-    color: var(--neutral-cream);
-    /*padding: 10px 20px;
-    border-radius: 5px;*/
-    text-transform: uppercase;
-    font-size: 0.5rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn:hover {
-    background-color: var(--primary-color-dark);
-    transform: scale(1.05);
-    color:  var(--neutral-cream);
-}
-
-.img-rounded {
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* =====================
-   Section Styles
-===================== */
-
-/* Ensure sticky-top works */
 .sticky-top {
-    z-index: 1020; /* Ensures it stays above other elements */
-    background-color: var(--background-color); /* Dark background for the navbar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    z-index: 1020;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* Base styles to swith logo display in header and hero sections*/ 
-.logo-small, .logo-large {
-    display: none; /* Hide both by default */
-}
-
-/* Mobile-first: Show small logo */
-.logo-small {
-    display: inline-block;
-}
-
-/* Show large logo on larger screens */
-@media (min-width: 768px) {
-    .logo-small {
-        display: none;
-    }
-
-    .logo-large {
-        display: flex;
-    }
-}
-
-/* Navbar */
 
 .navbar {
-    background-color:var(--background-color); /* Match the site's background */
-    color: var(--text-primary); /* Primary text color */
-    padding: 0 0; /* Add vertical padding */
-    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Navbar Links */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .navbar .nav-link {
-    color: var(---text-primary) !important; /* Link color */
-    font-weight: lighter;
-    font-size: 1rem; /* Adjust font size */
-    text-transform: uppercase; /* Optional: Transform to uppercase */
-    padding: 0.5rem 1rem; /* Adds better spacing */
-    transition: color 0.3s ease; /* Smooth hover effect */
-
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: var(--text-primary) !important;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
-.navbar .nav-link:hover {
-    color: var(--secondary-color, #f39c12) !important; /* Hover color */
-    text-decoration: none; /* No underline */
-}
-
-/* Active Link Styling */
+.navbar .nav-link:hover,
 .navbar .nav-link.active {
-    color: #f39c12 !important; /* Active link color */
-    font-weight: lighter; /* Highlight active link */   
+    color: var(--secondary-color) !important;
 }
 
-
-
-/* Navbar Toggler Icon */
-.navbar-toggler {
-    border: none; /* Removes the default border */
-    outline: none; /* Removes focus outline */
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28155,155,155,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; /* Customizes icon color */
-}
-
-/* Collapsible Content */
-.navbar-collapse {
-    justify-content: flex-end; /* Aligns nav items to the right */
-}
-
-@media (max-width: 768px) {
-    .navbar-collapse {
-        justify-content: center; /* Centers links in mobile view */
-    }
-
-    .navbar-nav {
-        text-align: center; /* Center-align links in mobile */
-    }
-}
-
-/* Adjust spacing and alignment for navbar items */
-.navbar-nav .nav-item {
-    margin: 0 0.5rem; /* Add spacing between nav items */
-}
-
-/* Active and hover states for buttons */
-.navbar-nav .nav-item .nav-link.active,
-.navbar-nav .nav-item .nav-link:hover {
-    color: #f39c12 !important; /* Highlight active/hover state */
-}
-
-
-
-
-/* Hero Section */
-/*#hero {
-    background-image: url('../images/hero-sketch-mobile.svg');
+/* =====================
+   Hero Section
+===================== */
+#hero {
     position: relative;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+    text-align: center;
     background-color: var(--background-color-light) !important;
-    color: var(--text-primary);
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-}*/
-
-/* Hero Section */
-#hero {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /*no repeat*/
-    align-items: center;
-    text-align: center;
-    background-color: var(--background-color-light) !important; 
-    color: var(--text-primary);
     overflow: hidden;
-}
-
-#hero .container {
-    position: relative;
-    z-index: 0;
-    max-width: 100%; /* Override Bootstrap's max-width */
-    padding: 1rem 1rem;
-    box-sizing: border-box;
+    padding: 60px 20px;
 }
 
 .hero-background-img {
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* Ensure it stays behind the content */
+    z-index: -1;
 }
 
 .hero-wordstamp-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto; /* Remove static width */
-    margin-top: 2rem; /* Add space between the hero image and text */
-    z-index: 1; /* Ensure it appears above the hero background */
+    margin-top: 2rem;
+    z-index: 1;
 }
 
 .hero-wordstamp {
-    max-width: 150px; /* Adjust as needed */
-    width: 80%; /* Responsive scaling */
-    height: auto;
-    object-fit: contain; /* Maintain aspect ratio */
+    max-width: 150px;
+    width: 80%;
+    object-fit: contain;
 }
 
-/* Typography */
-#hero p {
-    font-size: 1rem;
-    line-height: 1rem;
-    color: var(--text-primary);
-}
-
-#hero h2, #hero h3, #hero h4 {
-    font-size: 1.8rem;
-}
-
-/* Responsive Layouts - Mobile */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .container {
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
     #hero {
-        height: auto; /* Allow hero height to adjust on mobile */
-        background-image: url(../images/hero-sketch-mobile.svg);
+        padding: 40px 10px;
+        background-image: url('../images/hero-sketch-mobile.svg');
         background-size: cover;
         background-position: center;
-    }
-
-    .hero-wordstamp-container {
-        display: flex;
-        justify-content: center;
-
     }
 
     .hero-wordstamp {
         max-width: 80px;
-        width: 100%;
     }
 
-    .hero-background-img {
-        display: block;
+    #hero h2 {
+        font-size: 1.6rem;
     }
-
-    #hero h2, #hero h3, #hero h4 {
-        font-size: 1.2rem;
-    }
-
-    #hero p {
-        font-size: 0.9rem;
-    }
-
 }
 
-/* Tablet and Desktop */
 @media (min-width: 769px) {
-    .hero-background-img {
-        display: none;
-    }
-
     #hero {
-        background-image: url(../images/hero-sketch-desktop.svg);
-        background-size: cover;
-        background-position: center;
+        background-image: url('../images/hero-sketch-desktop.svg');
     }
 
-    #hero .container {
-        max-width: 900px; /* Limit width for better readability */
+    .hero-wordstamp-container {
+        display: none;
     }
 
     #hero h2 {
         font-size: 2.5rem;
     }
-
-    #hero p {
-        font-size: 1.2rem;
-    }
-
-    .hero-wordstamp-container {
-        display: none;
-    }
 }
-
-
-  
-
 
 /* =====================
-   About Section
-===================== */
-#about {
-    #background-color: var(--background-color-light); /* Match site's background */
-    color: var(--text-primary); /* Primary text color */
-}
-
-/* About Section Paragraphs */
-#about .about-intro p {
-    font-size: 1em;
-    line-height: 1em;
-    color: var(--text-primary); /* Use secondary text color for supporting text */
-}
-
-/* Service Descriptions */
-#about .services-description p {    
-    font-size: 1em; /* Slightly larger font size */
-    line-height: 1em;
-    color: var(--text-primary); /* Primary text color */
-}
-
-
-
-/* =====================
-   Team Section Styles
+   Team Section & Profiles
 ===================== */
 #team {
+    padding: 60px 20px;
     background-color: var(--background-color-light);
-    color: var(--text-primary);
-   /*padding: 60px 20px;*/
     text-align: center;
 }
 
-#team h2 {
-    color: var(--primary-color);
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-/* =====================
-   Profile Card Styles
-===================== */
 .profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 0;
-    background-color: var(--background-color-light);
+    padding: 20px;
     border-radius: 1rem;
-}
-
-/* Profile Image */
-.profile-img {
-    margin-bottom: 0.2em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color-light);
 }
 
 .profile-img img {
-    /*width: 150px;
-    height: 150px;*/
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
+    object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-img img:hover {
     transform: scale(1.1);
-    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);*/
 }
 
-/* Profile Text */
-.profile-name {
-    font-size: rem;
-    color: var(--primary-color);
-    margin: 1rem 0;
-}
-
-.profile-bio,
-.profile-qualifications {
-    font-size: 1rem;
-    line-height: 1rem;
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-}
-
-/* Profile Details List */
-.profile-list {
-    list-style-type: disc;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-.profile-list li {
-    margin-bottom: 1rem;
-}
-
-
-
-/* RICS Logo */
-.rics-logo {
-    margin-top: 1rem;
-    max-width: 20rem;
-    height: 10rem;
-}
-
-/* Responsive styles for mobile */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .row.no-stack, .row.d-flex {
-        display: flex;
-        flex-wrap: wrap;  /* Allow wrapping */
-        justify-content: space-between; /* Space between columns */
-        gap: 1px;        /* Space between columns */
-        padding: 0 1px;
+    .profile-container {
+        padding: 10px;
     }
 
-    .col-md-6, .col-lg-4 {
-        flex: 1 1 48%;          /* Take up nearly half the screen width */
-        max-width: 48%;         /* Prevent overflow */
-        box-sizing: border-box; /* Include padding and borders in width */
-    }
-
-    /* Adjustments for text and images */
     .profile-img img {
-        width: 80px;            /* Smaller profile images */
+        width: 80px;
         height: 80px;
     }
 
     .profile-name {
-        font-size: 1.2rem;      /* Adjust text sizes to fit better */
-    }
-
-    .profile-bio,
-    .profile-qualifications {
-        font-size: 0.9rem;
-    }
-
-    /* Remove list styles */
-    .profile-list {
-        padding-left: 0;
-        list-style: none;
-    }
-
-    .profile-list li {
-        margin-bottom: 0.5rem;
-    }
-
-    /* Adjust RICS logo */
-    .rics-logo {
-        max-width: 60px;
-        height: auto;
+        font-size: 1.2rem;
     }
 }
 
-
-
-
-
-
 /* =====================
-   Contact Section Refinements
+   Contact Form
 ===================== */
 #contact {
-    background-color: var(--background-color-light); /* Match the site's theme */
-    color: var(--text-primary);
-    padding: 40px 20px; /* Slightly reduce vertical padding */
+    padding: 40px 20px;
+    background-color: var(--background-color-light);
     text-align: center;
 }
 
-#contact h2 {
-    font-size: 2rem;
-    font-family: 'Raleway', sans-serif;
-    color: var(--primary-color);
-    margin-bottom: 15px; /* Reduce spacing under heading */
-}
-
-#contact p {
-    font-size: 1rem;
-    color: var(--text-primary);
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-/* Form Styling */
 #contact form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 30px; /* Increase form padding for balance */
-    border: 1px solid var(--neutral-light); /* Softer border */
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    background-color: var(--background-color-light); /* Match site’s contrast */
+    padding: 30px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--neutral-cream);
 }
 
-/* Form Labels */
-#contact .form-label {
-    font-weight: bold;
-    color: var(--text-primary);
-    margin-bottom: 5px;
-    display: block;
-}
-
-/* Form Inputs */
-#contact .form-control {
-    border: 1px solid var(--neutral-light);
-    border-radius: 4px;
-    padding: 12px;
-    font-size: 1rem;
-    background-color: var(--background-light);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-#contact .form-control:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-    outline: none;
-}
-
-/* Textarea */
-#contact textarea.form-control {
-    resize: none; /* Disable resizing */
-}
-
-/* Checkbox */
-#contact .form-check-input {
-    margin-right: 10px;
-    accent-color: var(--primary-color);
-}
-
-#contact .form-check-label {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    vertical-align: middle; /* Center text with the checkbox */
-}
-
-/* Submit Button */
-#contact .btn-primary {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-#contact .btn-primary:hover {
-    background-color: var(--primary-color-dark);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add depth on hover */
-}
-
-/* Responsive Adjustments */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     #contact {
         padding: 30px 15px;
-    }
-
-    #contact h2 {
-        font-size: 1.8rem;
     }
 
     #contact form {
@@ -660,82 +227,21 @@ ol.custom-list li {
     }
 }
 
-
 /* =====================
-   Footer Section
+   Footer
 ===================== */
 #footer {
-    background: var(--background-color-light); /* Match the site's background */
-    color: var(---text-primary); /* Secondary color for the text */
-    padding: 20px 0; /* Consistent vertical padding */
+    padding: 20px 0;
+    background-color: var(--background-color-light);
     text-align: center;
-    font-size: 0.9rem; /* Slightly smaller font size for footer text */
-    line-height: 1.6; /* Improve readability */
+    font-size: 0.9rem;
 }
-
-/* Footer Links */
-#footer a {
-    color: var(--primary-color); /* Match the site's primary color */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth color change on hover */
-}
-
-#footer a:hover {
-    color: var(--primary-color-dark); /* Slightly darker on hover */
-}
-
-/* Footer Modal Styling */
-.modal-content {
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    background: var(--background-color-light); /* Light background for contrast */
-    color: var(--text-primary); /* Primary text color */
-    padding: 20px; /* Inner padding for the modal */
-}
-
-.modal-header {
-    border-bottom: 1px solid var(--neutral-light); /* Subtle divider */
-    padding-bottom: 10px;
-}
-
-.modal-title {
-    font-size: 1.25rem; /* Highlighted title size */
-    color: var(--primary-color); /* Use primary color for titles */
-}
-
-.modal-body {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(var(---text-primary)y); /* Secondary color for body text */
-}
-
-.modal-footer {
-    border-top: 1px solid var(--neutral-light); /* Divider for footer */
-    padding-top: 10px;
-}
-
-.btn-close {
-    color: var(--neutral-dark); /* Neutral color for the close button */
-}
-
-.btn-close:hover {
-    color: var(--primary-color-dark); /* Match site's hover color */
-}
-
 
 /* =====================
-   Responsive Styles
+   Utilities
 ===================== */
-@media (min-width: 768px) {
-    #about, #services, #team {
-        padding: 80px 40px;
-    }
-
-    .profile-img {
-        margin-right: 20px;
-    }
-
-    .profile-text {
-        text-align: left;
-    }
+.container {
+    padding: 1rem;
+    box-sizing: border-box;
 }
+
