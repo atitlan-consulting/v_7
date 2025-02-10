@@ -272,7 +272,7 @@ ol.custom-list li {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /*background-color: var(--background-color-light) !important;*/
+    background-color: var(--background-color-light) !important; /*!important;*/
     background-image: url(../images/hero-sketch-mobile.svg);
     color: var(--text-primary);
 }
