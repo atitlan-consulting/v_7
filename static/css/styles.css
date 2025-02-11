@@ -103,7 +103,7 @@ a:hover {
 /* Mobile-first: Show the small logo */
 .logo-small {
     display: inline-block;
-    max-height: 40px;
+    max-height: 3rem;
 }
 
 /* Tablet and Desktop: Switch to large logo */
@@ -170,7 +170,7 @@ a:hover {
 }
 
 .hero-wordstamp {
-    max-width: 400px;
+    max-width: 4rem;
     width: 70%;
     height: auto;
     object-fit: contain;
