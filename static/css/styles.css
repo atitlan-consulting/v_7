@@ -141,7 +141,7 @@ a:hover {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center; /* Align content to the top flex-start*/
     align-items: center;
     text-align: center;
     background-color: var(--background-color-light) !important;
@@ -206,7 +206,7 @@ a:hover {
 }
 
 .hero-rics-logo {
-    max-width: 5rem;
+    max-width: 10rem;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -222,7 +222,7 @@ a:hover {
     }
 
     .hero-wordstamp {
-        max-width: 5rem;
+        max-width: 20rem;
     }
 
     #hero h2 {
@@ -230,7 +230,7 @@ a:hover {
     }
 
     .hero-rics-logo {
-        max-width: 5rem;
+        max-width: 20rem;
     }
 }
 
@@ -248,7 +248,7 @@ a:hover {
     }
 
     .hero-rics-logo {
-        max-width: 10rem;
+        max-width: 20rem;
     }
 }
 
