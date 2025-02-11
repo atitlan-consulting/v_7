@@ -68,7 +68,7 @@ a:hover {
 .navbar-nav {
     display: flex;
     justify-content: center;
-    gap: 0.75rem;
+    /*gap: 0.5rem;*/
 }
 
 .navbar .nav-link {
@@ -106,7 +106,7 @@ a:hover {
     max-height: 3rem;
 }
 
-/* Tablet and Desktop: Switch to large logo */
+/* Tablet and Desktop: Switch to large logo */ 
 @media (min-width: 768px) {
     .logo-small {
         display: none;
@@ -122,12 +122,12 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 10px; /* Add spacing between logos and text */
-    height: 60px;
+    height: 3rem; 
 }
 
 .logo-small,
 .logo-large {
-    height: 45px; /* Ensure consistent logo height */
+    height: 3rem; /* Ensure consistent logo height */
     object-fit: contain; /* Prevent stretching */
 }
 
@@ -192,7 +192,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 20rem;
+    margin-top: 15rem;
 }
 
 .hero-rics-logo-container {
@@ -202,11 +202,11 @@ a:hover {
     height: auto;
     margin-top: 1rem;
     z-index: 1;
-    padding-top: 1rem;
+    padding-top: 3rem;
 }
 
 .hero-rics-logo {
-    max-width: 400px;
+    max-width: 3rem;
     width: 70%;
     height: auto;
     object-fit: contain;
