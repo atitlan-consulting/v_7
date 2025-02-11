@@ -103,6 +103,7 @@ a:hover {
 /* Mobile-first: Show the small logo */
 .logo-small {
     display: inline-block;
+    max-height: 40px;
 }
 
 /* Tablet and Desktop: Switch to large logo */
