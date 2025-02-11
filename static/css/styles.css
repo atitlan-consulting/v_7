@@ -215,11 +215,15 @@ a:hover {
     }
 
     .hero-wordstamp {
-        max-width: 80px;
+        max-width: 200px;
     }
 
     #hero h2 {
         font-size: 1.6rem;
+    }
+
+    .hero-rics-logo {
+        max-width: 200px;
     }
 }
 
@@ -234,6 +238,10 @@ a:hover {
 
     #hero h2 {
         font-size: 2.5rem;
+    }
+
+    .hero-rics-logo {
+        max-width: 400px;
     }
 }
 
