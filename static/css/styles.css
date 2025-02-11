@@ -170,7 +170,7 @@ a:hover {
 }
 
 .hero-wordstamp {
-    max-width: 4rem;
+    max-width: 10rem;
     width: 70%;
     height: auto;
     object-fit: contain;
@@ -206,7 +206,7 @@ a:hover {
 }
 
 .hero-rics-logo {
-    max-width: 3rem;
+    max-width: 5rem;
     width: 70%;
     height: auto;
     object-fit: contain;
@@ -222,7 +222,7 @@ a:hover {
     }
 
     .hero-wordstamp {
-        max-width: 3rem;
+        max-width: 5rem;
     }
 
     #hero h2 {
@@ -230,7 +230,7 @@ a:hover {
     }
 
     .hero-rics-logo {
-        max-width: 3rem;
+        max-width: 5rem;
     }
 }
 
@@ -248,7 +248,7 @@ a:hover {
     }
 
     .hero-rics-logo {
-        max-width: 400px;
+        max-width: 10rem;
     }
 }
 

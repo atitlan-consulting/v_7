@@ -28,8 +28,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.63998221"
-     inkscape:cx="107.8155"
-     inkscape:cy="505.4828"
+     inkscape:cx="67.189368"
+     inkscape:cy="192.97412"
      inkscape:window-width="1280"
      inkscape:window-height="800"
      inkscape:window-x="0"
@@ -110,7 +110,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer4"
-     inkscape:label="Layer 7">
+     inkscape:label="Layer 7"
+     style="display:none">
     <rect
        style="fill:url(#linearGradient13);fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:0.996078;paint-order:stroke markers fill"
        id="rect9"
