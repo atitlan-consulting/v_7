@@ -175,6 +175,8 @@ a:hover {
     object-fit: contain;
 }
 
+
+
 .hero-visually-hidden {
     position: relative;
     clip: rect(0px, 0px, 0px, 0px);
@@ -186,7 +188,22 @@ a:hover {
     white-space: nowrap;
 }
 
+.hero-rics-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 1rem;
+    z-index: 1;
+    padding-top: 1rem;
+}
 
+.hero-rics-logo {
+    max-width: 400px;
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
