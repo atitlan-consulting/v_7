@@ -48,6 +48,16 @@ a:hover {
     color: var(--primary-color);
 }
 
+.btn-primary {
+    background-color: #00bfff;  /* Custom orange */
+    border-color: #ff5733;
+}
+
+.btn-primary:hover {
+    background-color: #e64a19; /* Darker orange */
+    border-color: #e64a19;
+}
+
 /* =====================
    Header & Navbar
 ===================== */
@@ -277,15 +287,15 @@ a:hover {
 }
 
 .profile-img img {
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-img img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Responsive adjustments */
@@ -295,8 +305,8 @@ a:hover {
     }
 
     .profile-img img {
-        width: 80px;
-        height: 80px;
+        width: 5rem;
+        height: 5rem;
     }
 
     .profile-name {
