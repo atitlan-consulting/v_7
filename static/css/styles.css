@@ -280,6 +280,14 @@ a:hover {
     align-items: center;
 }
 
+.team-rics-logo {
+    max-width: 10rem; /* Keeps it within 160px */
+    width: 100%; /* Ensures responsiveness */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures it doesn't distort */
+}
+
+
 .profile-container {
     padding: 2rem;
     border-radius: 1rem;
@@ -298,6 +306,9 @@ a:hover {
 .profile-img img:hover {
     transform: scale(1.05);
 }
+
+
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

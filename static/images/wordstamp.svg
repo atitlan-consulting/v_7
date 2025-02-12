@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="136.57751"
-   height="68.627296"
-   viewBox="0 0 36.136132 18.15764"
+   width="140"
+   height="65"
+   viewBox="0 0 140 65"
    version="1.1"
    id="svg1"
    sodipodi:docname="wordstamp.svg"
@@ -23,12 +23,12 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="3.0458894"
-     inkscape:cx="62.379153"
-     inkscape:cy="4.7605143"
-     inkscape:window-width="1920"
-     inkscape:window-height="1052"
-     inkscape:window-x="3200"
-     inkscape:window-y="37"
+     inkscape:cx="62.543308"
+     inkscape:cy="16.579722"
+     inkscape:window-width="1280"
+     inkscape:window-height="772"
+     inkscape:window-x="0"
+     inkscape:window-y="1108"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg1" />
   <defs
@@ -44,7 +44,7 @@
   </defs>
   <g
      id="layer6"
-     transform="translate(-83.029384,-72.980565)">
+     transform="matrix(3.5620837,0,0,3.5620837,-290.1176,-259.80239)">
     <g
        id="g4-0"
        transform="matrix(1.7989561,0,0,1.7989561,-468.81801,34.726311)"
