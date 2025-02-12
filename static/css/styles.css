@@ -52,6 +52,10 @@ a:hover {
 .btn-primary {
     background-color: var(--primary-color);  /* Custom orange */
     border-color: var(--primary-color-dark);
+    color: var(--background-color-light);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
 }
 
 .btn-primary:hover {
@@ -180,7 +184,7 @@ a:hover {
     margin-top: 1rem;
     z-index: 1;
     padding-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .hero-wordstamp {
@@ -270,7 +274,7 @@ a:hover {
    Team Section & Profiles
 ===================== */
 #team {
-    padding: 60px 20px;
+    padding: 2rem 1rem;
     background-color: var(--background-color-light);
     text-align: center;
 }
@@ -292,15 +296,15 @@ a:hover {
 
 
 .profile-container {
-    padding: 2rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background-color: var(--background-color-light);
 }
 
 .profile-img img {
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -316,12 +320,12 @@ a:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .profile-container {
-        padding: 1rem;
+        padding: 0.55rem;
     }
 
     .profile-img img {
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7rem;
     }
 
     .profile-name {

@@ -96,13 +96,13 @@
 
         <!-- Hero Heading -->
         <div>
-            <p>Bringing expert <strong>Skills</strong>, extensive <strong>Knowledge</strong>, and years of <strong>Experience</strong> to Development Management. </p>
+            <p>Bringing expert <strong>Skills</strong>, extensive <strong>Knowledge</strong>, and years of <strong>Experience</strong> to Development Management.</p>
         </div>
 
 
         <!-- Call to Action Button -->
         <div class="hero-cta-container">
-            <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+            <a href="#contact" class="btn btn-primary btn-md">Get in Touch</a>
         </div>
 
         <!-- RICS Logo -->
@@ -197,33 +197,38 @@
 
 
     </div>
-
 </section>
+
+<section>
     <div class="container">
     
         <form action="/submit" method="POST">
-            <!-- First and Last Name -->
-            <div class="row mb-3">
+            <!-- First and Last Name Row -->
+            <div class="row g-3 mb-3">
                 <div class="col-md-6">
-                    <label for="first_name" class="form-label">First Name</label>
-                    <input type="text" id="first_name" name="first_name" class="form-control" placeholder="First Name" required>
+                    <div class="form-floating">
+                        <input type="text" id="first_name" name="first_name" class="form-control" placeholder="First Name" required>
+                        <label for="first_name">First Name</label>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <label for="last_name" class="form-label">Last Name</label>
-                    <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Last Name" required>
+                    <div class="form-floating">
+                        <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Last Name" required>
+                        <label for="last_name">Last Name</label>
+                    </div>
                 </div>
             </div>
 
             <!-- Email -->
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+            <div class="form-floating mb-3">
                 <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                <label for="email">Email</label>
             </div>
 
             <!-- Message -->
-            <div class="mb-3">
-                <label for="message" class="form-label">Message (Optional)</label>
+            <div class="form-floating mb-3">
                 <textarea id="message" name="message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+                <label for="message">Message (Optional)</label>
             </div>
 
             <!-- Checkbox and Submit -->
@@ -232,11 +237,12 @@
                     <input type="checkbox" id="subscribe-newsletter" name="subscribe" class="form-check-input">
                     <label for="subscribe-newsletter" class="form-check-label">Subscribe to our newsletter</label>
                 </div>
-                <button type="submit" class="btn">Send</button> <!-- class="btn btn-primary" -->
+                <button type="submit" class="btn btn-primary">Send</button>
             </div>
         </form>
     </div>
 </section>
+    
 
 
 <!-- Footer -->
