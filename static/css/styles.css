@@ -66,13 +66,13 @@ a:hover {
 ===================== */
 .sticky-top {
     z-index: 1020;
-    background-color: var(--neutral-light) !important; 
+    background-color: #ffffff;/*var(--neutral-light) !important; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
     padding: 10px 20px;
-    background-color: var(--neutral-light);
+    background-color: #ffffff;
     color: var(--text-primary);
     display: flex;
     justify-content: space-between;
