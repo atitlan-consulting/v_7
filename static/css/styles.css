@@ -206,7 +206,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 .hero-rics-logo-container {
@@ -330,6 +330,13 @@ a:hover {
 
     .profile-details {
         font-size: 0.8rem;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .team-rics-logo {
+        max-width: 5rem;
     }
 }
 
