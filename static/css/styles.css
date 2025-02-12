@@ -240,7 +240,7 @@ a:hover {
     }
 
     .hero-wordstamp {
-        max-width: 12rem;
+        max-width: 10rem;
     }
 
     #hero h2 {
@@ -314,10 +314,16 @@ a:hover {
 }
 
 .profile-img img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
-
+.profile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
 
 
 /* Responsive adjustments */
@@ -337,6 +343,10 @@ a:hover {
 
     .profile-details {
         font-size: 0.8rem;
+    }
+
+    .profile-bio {
+        font-size: 0.9rem;
     }
 }
 
@@ -409,6 +419,13 @@ a:hover {
     background-color: var(--background-color-light) !important;
     text-align: center;
     font-size: 0.9rem;
+
+}
+
+.footer-links a {
+    color: var(--text-primary); /* Improve contrast */
+    font-size: 0.9rem;
+    padding: 8px;
 }
 
 /* =====================
