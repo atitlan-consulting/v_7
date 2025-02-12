@@ -59,6 +59,8 @@ a:hover {
     border-color: var(--secondary-color-light);
 }
 
+
+
 /* =====================
    Header & Navbar
 ===================== */
@@ -259,7 +261,7 @@ a:hover {
     }
 
     .hero-rics-logo {
-        max-width: 20rem;
+        max-width: 15rem;
     }
 }
 
