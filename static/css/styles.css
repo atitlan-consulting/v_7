@@ -163,7 +163,7 @@ a:hover {
     text-align: center;
     background-color: var(--background-color-light) !important;
     overflow: hidden;
-    padding: 20px 20px 60px;
+    padding: 10px 10px 10px;
 }
 
 .hero-background-img {
@@ -181,14 +181,14 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: auto;
-    margin-top: 1rem;
+    margin-top: 0rem;
     z-index: 1;
     padding-top: 1rem;
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
 }
 
 .hero-wordstamp {
-    max-width: 18rem;
+    max-width: 8rem;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -210,7 +210,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .hero-rics-logo-container {
@@ -220,11 +220,11 @@ a:hover {
     height: auto;
     margin-top: 1rem;
     z-index: 1;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .hero-rics-logo {
-    max-width: 10rem;
+    max-width: 5rem;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -251,7 +251,7 @@ a:hover {
     }
 
     .hero-rics-logo {
-        max-width: 8rem;
+        max-width: 6rem;
     }
 }
 
@@ -272,6 +272,52 @@ a:hover {
         max-width: 15rem;
     }
 }
+
+/* Services Section */
+#services {
+    background-color: var(--background-color-light);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color-dark);
+    margin-bottom: 0.75rem;
+    text-align: left;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.service-list li {
+    font-size: 1rem;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .service-title {
+        text-align: center;
+    }
+
+    .service-list {
+        text-align: center;
+    }
+}
+
+
+
 
 /* =====================
    Team Section & Profiles
@@ -306,8 +352,8 @@ a:hover {
 }
 
 .profile-img img {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
