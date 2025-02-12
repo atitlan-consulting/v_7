@@ -21,6 +21,7 @@
     --primary-color-dark: #007acc;
 
     --secondary-color: #ff8c00;
+    --secondary-color-light: #ffd699;
     --neutral-light: #fff9f2;
     --neutral-dark: #7f8c8d;
     --neutral-cream: #fffaf0;
@@ -49,13 +50,13 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #00bfff;  /* Custom orange */
-    border-color: #ff5733;
+    background-color: var(--primary-color);  /* Custom orange */
+    border-color: var(--primary-color-dark);
 }
 
 .btn-primary:hover {
-    background-color: #e64a19; /* Darker orange */
-    border-color: #e64a19;
+    background-color: var(--secondary-color); /* Darker orange */
+    border-color: var(--secondary-color-light);
 }
 
 /* =====================
@@ -301,7 +302,7 @@ a:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .profile-container {
-        padding: 10px;
+        padding: 1rem;
     }
 
     .profile-img img {
@@ -310,7 +311,11 @@ a:hover {
     }
 
     .profile-name {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .profile-details {
+        font-size: 0.9rem;
     }
 }
 
