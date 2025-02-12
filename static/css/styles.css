@@ -375,16 +375,16 @@ a:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .profile-container {
-        padding: 0.55rem;
+        padding: 0.1rem;
     }
 
     .profile-img img {
-        width: 7rem;
-        height: 7rem;
+        width: 6rem;
+        height: 6rem;
     }
 
     .profile-name {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .profile-details {
@@ -392,7 +392,7 @@ a:hover {
     }
 
     .profile-bio {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
