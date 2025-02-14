@@ -236,7 +236,7 @@ a:hover {
         padding: 40px 10px;
         background-image: url('../images/hero-sketch-mobile.svg');
         background-size: cover;
-        background-position: center;
+        background-position: center no-repeat;
     }
 
     .hero-wordstamp {
@@ -258,6 +258,8 @@ a:hover {
 @media (min-width: 769px) {
     #hero {
         background-image: url('../images/hero-sketch-desktop.svg');
+        background-size: cover;
+        background-position: center no-repeat;
     }
 
     .hero-wordstamp-container {
