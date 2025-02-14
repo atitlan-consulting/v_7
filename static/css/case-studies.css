@@ -14,6 +14,17 @@
     font-size: 0.9rem;
 }
 
+#case-studies p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+#case-studies h5 {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin: 1rem 0;
+}
+
 /* ============================
    Filter Buttons
 ============================ */
