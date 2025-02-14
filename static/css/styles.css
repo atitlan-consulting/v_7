@@ -236,7 +236,7 @@ a:hover {
         padding: 40px 10px;
         background-image: url('../images/hero-sketch-mobile.svg');
         background-size: cover;
-        background-position: center no-repeat;
+        background-position: center;
     }
 
     .hero-wordstamp {

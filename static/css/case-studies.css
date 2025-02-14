@@ -9,11 +9,6 @@
     text-align: center;
 }
 
-#case-studies h2 {
-    color: var(--primary-color);
-    font-size: 0.9rem;
-}
-
 #case-studies p {
     font-size: 0.8rem;
     margin: 0.5rem 0;
@@ -91,10 +86,10 @@
 .case-study-card {
     flex: 0 0 20rem;
     min-height: 12rem;
-    background-color: #fafaf8; /* Replace with var(--neutral-cream) if defined */
+    background-color: #ffffff; /* Replace with var(--neutral-cream) if defined */
     color: var(--text-primary);
     border-radius: 0.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -187,7 +182,7 @@
     }
 
     #map {
-        height: 10rem;
+        height: 15rem;
     }
 
     /*.filter-btn {

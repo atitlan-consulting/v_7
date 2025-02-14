@@ -134,9 +134,9 @@ function updateCaseStudies(category) {
         const card = document.createElement('div');
         card.className = 'flip-card';
         card.innerHTML = `
-            <div class="flip-card-inner">
+            <div class="case-study-container">
                 <!-- Front Side -->
-                <div class="flip-card-front" style="background-color: '#f5f5dc'};">
+                <div class="case-study-card">
                     <div class="card-content p-3">
                         <!-- Project Name at the Top -->
                         <h5 class="text-center card-title mb-3">${study.name}</h5>
@@ -150,7 +150,7 @@ function updateCaseStudies(category) {
                         <p class="text-center card-description">${study.description}</p>
                     </div>
 
-                                        <!-- View on Map Button -->
+                    <!-- View on Map Button -->
                     <button class="btn btn-primary view-on-map w-100 mt-3" 
                             data-index="${index}" 
                             data-category="${category}">
