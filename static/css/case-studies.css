@@ -85,7 +85,7 @@
 ============================ */
 .case-study-card {
     flex: 0 0 20rem;
-    min-height: 12rem;
+    min-height: 20rem;
     background-color: #ffffff; /* Replace with var(--neutral-cream) if defined */
     color: var(--text-primary);
     border-radius: 0.5rem;
@@ -100,7 +100,7 @@
 
 .case-study-card .card-header {
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 0.5rem;
 }
 
@@ -117,8 +117,8 @@
 }
 
 .case-study-card .sector-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -151,7 +151,7 @@
    Map Section (Separate if needed)
 ============================ */
 #map {
-    height: 15rem;
+    height: 20rem;
     border-radius: 1rem;
     margin-top: 1rem;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
@@ -169,6 +169,7 @@
     .case-study-card {
         flex: 0 0 16rem;
         padding: 1rem;
+        min-height: 15rem;
     }
 
     .sector-icon {
@@ -182,7 +183,7 @@
     }
 
     #map {
-        height: 10rem;
+        height: 15rem;
     }
 
     /*.filter-btn {
