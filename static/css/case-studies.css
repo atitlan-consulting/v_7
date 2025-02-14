@@ -11,7 +11,7 @@
 
 #case-studies h2 {
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 0.9rem;
 }
 
 /* ============================
@@ -20,7 +20,7 @@
 .filter-btn-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin: 1.5rem 0;
 }
 
@@ -63,7 +63,7 @@
 }
 
 #case-study-container::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: var(--primary-color-dark);
     border-radius: 0.25em;
 }
 
@@ -138,7 +138,7 @@
    Map Section (Separate if needed)
 ============================ */
 #map {
-    height: 10rem;
+    height: 20rem;
     border-radius: 1rem;
     margin-top: 1rem;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
@@ -169,7 +169,7 @@
     }
 
     #map {
-        height: 8rem;
+        height: 20rem;
     }
 
     .filter-btn {
