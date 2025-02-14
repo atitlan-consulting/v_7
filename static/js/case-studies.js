@@ -149,19 +149,12 @@ function updateCaseStudies(category) {
                         <!-- Description Below Icons -->
                         <p class="text-center card-description">${study.description}</p>
                     </div>
-                </div>
 
-                <!-- Back Side -->
-                <div class="flip-card-back p-3">
-                    <!-- Custom Fields Instead of Status/Date -->
-                    <p><strong>Custom Field 1:</strong> ${study.custom_field_1 || 'N/A'}</p>
-                    <p><strong>Custom Field 2:</strong> ${study.custom_field_2 || 'N/A'}</p>
-
-                    <!-- View on Map Button -->
+                                        <!-- View on Map Button -->
                     <button class="btn btn-primary view-on-map w-100 mt-3" 
                             data-index="${index}" 
                             data-category="${category}">
-                        View on Map
+                        View
                     </button>
                 </div>
             </div>

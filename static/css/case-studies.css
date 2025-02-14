@@ -15,8 +15,8 @@
 }
 
 #case-studies p {
-    font-size: 1rem;
-    margin: 1rem 0;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
 }
 
 #case-studies h5 {
@@ -74,7 +74,7 @@
 }
 
 #case-study-container::-webkit-scrollbar-thumb {
-    background: var(--primary-color-dark);
+    background: var(--text-primary);
     border-radius: 0.25em;
 }
 
