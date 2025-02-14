@@ -151,7 +151,7 @@ function updateCaseStudies(category) {
                     </div>
 
                     <!-- View on Map Button -->
-                    <button class="btn btn-primary-sm view-on-map w-100 mt-3" 
+                    <button class="btn btn-primary view-on-map w-100 mt-3" 
                             data-index="${index}" 
                             data-category="${category}">
                         View
