@@ -350,14 +350,14 @@ a:hover {
 .profile-container {
     padding: 0.5rem;
     border-radius: 1rem;
-    /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background-color: #ffffff /*var(--background-color-light);*/
 }
 
 .profile-img img {
     width: 9rem;
     height: 9rem;
-    border-radius: 50%;
+    border-radius: 25%;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
