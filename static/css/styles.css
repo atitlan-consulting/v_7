@@ -380,13 +380,13 @@ a:hover {
    Team Section & Profiles
 ===================== */
 #team {
-    padding: 0.5rem 0.5rem;
+    padding: 0rem 0rem;
     background-color: var(--background-color-light);
     text-align: center;
 }
 
 .team-container {
-    display: grid;
+    display: grid; /*grid*/
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     justify-content: center;
@@ -395,7 +395,7 @@ a:hover {
 }
 
 .team-rics-logo {
-    max-width: 10rem; /* Keeps it within 160px */
+    max-width: 5rem; /* Keeps it within 160px */
     width: 100%; /* Ensures responsiveness */
     height: auto; /* Maintains aspect ratio */
     object-fit: contain; /* Ensures it doesn't distort */
@@ -410,10 +410,10 @@ a:hover {
 }
 
 .profile-img img {
-    width: 9rem;
-    height: 9rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 25%;
-    object-fit: cover;
+    object-fit: auto; /*cover;*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -425,28 +425,28 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .profile-container {
-        padding: 0.1rem;
+        padding: 0rem;
     }
 
     .profile-img img {
-        width: 6rem;
-        height: 6rem;
+        width: 5rem;
+        height: 5rem;
     }
 
     .profile-name {
-        font-size: 0.8rem;
+        font-size: 2rem;
     }
 
     .profile-details {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .profile-bio {
@@ -457,7 +457,7 @@ a:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .team-rics-logo {
-        max-width: 5rem;
+        max-width: 4rem;
     }
 }
 
