@@ -120,7 +120,7 @@ a:hover {
 /* Mobile-first: Show the small logo */
 .logo-small {
     display: inline-block;
-    max-height: 3rem;
+    max-height: 2rem;
 }
 
 /* Tablet and Desktop: Switch to large logo */ 
@@ -139,12 +139,12 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 10px; /* Add spacing between logos and text */
-    height: 3rem; 
+    height: 2.5rem; 
 }
 
 .logo-small,
 .logo-large {
-    height: 3rem; /* Ensure consistent logo height */
+    height: 2rem; /* Ensure consistent logo height */
     object-fit: contain; /* Prevent stretching */
 }
 
