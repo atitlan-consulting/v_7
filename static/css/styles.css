@@ -437,12 +437,12 @@ a:hover {
     }
 
     .profile-img img {
-        width: 5rem;
-        height: 5rem;
+        width: 8rem;
+        height: 8rem;
     }
 
     .profile-name {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .profile-details {
