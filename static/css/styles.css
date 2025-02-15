@@ -234,7 +234,7 @@ a:hover {
 @media (max-width: 768px) {
     #hero {
         padding: 40px 10px;
-        background-image: url('../images/hero-sketch-mobile.svg');
+        background-image: url('../images/hero-mobile-test.webp');/*url('../images/hero-sketch-mobile.svg');*/
         background-size: cover;
         background-position: center;
     }
@@ -327,18 +327,18 @@ a:hover {
 
 /* Section Titles */
 .section-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-primary);
 }
 
 /* Article Titles */
 .article-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--primary-color-dark);
     margin-bottom: 0.75rem;
-    text-align: left;
+    text-align: center;
 }
 
 /* Article List */
