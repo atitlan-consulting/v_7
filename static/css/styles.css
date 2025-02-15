@@ -139,7 +139,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 10px; /* Add spacing between logos and text */
-    height: 2.5rem; 
+    height: 2rem; 
 }
 
 .logo-small,
@@ -184,11 +184,11 @@ a:hover {
     margin-top: 0rem;
     z-index: 1;
     padding-top: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .hero-wordstamp {
-    max-width: 8rem;
+    max-width: 10rem;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -240,11 +240,11 @@ a:hover {
     }
 
     .hero-wordstamp {
-        max-width: 8rem;
+        max-width: 10rem;
     }
 
     #hero h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.3;
 
