@@ -87,6 +87,7 @@
 .case-study-card {
     flex: 5 5 5rem; /* Flexbox item width */
     max-height: 5rem;
+    min-width: 4rem;
     background-color: #ffffff; /* Replace with var(--neutral-cream) if defined */
     color: var(--text-primary);
     border-radius: 0.5rem;
