@@ -158,7 +158,7 @@ a:hover {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: top; /* Align content to the top flex-start*/
+    justify-content: center; /* Align content to the top flex-start*/
     align-items: center;
     text-align: center;
     background-color: var(--background-color-light) !important;
