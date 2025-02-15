@@ -257,7 +257,7 @@ a:hover {
 
 @media (min-width: 769px) {
     #hero {
-        background-image: url('../images/hero-sketch-desktop.svg');
+        background-image: url('../images/hero-mobile-test.webp'); ;/*url('../images/hero-sketch-desktop.svg');*/
         background-size: cover;
         background-position: center no-repeat;
     }
