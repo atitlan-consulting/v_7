@@ -237,7 +237,7 @@ p {
 @media (max-width: 768px) {
     #hero {
         padding: 20px 40px;
-        background-image: url('../images/hero-sketch-mobile.svg'); /*url('../images/hero-mobile-test.webp');/*url('../images/hero-sketch-mobile.svg');*/
+        background-image: url('../images/hero-mobile-test.webp'); /*url('../images/hero-mobile-test.webp');/*url('../images/hero-sketch-mobile.svg');*/
         background-size: cover;
         background-position: top;
     }
