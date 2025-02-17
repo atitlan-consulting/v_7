@@ -134,7 +134,7 @@ function updateCaseStudies(category) {
         const card = document.createElement('div');
         card.className = 'flip-card';
         card.innerHTML = `
-            <div class="case-study-container">
+            <div class="case-study-container py-3">
                 <!-- Front Side -->
                 <div class="case-study-card">
                     <div class="card-content p-3">
