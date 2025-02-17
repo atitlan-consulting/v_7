@@ -186,7 +186,7 @@ p {
     height: auto;
     margin-top: 0rem;
     z-index: 1;
-    padding-top: 1rem;
+    padding-top: 0rem;
     margin-bottom: 3rem;
 }
 
@@ -236,14 +236,14 @@ p {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     #hero {
-        padding: 40px 40px;
+        padding: 20px 40px;
         background-image: url('../images/hero-sketch-mobile.svg'); /*url('../images/hero-mobile-test.webp');/*url('../images/hero-sketch-mobile.svg');*/
         background-size: cover;
         background-position: top;
     }
 
     .hero-wordstamp {
-        max-width: 10rem;
+        max-width: 7rem;
     }
 
     #hero h2 {
