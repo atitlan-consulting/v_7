@@ -36,7 +36,7 @@ body {
     font-family: 'Raleway', Arial, sans-serif;
     color: var(--text-primary);
     background-color: var(--background-color-light);
-    line-height: 1;
+    line-height: 1.1;
 }
 
 a {
@@ -54,7 +54,7 @@ a:hover {
     border-color: var(--primary-color-dark);
     color: var(--background-color-light);
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
     text-transform: uppercase;
 }
 
@@ -63,7 +63,10 @@ a:hover {
     border-color: var(--secondary-color-light);
 }
 
-
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
 /* =====================
    Header & Navbar
@@ -234,7 +237,7 @@ a:hover {
 @media (max-width: 768px) {
     #hero {
         padding: 40px 10px;
-        background-image: url('../images/hero-mobile-test.webp');/*url('../images/hero-sketch-mobile.svg');*/
+        background-image: url('../images/hero-sketch-mobile.svg'); /*url('../images/hero-mobile-test.webp');/*url('../images/hero-sketch-mobile.svg');*/
         background-size: cover;
         background-position: center;
     }
@@ -257,7 +260,7 @@ a:hover {
 
 @media (min-width: 769px) {
     #hero {
-        background-image: url('../images/hero-mobile-test.webp'); ;/*url('../images/hero-sketch-desktop.svg');*/
+        background-image: url('../images/hero-sketch-desktop.svg'); /*url('../images/hero-mobile-test.webp'); ;/*url('../images/hero-sketch-desktop.svg');*/
         background-size: cover;
         background-position: center no-repeat;
     }
@@ -283,7 +286,7 @@ a:hover {
 
 .section-title {
     font-size: 2rem;
-    font-weight: 700;
+    /*font-weight: 700;*/
     color: var(--text-primary);
 }
 
@@ -383,6 +386,7 @@ a:hover {
     padding: 0rem 0rem;
     background-color: var(--background-color-light);
     text-align: center;
+    font-weight: lighter;
 }
 
 .team-container {
